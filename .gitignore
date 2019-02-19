@@ -1,0 +1,13 @@
+deprecated/
+vendor/
+test.php
+config.php
+client_secret.json
+credentials.json
+composer.*
+*.list
+*.bat
+*.lnk
+*.db
+*.zip
+*.7z
