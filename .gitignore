@@ -2,6 +2,7 @@ deprecated/
 vendor/
 test.php
 config.php
+SQL-commands.php
 client_secret.json
 credentials.json
 composer.*
