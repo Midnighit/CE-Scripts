@@ -261,6 +261,7 @@ function G_addGroup($sheetId, &$requests, $startIndex, $endIndex, $dimension = '
 /**
  * forms groups over the given range and dimension according to a group criteria in a given column
  * @param $array of values with the criteria at column grpCol, start and end index and the dimenion for the indices
+ G_addGroupByColumn($sheetId, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
  */
 function G_addGroupByColumn($sheetId, &$requests, $values, $grpCol, $startIndex, $endIndex, $hide = true, $dimension = 'ROWS')
 {
@@ -272,7 +273,7 @@ function G_addGroupByColumn($sheetId, &$requests, $values, $grpCol, $startIndex,
 		if(!isset($values[$row + 1]) || $values[$row + 1][$grpCol] != $grp)
 		{
 			// If the row differs from the comparison starting row number there have to be at least two rows that can be grouped
-			if($row != $cmp && $row != $startIndex)
+			if($row != $cmp && $row >= $startIndex)
 			{
 				// Grouping starts at the row below the top row
 				G_addGroup($sheetId, $requests, $cmp + 2, $row + 1, $dimension);

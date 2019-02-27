@@ -19,7 +19,7 @@ if(!file_exists(CEDB_PATH . 'game.db')) exit("No database found, skipping script
 
 // GRANT CLAIMS BELONGING TO NO OWNER:
 // Example: UPDATE buildings SET owner_id = <NEW OWNER ID> WHERE owner_id = 2 AND object_id IN ( SELECT id FROM actor_position WHERE (x BETWEEN <LOW X> AND <HIGH X>) AND (y BETWEEN <LOW Y> AND <HIGH Y>) )
-// $queries[] = "UPDATE buildings SET owner_id = 1062644 WHERE owner_id = 2 AND object_id IN ( SELECT id FROM actor_position WHERE (x BETWEEN 128000 AND 138000) AND (y BETWEEN 56000 AND 66000) )";
+// $queries[] = "UPDATE buildings SET owner_id = 4 WHERE owner_id = 713170 AND object_id IN ( SELECT id FROM actor_position WHERE (x BETWEEN -120000 AND -100000) AND (y BETWEEN -65000 AND -45000) )";
 
 // CHANGE A CHARACTER TIMESTAMP FOR THE RUINS SCRIPT
 // $queries[] = "UPDATE characters SET lastTimeOnline = strftime('%s','now') WHERE id = 527209";
@@ -45,6 +45,17 @@ $queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT object_id 
 $queries[] = "DELETE FROM building_instances WHERE object_id IN (SELECT object_id FROM objects_remove)";
 $queries[] = "DELETE FROM buildings WHERE object_id IN (SELECT object_id FROM objects_remove)";
 $queries[] = "DELETE FROM actor_position WHERE id IN (SELECT object_id FROM objects_remove)";
+*/
+
+// REMOVE ALL UNLOCK PLUS ITEMS FROM THE DB
+/*
+$queries[] = "DELETE FROM destruction_history WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%')";
+$queries[] = "DELETE FROM properties WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%') OR name LIKE '%UnlockPlus%'";
+$queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%')";
+$queries[] = "DELETE FROM building_instances WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%')";
+$queries[] = "DELETE FROM buildings WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%')";
+$queries[] = "DELETE FROM actor_position WHERE id IN (SELECT id FROM actor_position WHERE class LIKE '%UnlockPlus%')";
+$queries[] = "DELETE FROM item_inventory WHERE template_id = 376580852";
 */
 
 // REMOVE ALL BUILDINGS BELONGING TO A GIVEN OWNER FROM THE CURRENT DB AND THEN RESTORE THEM FROM OLDER DB

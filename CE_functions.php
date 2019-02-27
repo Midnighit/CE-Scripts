@@ -316,6 +316,7 @@ function updateThrallcache(&$db)
 function getSteamName($steamid, &$steamcache, $timeout = 1)
 {
 	$steamid = (string)$steamid;
+	if(strlen($steamid) == 18) $steamid = substr($steamid, 0, -1);
 	if(isset($steamcache[$steamid]) && ($steamcache[$steamid]!='')) return $steamcache[$steamid];
 	else
 	{

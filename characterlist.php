@@ -80,7 +80,7 @@ $sql =
 	ORDER BY lastTimeOnline DESC';
 $result=$db->query($sql);
 $values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '']; // add the upload date and database age to the headline
-$values[] = ['Character Names', 'Character ID', 'Guild Names', 'Guild ID', 'lvl', 'Steam Name', 'Steam ID', 'Last Login (GMT)'];
+$values[] = ['Character Names', 'Character ID', 'Guild Names', 'Guild ID', 'lvl', 'Steam Name', 'Steam ID', 'Slot', 'Last Login (GMT)'];
 while($row = $result->fetchArray(SQLITE3_ASSOC))
 {
 	if($row['guild'] == NULL)
@@ -94,13 +94,19 @@ while($row = $result->fetchArray(SQLITE3_ASSOC))
 		$guild = $ownercache[$row['guild']];
 	}
 	if(count($values) == 2) $values[0][2] = $lastUpdate = 'Database Date: '.convertTZ($row['lastTimeOnline'], $tz, $dt).' GMT';
-	$values[] = [$ownercache[$row['id']], $row['id'], $guild, $guildId, $row['level'], getSteamName($row['playerId'], $steamcache), $row['playerId'], convertTZ($row['lastTimeOnline'], $tz, $dt)];
+	if(strlen($row['playerId']) == 17) $slot = 'active';
+	elseif(strlen($row['playerId']) == 18)
+	{
+		$slot = substr($row['playerId'], -1);
+		$row['playerId'] = substr($row['playerId'], 0, -1);
+	}
+	$values[] = [$ownercache[$row['id']], $row['id'], $guild, $guildId, $row['level'], getSteamName($row['playerId'], $steamcache), $row['playerId'], $slot, convertTZ($row['lastTimeOnline'], $tz, $dt)];
 }
 $result->finalize();
 unset($db);
 
 // if no additional lines were added after the headlines, create a dummy line
-if(count($values) == 2) $values[] = ['No characters found!', '', '', '', '', '', '', ''];
+if(count($values) == 2) $values[] = ['No characters found!', '', '', '', '', '', '', '', ''];
 
 // cache the learned steamIds in a local file
 $handle = fopen('./steamcache.list', 'w+');
@@ -112,17 +118,17 @@ fclose($handle);
 
 // Set parameters for the spreadsheet update
 $valueInputOption = 'USER_ENTERED';
-$range = 'Characters!A1:H'.count($values);
+$range = 'Characters!A1:I'.count($values);
 $valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
 $params = ['valueInputOption' => $valueInputOption];
 $rows = ['firstHeadline' => 1, 'lastHeadline' => 2, 'firstData' => 3, 'lastData' => count($values), 'last' => count($values)];
-$columns = ['first' => 1, 'last' => 8];
+$columns = ['first' => 1, 'last' => 9];
 
 // Build the requests array
 G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
 G_changeFormat($sheetId, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'RIGHT', 'NUMBER');
-G_changeFormat($sheetId, $requests, 6, $rows['firstData'], 7, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat($sheetId, $requests, 8, $rows['firstData'], 8, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy hh:mm');
+G_changeFormat($sheetId, $requests, 6, $rows['firstData'], 8, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat($sheetId, $requests, 9, $rows['firstData'], 9, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy hh:mm');
 G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
 

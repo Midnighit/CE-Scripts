@@ -20,6 +20,11 @@ $db = new SQLite3(CEDB_PATH . 'game.db');
 // Create a SQL compatibel string from the owner whitelist
 $whitelist = implode(",", OWNER_WLST);
 
+// Give all thespians within Heimdal, The Spillway and New Vilayet territory back to their respective owners
+$queries[] = "UPDATE buildings SET owner_id = 4 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN 19000 AND 27000) AND (y BETWEEN 42000 AND 50000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 4)";
+$queries[] = "UPDATE buildings SET owner_id = 6 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -117000 AND -108000) AND (y BETWEEN -59000 AND -51000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 6)";
+$queries[] = "UPDATE buildings SET owner_id = 809035 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -81000 AND -64000) AND (y BETWEEN 103000 AND 111000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 809035)";
+
 // Remove characters that have been inactive for more than the number of days defined in LONG_INACTIVE from the db
 $result = $db->exec("CREATE TEMPORARY TABLE removed_chars AS SELECT id FROM characters WHERE (strftime('%s','now')) - lastTimeOnline > " . LONG_INACTIVE . " * 86400 AND id > 2 AND id NOT IN (" . $whitelist . ")");
 $result = $db->exec("DELETE FROM characters WHERE id IN (SELECT id FROM removed_chars)");
@@ -61,25 +66,18 @@ updateNoOwnerObjectscache($db);
 updateThrallcache($db);
 
 // Create a table containing all clans with inactive members and the number of those inactive members
-$queries[] = "DROP TABLE IF EXISTS clanmembers_inactive";
 $queries[] = "CREATE TEMPORARY TABLE clanmembers_inactive AS SELECT count(*) as num_members_inactive, guild as guild_id FROM characters WHERE lastTimeOnline < strftime('%s', 'now', '-" . INACTIVITY . " days') AND guild_id NOT NULL GROUP BY guild_id";
 // Create a table containing all clans and the number of members
-$queries[] = "DROP TABLE IF EXISTS clanmembers_all";
 $queries[] = "CREATE TEMPORARY TABLE clanmembers_all AS SELECT count(*) as num_members_all, guild as guild_id FROM characters WHERE guild_id NOT NULL GROUP BY guild_id";
 // Compare the two tables above and create a new table containing containing only those rows where the number of members match (e.g. all members are inactive)
-$queries[] = "DROP TABLE IF EXISTS objects_owned_by_clans_inactive";
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_clans_inactive AS SELECT object_id, name, owner_id FROM buildings, guilds WHERE guildId = owner_id AND owner_id IN ( SELECT clanmembers_all.guild_id AS guild_id FROM clanmembers_all INNER JOIN clanmembers_inactive ON clanmembers_all.guild_id = clanmembers_inactive.guild_id WHERE num_members_inactive = num_members_all)";
 // Create a table containing all inactive characters that have no clan
-$queries[] = "DROP TABLE IF EXISTS objects_owned_by_characters_inactive";
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_characters_inactive AS SELECT object_id, char_name as name, owner_id FROM buildings, characters WHERE owner_id = id AND lastTimeOnline < strftime('%s','now', '-" . INACTIVITY . " days')";
 // Combine the inactive character and clan tables to one table with all inactive objetcs to be deleted
-$queries[] = "DROP TABLE IF EXISTS objects_owned_by_inactive";
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_inactive AS SELECT object_id, owner_id, name, x, y, z FROM objects_owned_by_characters_inactive, actor_position WHERE object_id = id UNION SELECT object_id, owner_id, name, x, y, z FROM objects_owned_by_clans_inactive, actor_position WHERE object_id = id";
 // Create a table containing all objects that have no owner
-$queries[] = "DROP TABLE IF EXISTS objects_no_owner";
 $queries[] = "CREATE TEMPORARY TABLE objects_no_owner AS SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE object_id = id AND owner_id > 2 AND owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )"; // UNION SELECT object_id, owner_id, x, y, z FROM buildings, actor_position, guilds WHERE id = object_id AND owner_id = guildId AND owner_id NOT IN (SELECT guild FROM characters WHERE guild NOT NULL)";
 // Create a table containing all objects that belong to active owners
-$queries[] = "DROP TABLE IF EXISTS objects_owned_by_active";
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_active AS SELECT object_id, owner_id, x, y, z FROM actor_position, buildings WHERE id = object_id AND owner_id NOT IN ( SELECT owner_id FROM objects_owned_by_inactive ) AND owner_id NOT IN ( SELECT owner_id FROM buildings WHERE owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds ) )";
 while(count($queries) > 0) $db->exec(array_shift($queries));
 
@@ -218,7 +216,7 @@ if(isset($renameToOriginal))
 {
 	foreach($renameToOriginal as $k => $v)
 	{
-		if($isGuild[$k]) $queries[] = 'UPDATE guilds SET name = "' . $v . '" WHERE guildId = ' . $k;
+		if(isset($isGuild[$k]) && $isGuild[$k]) $queries[] = 'UPDATE guilds SET name = "' . $v . '" WHERE guildId = ' . $k;
 		else $queries[] = 'UPDATE characters SET char_name = "' . $v . '" WHERE id = ' . $k;
 	}
 	if(count($queries) > 0)
