@@ -16,14 +16,12 @@ else
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . 'game.db')) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
 
 // Get the Google API client and construct the service object and set the spreadsheet- and sheetId.
 require 'google_sheets_client.php';
 $client = G_getClient();
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = PLAYER_SPREADSHEET_ID;
-$sheetId = '!!!!CHANGE TO SHEETID FOR TILES SHEET!!!!'; 
 
 // Do some timezone shenanigans to get the offset for the real unix timestamp
 $tz = new datetimezone('Etc/GMT');							// where the server is located
@@ -31,12 +29,11 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH);
 
 // Read in and update the ownercache
 updateOwnercache($db);
 
-/* REACTIVATE ONCE TILE BASE SYSTEM IN PLACE!
 // Get the last time a player has been online and use that information to determine the db age
 $lastUpdate = 'Database Date: '.convertTZ(getLastOnlineTimestamp($db), $tz, $dt).' GMT';
 $now = date('d-M-Y H:i', time());
@@ -48,47 +45,46 @@ $tiles = getTilescount($db);
 $members = getMembers($db, ACTIVE+BUILDINGS);
 
 // Create the values array
-$sql = 'SELECT DISTINCT owner_id FROM buildings, actor_position WHERE object_id = id';
+$whitelist = implode(',', OWNER_WLST);
+$sql = 'SELECT DISTINCT owner_id FROM buildings WHERE owner_id NOT IN (' . $whitelist . ')';
 $result = $db->query($sql);
-while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [$ownercache[$row['owner_id']], $members[$row['owner_id']], $tiles[$row['owner_id']], round($tiles[$row['owner_id']] / $members[$row['owner_id']])];
+while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [$ownercache[$row['owner_id']], $members[$row['owner_id']], $tiles[$row['owner_id']], round($tiles[$row['owner_id']] / $members[$row['owner_id']]), ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
 $result->finalize();
 
+
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
-$values = array_orderby($values, '3', SORT_DESC, '2', SORT_DESC, '1');
+if(isset($values)) $values = array_orderby($values, '3', SORT_DESC, '2', SORT_DESC, '1');
 
 // Add the headlines at the top of the table after it has been sorted
-array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member']);
+array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member', 'Allowance']);
 array_unshift($values, ['Last Upload: '.date('d-M-Y H:i').' GMT', '', $lastUpdate]);
 
 // Define some special rows and columns
 $rows = ['firstHeadline' => 1, 'lastHeadline' => 2, 'firstData' => 3, 'lastData' => count($values), 'last' => count($values)];
-$columns = ['first' => 1, 'last' => 4];
+$columns = ['first' => 1, 'last' => 5];
 
 // Set parameters for the spreadsheet update
 $valueInputOption = 'USER_ENTERED';
-$range = 'TPM!A1:D'.count($values);
+$range = 'Tiles!A1:E'.count($values);
 $valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
 $params = ['valueInputOption' => $valueInputOption];
 
 // Build the requests array
-G_unmergeCells($sheetId, $requests, 1, $rows['firstData'], 2, $rows['lastData']);
-G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
-G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
-G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat($sheetId, $requests, 2, $rows['firstData'], 4, $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
+G_unmergeCells(TPM_PLAYERS_SHEET_ID, $requests, 1, $rows['firstData'], 2, $rows['lastData']);
+G_setFilterRequest(TPM_PLAYERS_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+G_setGridSize(TPM_PLAYERS_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
+G_changeFormat(TPM_PLAYERS_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(TPM_PLAYERS_SHEET_ID, $requests, 2, $rows['firstData'], 5, $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
 
 // Update the spreadsheet
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
-$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+$response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
+$service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
 unset($values);
-*/
 
 //---------------------------- Activity Statistics ----------------------------//
 
 echo "Updating the activity statistics sheet..." . $lb;
-
-$sheetId = ACTIVITY_STATISTICS_SHEET_ID;
 
 const FRAME = 75;
 const HOLD_BACK_TIME = 5;
@@ -97,7 +93,7 @@ const HOLD_BACK_TIME = 5;
 $now = time();
 
 // Read the statistics already uploaded
-$response = $service->spreadsheets_values->get($spreadsheetId, 'Activity Statistics!A2:B');
+$response = $service->spreadsheets_values->get(PLAYER_SPREADSHEET_ID, 'Activity Statistics!A2:B');
 if($response->values) foreach($response->values as $key => $value)
 {
 	$statsTS = strtotime($value[0]);
@@ -139,14 +135,14 @@ $rows = ['firstHeadline' => 1, 'lastHeadline' => 1, 'firstData' => 2, 'lastData'
 $columns = ['first' => 1, 'last' => 2];
 
 // Build the requests array
-G_setGridSize($sheetId, $requests, $columns['last'], HOLD_BACK_TIME * 144 + 1, 1, true);
-G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'DATE_TIME', 'ddd dd-mmm-yyyy hh:mm');
-G_changeFormat($sheetId, $requests, 2, $rows['firstData'], $columns['last'], $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
+G_setGridSize(ACTIVITY_STATISTICS_SHEET_ID, $requests, $columns['last'], HOLD_BACK_TIME * 144 + 1, 1, true);
+G_changeFormat(ACTIVITY_STATISTICS_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'DATE_TIME', 'ddd dd-mmm-yyyy hh:mm');
+G_changeFormat(ACTIVITY_STATISTICS_SHEET_ID, $requests, 2, $rows['firstData'], $columns['last'], $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
 
 // Update the spreadsheet
-$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+$service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
+$response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
 
 $etime = microtime(true);
 $diff = $etime - $stime;

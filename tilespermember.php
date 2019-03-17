@@ -40,14 +40,12 @@ else echo 'Updating the tiles per member sheet...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . 'game.db')) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
 
 // Get the Google API client and construct the service object and set the spreadsheet- and sheetId.
 require 'google_sheets_client.php';
 $client = G_getClient();
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = ADMIN_SPREADSHEET_ID;
-$sheetId = TILES_PER_MEMBER_SHEET_ID;
 
 // Do some timezone shenanigans to get the offset for the real unix timestamp
 $tz = new datetimezone('Etc/GMT');							// where the server is located
@@ -55,7 +53,7 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH);
 
 // Read in and update the ownercache
 updateOwnercache($db);
@@ -109,20 +107,20 @@ $valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
 $params = ['valueInputOption' => $valueInputOption];
 
 // Build the requests array
-G_unmergeCells($sheetId, $requests, 1, $rows['firstData'], 2, $rows['lastData']);
-G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat($sheetId, $requests, 4, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
-G_changeFormat($sheetId, $requests, 7, $rows['firstData'], 8, $rows['lastData'], 'LEFT', 'TEXT');
-G_deleteGroup($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_unhideCells($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_addGroupByColumn($sheetId, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
-G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
-G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
+G_unmergeCells(TILES_PER_MEMBER_SHEET_ID, $requests, 1, $rows['firstData'], 2, $rows['lastData']);
+G_changeFormat(TILES_PER_MEMBER_SHEET_ID, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(TILES_PER_MEMBER_SHEET_ID, $requests, 4, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
+G_changeFormat(TILES_PER_MEMBER_SHEET_ID, $requests, 7, $rows['firstData'], 8, $rows['lastData'], 'LEFT', 'TEXT');
+G_deleteGroup(TILES_PER_MEMBER_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_unhideCells(TILES_PER_MEMBER_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_addGroupByColumn(TILES_PER_MEMBER_SHEET_ID, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
+G_setFilterRequest(TILES_PER_MEMBER_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+G_setGridSize(TILES_PER_MEMBER_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
 
 // Update the spreadsheet
-$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+$service->spreadsheets_values->update(ADMIN_SPREADSHEET_ID, $range, $valueRange, $params);
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
+$response = $service->spreadsheets->batchUpdate(ADMIN_SPREADSHEET_ID, $batchUpdateRequest);
 
 $etime = microtime(true);
 $diff = $etime - $stime;

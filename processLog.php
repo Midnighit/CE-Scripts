@@ -40,7 +40,7 @@ else echo 'updating the logs...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . 'game.db')) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
 
 function getName($input)
 {
@@ -157,7 +157,7 @@ fwrite($handle, $contents);
 fclose($handle);
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH);
 
 // Read the characters table to determine the names of the characters belonging to the steam IDs
 $sql = 'SELECT playerId, char_name FROM characters';

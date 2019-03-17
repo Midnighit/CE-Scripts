@@ -7,26 +7,24 @@ echo "Creating new ruins, applying damage and purging them depending on inactivi
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . 'game.db')) exit("No database found, skipping script\n");
+if(!file_exists(CEDB_PATH)) exit("No database found, skipping script\n");
 
 // define constants and set ini variables	
 ini_set('max_execution_time', 600);
 
 // Open the sqlite3 db
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH);
 
 //---------------------- Execute some preparatory operations --------------------//
 
 // Create a SQL compatibel string from the owner whitelist
 $whitelist = implode(",", OWNER_WLST);
 
-// Give all thespians within Heimdal, The Spillway and New Vilayet territory back to their respective owners
-$queries[] = "UPDATE buildings SET owner_id = 4 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -117000 AND -108000) AND (y BETWEEN -59000 AND -51000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 4)";
-$queries[] = "UPDATE buildings SET owner_id = 6 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN 19000 AND 27000) AND (y BETWEEN 42000 AND 50000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 6)";
-$queries[] = "UPDATE buildings SET owner_id = 809035 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -81000 AND -64000) AND (y BETWEEN 103000 AND 111000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 809035)";
+// Give all thespians within New Vilayet territory back to their respective owners
+$queries[] = "UPDATE buildings SET owner_id = 12 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -81000 AND -64000) AND (y BETWEEN 103000 AND 111000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 12)";
 
 // Remove characters that have been inactive for more than the number of days defined in LONG_INACTIVE from the db
-$result = $db->exec("CREATE TEMPORARY TABLE removed_chars AS SELECT id FROM characters WHERE (strftime('%s','now')) - lastTimeOnline > " . LONG_INACTIVE . " * 86400 AND id > 2 AND id NOT IN (" . $whitelist . ")");
+$result = $db->exec("CREATE TEMPORARY TABLE removed_chars AS SELECT id FROM characters WHERE (strftime('%s','now')) - lastTimeOnline > " . LONG_INACTIVE . " * 86400 AND id > 20 AND id NOT IN (" . $whitelist . ")");
 $result = $db->exec("DELETE FROM characters WHERE id IN (SELECT id FROM removed_chars)");
 if($result) $changes = $db->changes();
 
@@ -40,7 +38,7 @@ while(count($queries) > 0) $db->exec(array_shift($queries));
 if($changes) echo "Removing " . $changes . " long time inactive characters from the db...\n";
 
 // Remove now empty clans from the db
-$result = $db->exec("DELETE FROM guilds WHERE guildId NOT IN (SELECT DISTINCT guild FROM characters WHERE guild NOT NULL) AND guildId > 2 AND guildId NOT IN (" . $whitelist . ")");
+$result = $db->exec("DELETE FROM guilds WHERE guildId NOT IN (SELECT DISTINCT guild FROM characters WHERE guild NOT NULL) AND guildId > 20 AND guildId NOT IN (" . $whitelist . ")");
 if($result) $changes = $db->changes();
 if($changes) echo "Removing " . $changes . " empty clans from the db...\n";
 
@@ -76,7 +74,7 @@ $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_characters_inactive AS SEL
 // Combine the inactive character and clan tables to one table with all inactive objetcs to be deleted
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_inactive AS SELECT object_id, owner_id, name, x, y, z FROM objects_owned_by_characters_inactive, actor_position WHERE object_id = id UNION SELECT object_id, owner_id, name, x, y, z FROM objects_owned_by_clans_inactive, actor_position WHERE object_id = id";
 // Create a table containing all objects that have no owner
-$queries[] = "CREATE TEMPORARY TABLE objects_no_owner AS SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE object_id = id AND owner_id > 2 AND owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )"; // UNION SELECT object_id, owner_id, x, y, z FROM buildings, actor_position, guilds WHERE id = object_id AND owner_id = guildId AND owner_id NOT IN (SELECT guild FROM characters WHERE guild NOT NULL)";
+$queries[] = "CREATE TEMPORARY TABLE objects_no_owner AS SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE object_id = id AND owner_id > 20 AND owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )"; // UNION SELECT object_id, owner_id, x, y, z FROM buildings, actor_position, guilds WHERE id = object_id AND owner_id = guildId AND owner_id NOT IN (SELECT guild FROM characters WHERE guild NOT NULL)";
 // Create a table containing all objects that belong to active owners
 $queries[] = "CREATE TEMPORARY TABLE objects_owned_by_active AS SELECT object_id, owner_id, x, y, z FROM actor_position, buildings WHERE id = object_id AND owner_id NOT IN ( SELECT owner_id FROM objects_owned_by_inactive ) AND owner_id NOT IN ( SELECT owner_id FROM buildings WHERE owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds ) )";
 while(count($queries) > 0) $db->exec(array_shift($queries));
@@ -129,7 +127,7 @@ $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_NUM)) $ruins[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 
 // Create an array with all owners that will be returned to their original name
-$sql = "SELECT guildId FROM guilds WHERE name = 'Ruins' AND guildId > 2 AND (guildId NOT IN (SELECT owner_id FROM buildings) OR guildId NOT IN (" . $inactive_owners . ") OR guildId IN (" . $whitelist . "))";
+$sql = "SELECT guildId FROM guilds WHERE name = 'Ruins' AND guildId > 20 AND (guildId NOT IN (SELECT owner_id FROM buildings) OR guildId NOT IN (" . $inactive_owners . ") OR guildId IN (" . $whitelist . "))";
 $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_NUM)) $renameToOriginal[$row[0]] = $ownercache[$row[0]];
 $sql = "SELECT id FROM characters WHERE char_name = 'Ruins' AND (id NOT IN (SELECT owner_id FROM buildings) OR id NOT IN (" . $inactive_owners . ") OR id IN (" . $whitelist . "))";
@@ -146,7 +144,7 @@ if(isset($daysInactive))
 }
 
 // Create an array with all objects that have no owner and are not already in the dedicated Ruins clan.
-$sql = "SELECT object_id, owner_id, x, y, z FROM objects_no_owner WHERE owner_id > 2";
+$sql = "SELECT object_id, owner_id, x, y, z FROM objects_no_owner WHERE owner_id > 20";
 $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_NUM)) if(!in_array($row[1], OWNER_WLST)) $moveToRuinsGuild[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 $now = time();
@@ -164,7 +162,7 @@ if(isset($daysInactive))
 
 if(isset($daysObjInactive))
 {
-	$sql = "SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE id = object_id AND owner_id = 2";
+	$sql = "SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE id = object_id AND owner_id = 11";
 	$result = $db->query($sql);
 	while($row = $result->fetchArray(SQLITE3_NUM)) if($daysObjInactive[$row[0]] >= PURGE || $daysObjInactive[$row[0]] * DAMAGE >= 1) $toBePurged[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 }
@@ -250,15 +248,15 @@ if(count($queries) > 0)
 	while(count($queries) > 0) $db->exec(array_shift($queries));
 }
 
-// Create dedicated Ruins Guild with reserved guildId = 2 if it doesn't exist already and there is at least one no-owner object that needs to be moved
+// Create dedicated Ruins Guild with reserved guildId = 11 if it doesn't exist already and there is at least one no-owner object that needs to be moved
 if(isset($moveToRuinsGuild))
 {
-	$result = $db->query("SELECT EXISTS(SELECT 1 FROM guilds WHERE guildId = 2 AND name = 'Ruins')");
+	$result = $db->query("SELECT EXISTS(SELECT 1 FROM guilds WHERE guildId = 11 AND name = 'Ruins')");
 	$exists = $result->fetchArray(SQLITE3_NUM)[0];
-	if(!$exists) $db->exec("INSERT INTO guilds (guildID, name, owner) VALUES (2, 'Ruins', 0)");
+	if(!$exists) $db->exec("INSERT INTO guilds (guildId, name, messageOfTheDay, owner, nameLastChangedBy, motdLastChangedBy) VALUES (11, 'Ruins', '', '', -1, -1)");
 
 	// Assign all non-reserved no owner objects to the Ruins guild
-	foreach($moveToRuinsGuild as $v) $queries[] = "UPDATE buildings SET owner_id = 2 WHERE owner_id = " . $v['ownerID'];
+	foreach($moveToRuinsGuild as $v) $queries[] = "UPDATE buildings SET owner_id = 11 WHERE owner_id = " . $v['ownerID'];
 	echo "Assigning " . count($queries) . " no owner objects to the dedicated Ruins clan...\n";
 	while(count($queries) > 0) $db->exec(array_shift($queries));
 }
@@ -266,7 +264,7 @@ if(isset($moveToRuinsGuild))
 // Run some general performance increasing maintenance commands on the db
 // Close and reopen the db to ensure that the previous statements have been fully processed.
 $db->close();
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH);
 $queries[] = "VACUUM";
 $queries[] = "ANALYZE";
 while(count($queries) > 0) $db->exec(array_shift($queries));
