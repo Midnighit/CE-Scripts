@@ -40,13 +40,12 @@ else echo 'Updating the inactives characters/clans and ruins sheets...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . 'game.db')) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . 'backup-2019.03.17.db')) exit('No database found, skipping script' . $lb);
 
 // Get the Google API client and construct the service object and set the spreadsheetId.
 require 'google_sheets_client.php';
 $client = G_getClient();
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = ADMIN_SPREADSHEET_ID;
 
 // Do some timezone shenanigans to get the offset for the real unix timestamp
 $tz = new datetimezone('Etc/GMT');							// where the server is located
@@ -54,7 +53,7 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH . 'game.db');
+$db = new SQLite3(CEDB_PATH . 'backup-2019.03.17.db');
 
 // Read in and update the ownercache
 updateOwnercache($db);
@@ -109,7 +108,6 @@ array_unshift($values, ['Last Upload: '.date('d-M-Y H:i').' GMT', '', $lastUpdat
 
 // Set parameters for the spreadsheet update
 $valueInputOption = 'USER_ENTERED';
-$sheetId = INACTIVES_SHEET_ID;
 $range = 'Inactive owners!A1:E'.count($values);
 $valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
 $params = ['valueInputOption' => $valueInputOption];
@@ -117,20 +115,19 @@ $rows = ['firstHeadline' => 1, 'lastHeadline' => 2, 'firstData' => 3, 'lastData'
 $columns = ['first' => 1, 'last' => 5];
 
 // Build the requests array
-G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
-G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat($sheetId, $requests, 4, $rows['firstData'], 4, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
-G_changeFormat($sheetId, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'TEXT');
-G_deleteGroup($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_unhideCells($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_addGroupByColumn($sheetId, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
-G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+G_setGridSize(INACTIVES_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
+G_changeFormat(INACTIVES_SHEET_ID, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(INACTIVES_SHEET_ID, $requests, 4, $rows['firstData'], 4, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
+G_changeFormat(INACTIVES_SHEET_ID, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'TEXT');
+G_deleteGroup(INACTIVES_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_unhideCells(INACTIVES_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_addGroupByColumn(INACTIVES_SHEET_ID, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
+G_setFilterRequest(INACTIVES_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 
 // Update the spreadsheet
-$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+$service->spreadsheets_values->update(ADMIN_SPREADSHEET_ID, $range, $valueRange, $params);
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
-
+$response = $service->spreadsheets->batchUpdate(ADMIN_SPREADSHEET_ID, $batchUpdateRequest);
 
 /*********************** Fill the Ruins sheet ***********************/
 
@@ -172,19 +169,19 @@ $rows = ['firstHeadline' => 1, 'lastHeadline' => 2, 'firstData' => 3, 'lastData'
 $columns = ['first' => 1, 'last' => 5];
 
 // Build the requests array
-G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat($sheetId, $requests, 4, $rows['firstData'], 4, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
-G_changeFormat($sheetId, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'TEXT');
-G_deleteGroup($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_unhideCells($sheetId, $requests, $rows['firstData'], $rows['lastData']);
-G_addGroupByColumn($sheetId, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
-G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
-G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
+G_changeFormat(RUINS_SHEET_ID, $requests, 1, $rows['firstData'], 3, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(RUINS_SHEET_ID, $requests, 4, $rows['firstData'], 4, $rows['lastData'], 'RIGHT', 'NUMBER', '#,##0');
+G_changeFormat(RUINS_SHEET_ID, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'TEXT');
+G_deleteGroup(RUINS_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_unhideCells(RUINS_SHEET_ID, $requests, $rows['firstData'], $rows['lastData']);
+G_addGroupByColumn(RUINS_SHEET_ID, $requests, $values, 2, $rows['firstData'], $rows['lastData']);
+G_setFilterRequest(RUINS_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+G_setGridSize(RUINS_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
 
 // Update the spreadsheet
-$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+$service->spreadsheets_values->update(ADMIN_SPREADSHEET_ID, $range, $valueRange, $params);
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
+$response = $service->spreadsheets->batchUpdate(ADMIN_SPREADSHEET_ID, $batchUpdateRequest);
 
 // Close the db
 unset($db);
