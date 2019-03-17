@@ -21,8 +21,8 @@ $db = new SQLite3(CEDB_PATH . 'game.db');
 $whitelist = implode(",", OWNER_WLST);
 
 // Give all thespians within Heimdal, The Spillway and New Vilayet territory back to their respective owners
-$queries[] = "UPDATE buildings SET owner_id = 4 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN 19000 AND 27000) AND (y BETWEEN 42000 AND 50000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 4)";
-$queries[] = "UPDATE buildings SET owner_id = 6 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -117000 AND -108000) AND (y BETWEEN -59000 AND -51000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 6)";
+$queries[] = "UPDATE buildings SET owner_id = 4 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -117000 AND -108000) AND (y BETWEEN -59000 AND -51000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 4)";
+$queries[] = "UPDATE buildings SET owner_id = 6 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN 19000 AND 27000) AND (y BETWEEN 42000 AND 50000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 6)";
 $queries[] = "UPDATE buildings SET owner_id = 809035 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -81000 AND -64000) AND (y BETWEEN 103000 AND 111000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 809035)";
 
 // Remove characters that have been inactive for more than the number of days defined in LONG_INACTIVE from the db
