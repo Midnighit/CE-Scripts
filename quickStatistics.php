@@ -53,7 +53,7 @@ $result->finalize();
 
 
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
-if(isset($values)) $values = array_orderby($values, '3', SORT_DESC, '2', SORT_DESC, '1');
+if(isset($values)) $values = array_orderby($values, '2', SORT_DESC, '3', SORT_DESC, '1');
 
 // Add the headlines at the top of the table after it has been sorted
 array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member', 'Allowance']);
