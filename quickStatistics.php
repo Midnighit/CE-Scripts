@@ -51,9 +51,9 @@ $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [$ownercache[$row['owner_id']], $members[$row['owner_id']], $tiles[$row['owner_id']], round($tiles[$row['owner_id']] / $members[$row['owner_id']]), ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
 $result->finalize();
 
-
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
 if(isset($values)) $values = array_orderby($values, '2', SORT_DESC, '3', SORT_DESC, '1');
+else $values[] = ['No buildings found!', '', '', '', ''];
 
 // Add the headlines at the top of the table after it has been sorted
 array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member', 'Allowance']);
