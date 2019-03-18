@@ -7,13 +7,13 @@ echo "Creating new ruins, applying damage and purging them depending on inactivi
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit("No database found, skipping script\n");
+if(!file_exists(CEDB_PATH . DB_FILE)) exit("No database found, skipping script\n");
 
 // define constants and set ini variables	
 ini_set('max_execution_time', 600);
 
 // Open the sqlite3 db
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 
 //---------------------- Execute some preparatory operations --------------------//
 
@@ -264,7 +264,7 @@ if(isset($moveToRuinsGuild))
 // Run some general performance increasing maintenance commands on the db
 // Close and reopen the db to ensure that the previous statements have been fully processed.
 $db->close();
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 $queries[] = "VACUUM";
 $queries[] = "ANALYZE";
 while(count($queries) > 0) $db->exec(array_shift($queries));
