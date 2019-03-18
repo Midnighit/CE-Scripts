@@ -260,7 +260,7 @@ function updateOwnercache(&$db)
 	global $ownercache;
 	// if an ownercache has been created, read it otherwise initialize the reserved owner IDs
 	if(file_exists('ownercache.list')) include 'ownercache.list';
-	else list($ownercache[0], $ownercache[1], $ownercache[2]) = ['Game assets', 'Whitelisted', 'Ruins'];
+	else list($ownercache[0], $ownercache[11]) = ['Game assets', 'Ruins'];
 
 	// Get all characters IDs and their names from the current characters table
 	$sql =
