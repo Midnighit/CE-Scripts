@@ -29,7 +29,6 @@ if($html)
 		<a href='tilespermember.php'>Update tiles per member list</a></br>
 		<a href='characterlist.php'>Update character list</a></br>
 		<a href='inactives.php'>Update list of inactive clans/characters and ruins</a></br>
-		<a href='no-owner.php'>Update list of buildings with no owners</a></br>
 		<a href='processLog.php'>Update the logs</a></br>
 		<pre>
 <?php
@@ -41,7 +40,7 @@ else echo 'Updating the characterlist sheet...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
 // set ini variables	
 if(file_exists('steamcache.list')) include_once 'steamcache.list';
@@ -58,7 +57,7 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 
 // save all guild and character names for future reference
 updateOwnercache($db);

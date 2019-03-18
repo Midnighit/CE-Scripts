@@ -16,7 +16,7 @@ else
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
 // Get the Google API client and construct the service object and set the spreadsheet- and sheetId.
 require 'google_sheets_client.php';
@@ -29,7 +29,7 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 
 // Read in and update the ownercache
 updateOwnercache($db);
@@ -51,9 +51,9 @@ $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [$ownercache[$row['owner_id']], $members[$row['owner_id']], $tiles[$row['owner_id']], round($tiles[$row['owner_id']] / $members[$row['owner_id']]), ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
 $result->finalize();
 
-
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
 if(isset($values)) $values = array_orderby($values, '2', SORT_DESC, '3', SORT_DESC, '1');
+else $values[] = ['No buildings found!', '', '', '', ''];
 
 // Add the headlines at the top of the table after it has been sorted
 array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member', 'Allowance']);
