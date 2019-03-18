@@ -160,7 +160,7 @@ if(isset($daysInactive))
 	while($row = $result->fetchArray(SQLITE3_NUM)) if(($daysInactive[$row[1]] >= PURGE || $daysInactive[$row[1]] * DAMAGE >= 1) && !in_array($row[1], OWNER_WLST)) $toBePurged[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 }
 
-if(isset($daysObjInactive))
+if(isset($daysObjInactive) && !empty($daysInactive))
 {
 	$sql = "SELECT object_id, owner_id, x, y, z FROM buildings, actor_position WHERE id = object_id AND owner_id = 11";
 	$result = $db->query($sql);

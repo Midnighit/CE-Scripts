@@ -233,7 +233,7 @@ function updateNoOwnerObjectscache(&$db)
 	$sql =
 		"SELECT object_id
 		FROM buildings
-		WHERE (owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )) OR owner_id = 2";
+		WHERE (owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )) OR owner_id = " . RUINS_CLAN_ID;
 	$result = $db->query($sql);
 	// add current timestamp for new entries 
 	$now = time();
@@ -307,7 +307,7 @@ function updateThrallcache(&$db)
 	// write back the cached owner names
 	$handle = fopen('./thrallcache.list', 'w+');
 	$contents = '<?php'.PHP_EOL;
-	foreach($thrallcache as $objectId => $ownerId) $contents .= '$thrallcache["'.$objectId.'"] = "'.$ownerId.'";'.PHP_EOL;
+	if(isset($thrallchache)) foreach($thrallcache as $objectId => $ownerId) $contents .= '$thrallcache["'.$objectId.'"] = "'.$ownerId.'";'.PHP_EOL;
 	$contents .= '?>';
 	fwrite($handle, $contents);
 }
