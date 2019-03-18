@@ -39,7 +39,7 @@ else echo 'Updating the inactives characters/clans and ruins sheets...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
 // Get the Google API client and construct the service object and set the spreadsheetId.
 require 'google_sheets_client.php';
@@ -52,7 +52,11 @@ $dt = new datetime('now', new datetimezone('Etc/GMT'));		// instanciate an date 
 date_default_timezone_set('Etc/GMT');						// use GMT for all future outputs
 
 // Open the SQLite3 db and places the values in a sheets conform array
+<<<<<<< HEAD
 $db = new SQLite3(CEDB_PATH);
+=======
+$db = new SQLite3(CEDB_PATH . DB_FILE);
+>>>>>>> cb5a68e3d577898cc60011f35b2efe0448f5303e
 
 // Read in and update the ownercache
 updateOwnercache($db);
