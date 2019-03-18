@@ -17,7 +17,7 @@ echo 'Updating the statistics sheet...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
 // set ini variables	
 if(file_exists('steamcache.list')) include_once 'steamcache.list';
@@ -41,7 +41,7 @@ const TWENTY_HOURS = 20*60*60;
 const TWENTYFOUR_HOURS = 24*60*60;
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 
 // Read in and update the ownercache
 updateOwnercache($db);

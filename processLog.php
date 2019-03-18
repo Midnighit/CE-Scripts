@@ -39,7 +39,7 @@ else echo 'updating the logs...' . $lb;
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
 function getName($input)
 {
@@ -156,7 +156,7 @@ fwrite($handle, $contents);
 fclose($handle);
 
 // Open the SQLite3 db and places the values in a sheets conform array
-$db = new SQLite3(CEDB_PATH);
+$db = new SQLite3(CEDB_PATH . DB_FILE);
 
 // Read the characters table to determine the names of the characters belonging to the steam IDs
 $sql = 'SELECT playerId, char_name FROM characters';
@@ -175,11 +175,9 @@ if(isset($IPLog)) foreach($IPLog as $timestamp => $value)
 require 'google_sheets_client.php';
 $client = G_getClient();
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = LOGS_SPREADSHEET_ID;
-$sheetId = CHAT_LOG_SHEET_ID;
 
 // Read the chatlog that's already uploaded
-$response = $service->spreadsheets_values->get($spreadsheetId, 'Chat Log!A3:D');
+$response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'Chat Log!A3:D');
 if($response->values) foreach($response->values as $key => $value)
 {
 	if(!isset($value[3])) $value[3] = '';
@@ -209,21 +207,19 @@ if(isset($chatlog))
 	$columns = ['first' => 1, 'last' => 4];
 
 	// Build the requests array
-	G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
-	G_changeFormat($sheetId, $requests, 3, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
-	G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+	G_setGridSize(CHAT_LOG_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
+	G_changeFormat(CHAT_LOG_SHEET_ID, $requests, 3, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
+	G_setFilterRequest(CHAT_LOG_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 
 	// Update the spreadsheet
 	$batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-	$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
-	$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+	$response = $service->spreadsheets->batchUpdate( LOGS_SPREADSHEET_ID, $batchUpdateRequest);
+	$service->spreadsheets_values->update( LOGS_SPREADSHEET_ID, $range, $valueRange, $params);
 	unset($values);
 }
 
 // Read the IPlog that's already uploaded
-$sheetId = IP_LOG_SHEET_ID;
-
-$response = $service->spreadsheets_values->get($spreadsheetId, 'IP Log!A3:E');
+$response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'IP Log!A3:E');
 if($response->values) foreach($response->values as $key => $value)
 {
 	$names = explode(' / ', $value[1]);
@@ -283,22 +279,20 @@ if(isset($IPList))
 	$columns = ['first' => 1, 'last' => 5];
 
 	// Build the requests array
-	G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
-	G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
-	G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
-	G_changeFormat($sheetId, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy hh:mm:ss');
+	G_setGridSize(IP_LOG_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
+	G_setFilterRequest(IP_LOG_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+	G_changeFormat(IP_LOG_SHEET_ID, $requests, 1, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
+	G_changeFormat(IP_LOG_SHEET_ID, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy hh:mm:ss');
 
 	// Update the spreadsheet
 	$batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-	$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
-	$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+	$response = $service->spreadsheets->batchUpdate( LOGS_SPREADSHEET_ID, $batchUpdateRequest);
+	$service->spreadsheets_values->update( LOGS_SPREADSHEET_ID, $range, $valueRange, $params);
 	unset($values);
 }
 
 // Read the CommandLog that's already uploaded
-$sheetId = COMMAND_LOG_ID;
-
-$response = $service->spreadsheets_values->get($spreadsheetId, 'Command Log!A3:E');
+$response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'Command Log!A3:E');
 if($response->values) foreach($response->values as $key => $value)
 {
 	$commandLog[strtotime($value[0])][$value[1]][$value[2]]['Amount'] = $value[4];
@@ -334,16 +328,16 @@ if(isset($commandLog))
 	$columns = ['first' => 1, 'last' => 5];
 
 	// Build the requests array
-	G_setGridSize($sheetId, $requests, $columns['last'], $rows['last'], 2);
-	G_setFilterRequest($sheetId, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
-	G_changeFormat($sheetId, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy');
-	G_changeFormat($sheetId, $requests, 2, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
-	G_changeFormat($sheetId, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'NUMBER');
+	G_setGridSize(COMMAND_LOG_ID, $requests, $columns['last'], $rows['last'], 2);
+	G_setFilterRequest(COMMAND_LOG_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+	G_changeFormat(COMMAND_LOG_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'RIGHT', 'DATE_TIME', 'dd-mmm-yyyy');
+	G_changeFormat(COMMAND_LOG_ID, $requests, 2, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
+	G_changeFormat(COMMAND_LOG_ID, $requests, 5, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'NUMBER');
 
 	// Update the spreadsheet
 	$batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-	$response = $service->spreadsheets->batchUpdate($spreadsheetId, $batchUpdateRequest);
-	$service->spreadsheets_values->update($spreadsheetId, $range, $valueRange, $params);
+	$response = $service->spreadsheets->batchUpdate( LOGS_SPREADSHEET_ID, $batchUpdateRequest);
+	$service->spreadsheets_values->update( LOGS_SPREADSHEET_ID, $range, $valueRange, $params);
 }
 
 $etime = microtime(true);
