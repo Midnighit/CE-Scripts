@@ -47,6 +47,11 @@ $result = $db->exec("DELETE FROM game_events WHERE worldTime < strftime('%s', 'n
 if($result) $changes = $db->changes();
 if($changes) echo "Removing " . $changes . " event log lines from the db...\n";
 
+// Remove entries older than EVENT_LOG_HOLD_BACK from the TERPO_debug_log table
+$result = $db->exec("DELETE FROM TERPO_debug_log WHERE lastSwitch < strftime('%s', 'now', '-" . EVENT_LOG_HOLD_BACK . " days')");
+if($result) $changes = $db->changes();
+if($changes) echo "Removing " . $changes . " TERPO debug log lines from the db...\n";
+
 // Remove thrall and pet feeding pots 
 $queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
 $queries[] = "DELETE FROM buildings WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
@@ -150,7 +155,7 @@ while($row = $result->fetchArray(SQLITE3_NUM)) if(!in_array($row[1], OWNER_WLST)
 $now = time();
 
 // Create an array with all objects that have no owners and the number of days that they have were ownerless.
-foreach($noownerobjcache as $k => $v) $daysObjInactive[$k] = floor(($now - $v) / 86000);
+if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) $daysObjInactive[$k] = floor(($now - $v) / 86000);
 
 // Create an array with all objects that will be purged
 if(isset($daysInactive))

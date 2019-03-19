@@ -242,15 +242,15 @@ function updateNoOwnerObjectscache(&$db)
 	$result->finalize();
 	
 	// purge objects from the cache that either have an owner or don't exist anymore (e.g. everything that's not in the objects array)
-	foreach($noownerobjcache as $k => $v) if(!isset($allNoOwnerObj[$k])) unset($noownerobjcache[$k]);
+	if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) if(!isset($allNoOwnerObj[$k])) unset($noownerobjcache[$k]);
 	
 	// add new objects that don't have an owner or belong to the no owner ruins guild to the cache
-	foreach($allNoOwnerObj as $k => $v) if(!isset($noownerobjcache[$k])) $noownerobjcache[$k] = $v;
+	if(!empty($allNoOwnerObj)) foreach($allNoOwnerObj as $k => $v) if(!isset($noownerobjcache[$k])) $noownerobjcache[$k] = $v;
 
 	// write back the cached object timestamps
 	$handle = fopen('./noownerobjcache.list', 'w+');
 	$contents = '<?php'.PHP_EOL;
-	foreach($noownerobjcache as $k => $v) $contents .= '$noownerobjcache["' . $k . '"] = ' . $v . ';'.PHP_EOL;
+	if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) $contents .= '$noownerobjcache["' . $k . '"] = ' . $v . ';'.PHP_EOL;
 	$contents .= '?>';
 	fwrite($handle, $contents);
 }
