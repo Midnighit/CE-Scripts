@@ -233,10 +233,11 @@ function updateNoOwnerObjectscache(&$db)
 	$sql =
 		"SELECT object_id
 		FROM buildings
-		WHERE (owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )) OR owner_id = " . RUINS_CLAN_ID;
+		WHERE (owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )) AND owner_id <> 0 OR owner_id = " . RUINS_CLAN_ID;
 	$result = $db->query($sql);
 	// add current timestamp for new entries 
 	$now = time();
+	$allNoOwnerObj = [];
 	while($row = $result->fetchArray(SQLITE3_NUM)) $allNoOwnerObj[$row[0]] = $now;
 	$result->finalize();
 	
