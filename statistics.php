@@ -132,13 +132,16 @@ foreach($response->values as $k => $v) if((strtotime($v[0]) > ($lastUpdateTS - T
 $value[12] = $numChatLines;
 
 // Create an array with all characters and clans named ruins
-$result = $db->query("SELECT guildId, name FROM guilds WHERE name = 'Ruins'");
-while($row = $result->fetchArray(SQLITE3_ASSOC)) $ruins[$row['guildId']] = $row['name'];
+$result = $db->query("SELECT guildId FROM guilds WHERE name = 'Ruins' AND guildId <> " . RUINS_CLAN_ID);
+while($row = $result->fetchArray(SQLITE3_ASSOC)) $ruins[$row['guildId']] = true;
 $result->finalize();
-$result = $db->query("SELECT id, char_name FROM characters WHERE char_name = 'Ruins'");
-while($row = $result->fetchArray(SQLITE3_ASSOC)) $ruins[$row['id']] = $row['char_name'];
+$result = $db->query("SELECT id FROM characters WHERE char_name = 'Ruins'");
+while($row = $result->fetchArray(SQLITE3_ASSOC)) $ruins[$row['id']] = true;
 $result->finalize();
-$numRuins = count($ruins);
+$result = $db->query("SELECT DISTINCT owner_id FROM buildings WHERE owner_id = " . RUINS_CLAN_ID);
+while($row = $result->fetchArray(SQLITE3_ASSOC)) $ruins[$row['owner_id']] = true;
+$result->finalize();
+if(empty($ruins)) $numRuins = 0; else $numRuins = count($ruins);
 
 $value[13] = $numRuins;
 
