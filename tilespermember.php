@@ -59,9 +59,9 @@ updateOwnercache($db);
 // Get the last time a player has been online and use that information to determine the db age
 $lastUpdate = 'Database Date: '.convertTZ(getLastOnlineTimestamp($db), $tz, $dt).' GMT';
 // Read the amount of tiles per owner into another tiles array
-$tilesOwn = getTilescount($db, BY_OWNER);
+$tilesOwn = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Read the amount of tiles per object into another tiles array
-$tilesObj = getTilescount($db, BY_OBJECT);
+$tilesObj = getTilescount($db, BY_OBJECT, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Get all the active characters with buildings and the number of them within a guild
 $members = getMembers($db, ACTIVE+BUILDINGS);
 

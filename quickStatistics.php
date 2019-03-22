@@ -40,7 +40,7 @@ $now = date('d-M-Y H:i', time());
 echo 'Updating the tiles per member sheet as of ' . $now . '...' . $lb;
 
 // Read the amount of tiles per owner into the tiles array
-$tiles = getTilescount($db);
+$tiles = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Get all the active characters with buildings and the number of them within a guild
 $members = getMembers($db, ACTIVE+BUILDINGS);
 
