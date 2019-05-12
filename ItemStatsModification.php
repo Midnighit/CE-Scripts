@@ -44,7 +44,7 @@ if($response->values) foreach($response->values as $key => $value) $ism_table[] 
 
 echo "Processing Item Stat Modifications..." . PHP_EOL;
 
-
+// create JSON file for import and values array for upload
 foreach($ism_table as $num => $line)
 {
   // add headline for the sheet but ignore it for the JSON file
@@ -53,31 +53,40 @@ foreach($ism_table as $num => $line)
     $values[] = ['Item', 'TemplateID', 'Modify', 'Stat', 'StatID', 'Amount'];
     continue;
   }
-  // create JSON file for import
+  // lines with remove as modification only have the first three data cells
   if(count($line) == 6) list($item, $templateId, $mod, $stat, $statId, $amount) = $line;
   else
   {
     list($item, $templateId, $mod) = $line;
     $stat = $statId = $amount = '';
   }
-  $ism_json[$num]['RowName'] = $templateId;
+  // check if templateId has already been added
+  if(!isset($has_been_added[$templateId]))
+  {
+    // remember that it has been added now
+    $has_been_added[$templateId] = $index = $num - 1;
+    $ism_json[$index]['RowName'] = $templateId;
+  }
+  else $index = $has_been_added[$templateId];
   !isset($itbl_list[$templateId]) ? $name = $item : $name = $itbl_list[$templateId];
   if($mod == 'add')
   {
     if(is_numeric($statId)) $stat = STAT_INT[$statId];
     elseif($statId = array_search($stat, STAT_INT));
     else continue;
-    $ism_json[$num - 1]['Modifications'][0]['IsFloatStatModification'] = false;
-    $ism_json[$num - 1]['Modifications'][0]['OperatorID'] = 'Add';
-    $ism_json[$num - 1]['Modifications'][0]['StatID'] = $statId;
-    $ism_json[$num - 1]['Modifications'][0]['ModificationValue'] = $amount;
+    // if there already is at least one modification, append the new one
+    isset($ism_json[$index]['Modifications']) ? $num_mods = count($ism_json[$index]['Modifications']) : $num_mods = 0;
+    $ism_json[$index]['Modifications'][$num_mods]['IsFloatStatModification'] = false;
+    $ism_json[$index]['Modifications'][$num_mods]['OperatorID'] = 'Add';
+    $ism_json[$index]['Modifications'][$num_mods]['StatID'] = $statId;
+    $ism_json[$index]['Modifications'][$num_mods]['ModificationValue'] = $amount;
 
     // create values array to upload to re-upload google sheet
     $values[] = [$name, $templateId, $mod, $stat, $statId, $amount];
   }
   else
   {
-    $ism_json[$num - 1]['Modifications'] = array();
+    $ism_json[$index]['Modifications'] = array();
     $values[] = [$name, $templateId, $mod, '', '', ''];
   }
 }
@@ -98,8 +107,10 @@ $columns = ['first' => 1, 'last' => 6];
 
 // Build the requests array
 G_setGridSize(ISM_SHEET_ID, $requests, $columns['last'], $rows['last'], 1);
-G_changeFormat(ISM_SHEET_ID, $requests, 1, $rows['firstData'], 5, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat(ISM_SHEET_ID, $requests, 6, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER');
+G_changeFormat(ISM_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_SHEET_ID, $requests, 2, $rows['firstData'], 2, $rows['lastData'], 'RIGHT', 'NUMBER');
+G_changeFormat(ISM_SHEET_ID, $requests, 3, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_SHEET_ID, $requests, 5, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER');
 G_setFilterRequest(ISM_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 
 // Update the spreadsheet
