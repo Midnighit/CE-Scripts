@@ -42,7 +42,7 @@ require 'CE_functions.php';
 // check if db is found at given path
 if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
 
-// set ini variables	
+// set ini variables
 if(file_exists('steamcache.list')) include_once 'steamcache.list';
 else ini_set('max_execution_time', 300);
 
@@ -108,7 +108,7 @@ if(count($values) == 2) $values[] = ['No characters found!', '', '', '', '', '',
 // cache the learned steamIds in a local file
 $handle = fopen('./steamcache.list', 'w+');
 $contents = '<?php'.PHP_EOL;
-foreach($steamcache as $steamId => $steamName) $contents .= '$steamcache["'.$steamId.'"] = "'.$steamName.'";'.PHP_EOL;
+foreach($steamcache as $steamId => $steamName) if(is_numeric($steamId) && strlen($steamId) == 17) $contents .= '$steamcache["' . $steamId . '"] = "' . stripslashes($steamName) . '";' . PHP_EOL;
 $contents .= '?>';
 fwrite($handle, $contents);
 fclose($handle);

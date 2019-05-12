@@ -9,7 +9,7 @@ require 'CE_functions.php';
 // check if db is found at given path
 if(!file_exists(CEDB_PATH . DB_FILE)) exit("No database found, skipping script\n");
 
-// define constants and set ini variables	
+// define constants and set ini variables
 ini_set('max_execution_time', 600);
 
 // Open the sqlite3 db
@@ -52,7 +52,7 @@ $result = $db->exec("DELETE FROM TERPO_debug_log WHERE lastSwitch < strftime('%s
 if($result) $changes = $db->changes();
 if($changes) echo "Removing " . $changes . " TERPO debug log lines from the db...\n";
 
-// Remove thrall and pet feeding pots 
+// Remove thrall and pet feeding pots
 $queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
 $queries[] = "DELETE FROM buildings WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
 $queries[] = "DELETE FROM destruction_history WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
@@ -94,7 +94,7 @@ $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_NUM)) $isGuild[$row[0]] = false;
 
 if(DAMAGE > 0)
-{				
+{
 	// Create an array with all objects and their instances that need to have damage applied to them
 	$sql = "SELECT objects_owned_by_inactive.object_id, owner_id, instance_id, health_id, health_percentage FROM objects_owned_by_inactive, buildable_health WHERE objects_owned_by_inactive.object_id = buildable_health.object_id ORDER BY objects_owned_by_inactive.object_id";
 	$result = $db->query($sql);
@@ -156,6 +156,8 @@ $now = time();
 
 // Create an array with all objects that have no owners and the number of days that they have were ownerless.
 if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) $daysObjInactive[$k] = floor(($now - $v) / 86000);
+if(isset($daysObjInactive[1567785])) echo "Object 1567785 has been inactive for " . $daysObjInactive[1567785] . " days.\n";
+else echo "Object 1567785 not on list!\n";
 
 // Create an array with all objects that will be purged
 if(isset($daysInactive))
@@ -171,7 +173,7 @@ if(isset($daysObjInactive) && !empty($daysInactive))
 	$result = $db->query($sql);
 	while($row = $result->fetchArray(SQLITE3_NUM)) if($daysObjInactive[$row[0]] >= PURGE || $daysObjInactive[$row[0]] * DAMAGE >= 1) $toBePurged[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 }
-	
+
 // Create an array with all thralls
 $sql = "SELECT id, x, y, z FROM actor_position WHERE class LIKE '/Game/Characters/NPCs/Humanoid/%HumanoidNPC%' ORDER BY id";
 $result = $db->query($sql);

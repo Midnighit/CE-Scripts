@@ -290,6 +290,7 @@ if(isset($IPList))
 $response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'Command Log!A3:E');
 if($response->values) foreach($response->values as $key => $value)
 {
+	if(!isset($value[4])) $value[4] = "Unknown";
 	$commandLog[strtotime($value[0])][$value[1]][$value[2]]['Amount'] = $value[4];
 	$commandLog[strtotime($value[0])][$value[1]][$value[2]]['ItemName'] = $value[3];
 	$commandLog[strtotime($value[0])][$value[1]][$value[2]]['Date'] = $value[0];
