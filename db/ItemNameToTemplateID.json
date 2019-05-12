@@ -1,7 +1,167 @@
 [
 	{
+		"RowName": "Sign_Alchemy",
+		"ID_XX": 4150
+	},
+	{
+		"RowName": "Sign_Blacksmith",
+		"ID_XX": 4151
+	},
+	{
+		"RowName": "Sign_Armorsmith",
+		"ID_XX": 4152
+	},
+	{
+		"RowName": "Sign_Forge",
+		"ID_XX": 4153
+	},
+	{
+		"RowName": "Sign_Tannery",
+		"ID_XX": 4154
+	},
+	{
+		"RowName": "Sign_Prison",
+		"ID_XX": 4155
+	},
+	{
+		"RowName": "Sign_Planter",
+		"ID_XX": 4156
+	},
+	{
+		"RowName": "Sign_Cooking",
+		"ID_XX": 4157
+	},
+	{
+		"RowName": "Sign_Tavern",
+		"ID_XX": 4158
+	},
+	{
+		"RowName": "Sign_Alchemy_standing",
+		"ID_XX": 4159
+	},
+	{
+		"RowName": "Sign_Blacksmith_standing",
+		"ID_XX": 4160
+	},
+	{
+		"RowName": "Sign_Armorsmith_standing",
+		"ID_XX": 4161
+	},
+	{
+		"RowName": "Sign_Forge_standing",
+		"ID_XX": 4162
+	},
+	{
+		"RowName": "Sign_Tannery_standing",
+		"ID_XX": 4163
+	},
+	{
+		"RowName": "Sign_Prison_standing",
+		"ID_XX": 4164
+	},
+	{
+		"RowName": "Sign_Planter_standing",
+		"ID_XX": 4165
+	},
+	{
+		"RowName": "Sign_Cooking_standing",
+		"ID_XX": 4166
+	},
+	{
+		"RowName": "Sign_Tavern_standing",
+		"ID_XX": 4167
+	},
+	{
+		"RowName": "Sign_Left_Standing",
+		"ID_XX": 4168
+	},
+	{
+		"RowName": "Sign_Right_Standing",
+		"ID_XX": 4169
+	},
+	{
+		"RowName": "PetrifiedEgg",
+		"ID_XX": 4176
+	},
+	{
+		"RowName": "Throne_Serpentmen",
+		"ID_XX": 4177
+	},
+	{
+		"RowName": "Sign_Left",
+		"ID_XX": 4180
+	},
+	{
+		"RowName": "Sign_Right",
+		"ID_XX": 4181
+	},
+	{
+		"RowName": "Barfight_weapon_dagger",
+		"ID_XX": 4189
+	},
+	{
+		"RowName": "Barfight_weapon_mace",
+		"ID_XX": 4190
+	},
+	{
+		"RowName": "Barfight_weapon_waraxe",
+		"ID_XX": 4192
+	},
+	{
+		"RowName": "Barfight_weapon_leg",
+		"ID_XX": 4193
+	},
+	{
+		"RowName": "Barfight_weapon_2hhammer",
+		"ID_XX": 4194
+	},
+	{
+		"RowName": "Barfight_weapon_sword",
+		"ID_XX": 4195
+	},
+	{
+		"RowName": "Barfight_weapon_pike",
+		"ID_XX": 4196
+	},
+	{
+		"RowName": "Barfight_weapon_2hsword",
+		"ID_XX": 4197
+	},
+	{
+		"RowName": "Dice_D4",
+		"ID_XX": 4220
+	},
+	{
+		"RowName": "Dice_D6",
+		"ID_XX": 4221
+	},
+	{
+		"RowName": "Dice_D8",
+		"ID_XX": 4222
+	},
+	{
+		"RowName": "Dice_D10",
+		"ID_XX": 4223
+	},
+	{
+		"RowName": "Dice_D12",
+		"ID_XX": 4224
+	},
+	{
+		"RowName": "Dice_D20",
+		"ID_XX": 4225
+	},
+	{
 		"RowName": "Stone",
 		"ID_XX": 10001
+	},
+	{
+		"RowName": "bee_queen",
+		"ID_XX": 10002
+	},
+	{
+		"RowName": "bee_worker",
+		"ID_XX": 10003
 	},
 	{
 		"RowName": "Bark",
@@ -46,6 +206,310 @@
 	{
 		"RowName": "Silver",
 		"ID_XX": 11052
+	},
+	{
+		"RowName": "Gold",
+		"ID_XX": 11053
+	},
+	{
+		"RowName": "Gold_Bar",
+		"ID_XX": 11054
+	},
+	{
+		"RowName": "Silver_Bar",
+		"ID_XX": 11055
+	},
+	{
+		"RowName": "Feather",
+		"ID_XX": 11056
+	},
+	{
+		"RowName": "Hide_Rhino",
+		"ID_XX": 11057
+	},
+	{
+		"RowName": "Hide_Hyena",
+		"ID_XX": 11058
+	},
+	{
+		"RowName": "Hide_Elephant",
+		"ID_XX": 11059
+	},
+	{
+		"RowName": "Hide_Panther",
+		"ID_XX": 11060
+	},
+	{
+		"RowName": "Hide_Bear",
+		"ID_XX": 11061
+	},
+	{
+		"RowName": "Chitin",
+		"ID_XX": 11062
+	},
+	{
+		"RowName": "Hide_Bat",
+		"ID_XX": 11063
+	},
+	{
+		"RowName": "Obsidian",
+		"ID_XX": 11064
+	},
+	{
+		"RowName": "Silver_Coin",
+		"ID_XX": 11065
+	},
+	{
+		"RowName": "Gold_Coin",
+		"ID_XX": 11066
+	},
+	{
+		"RowName": "Silver_Dust",
+		"ID_XX": 11067
+	},
+	{
+		"RowName": "Gold_Dust",
+		"ID_XX": 11068
+	},
+	{
+		"RowName": "Hide_Wolf",
+		"ID_XX": 11069
+	},
+	{
+		"RowName": "Alchemical_Base",
+		"ID_XX": 11070
+	},
+	{
+		"RowName": "Ivory",
+		"ID_XX": 11071
+	},
+	{
+		"RowName": "Claws",
+		"ID_XX": 11072
+	},
+	{
+		"RowName": "ChestKey",
+		"ID_XX": 11073
+	},
+	{
+		"RowName": "Pontoon",
+		"ID_XX": 11074
+	},
+	{
+		"RowName": "Coin_mold",
+		"ID_XX": 11075
+	},
+	{
+		"RowName": "Fertilizer",
+		"ID_XX": 11076
+	},
+	{
+		"RowName": "Potent_Fertilizer",
+		"ID_XX": 11077
+	},
+	{
+		"RowName": "Bonemeal",
+		"ID_XX": 11078
+	},
+	{
+		"RowName": "Blood",
+		"ID_XX": 11079
+	},
+	{
+		"RowName": "White_Lotus_Flower",
+		"ID_XX": 11080
+	},
+	{
+		"RowName": "White_Lotus_seeds",
+		"ID_XX": 11081
+	},
+	{
+		"RowName": "Yellow_Lotus_seeds",
+		"ID_XX": 11082
+	},
+	{
+		"RowName": "Purple_Lotus_Flower",
+		"ID_XX": 11083
+	},
+	{
+		"RowName": "Purple_Lotus_Powder",
+		"ID_XX": 11084
+	},
+	{
+		"RowName": "Purple_Lotus_seeds",
+		"ID_XX": 11085
+	},
+	{
+		"RowName": "Black_Lotus_Flower",
+		"ID_XX": 11086
+	},
+	{
+		"RowName": "Black_Lotus_Powder",
+		"ID_XX": 11087
+	},
+	{
+		"RowName": "Black_Lotus_seeds",
+		"ID_XX": 11088
+	},
+	{
+		"RowName": "Golden_Lotus_Flower",
+		"ID_XX": 11089
+	},
+	{
+		"RowName": "Golden_Lotus_seeds",
+		"ID_XX": 11090
+	},
+	{
+		"RowName": "Grey_Lotus_Flower",
+		"ID_XX": 11091
+	},
+	{
+		"RowName": "Grey_Lotus_Powder",
+		"ID_XX": 11092
+	},
+	{
+		"RowName": "Grey_Lotus_seeds",
+		"ID_XX": 11093
+	},
+	{
+		"RowName": "Desert_berry_bush_seeds",
+		"ID_XX": 11094
+	},
+	{
+		"RowName": "Highlands_berry_bush_seeds",
+		"ID_XX": 11095
+	},
+	{
+		"RowName": "Hops_seeds",
+		"ID_XX": 11096
+	},
+	{
+		"RowName": "Leavening_plant_seeds",
+		"ID_XX": 11097
+	},
+	{
+		"RowName": "Magenta_flower_seeds",
+		"ID_XX": 11098
+	},
+	{
+		"RowName": "Midnight_blue_flower_seeds",
+		"ID_XX": 11099
+	},
+	{
+		"RowName": "Phykos_Seeds",
+		"ID_XX": 11100
+	},
+	{
+		"RowName": "Vines",
+		"ID_XX": 11101
+	},
+	{
+		"RowName": "Ash",
+		"ID_XX": 11102
+	},
+	{
+		"RowName": "Fragment_of_Power",
+		"ID_XX": 11103
+	},
+	{
+		"RowName": "Bracelet_Mold",
+		"ID_XX": 11104
+	},
+	{
+		"RowName": "Anklet_Mold",
+		"ID_XX": 11105
+	},
+	{
+		"RowName": "Circlet_Mold",
+		"ID_XX": 11106
+	},
+	{
+		"RowName": "Earring_Mold",
+		"ID_XX": 11107
+	},
+	{
+		"RowName": "InsulatedWood",
+		"ID_XX": 11108
+	},
+	{
+		"RowName": "Greyflower_seeds",
+		"ID_XX": 11109
+	},
+	{
+		"RowName": "FalseMandrake_seeds",
+		"ID_XX": 11110
+	},
+	{
+		"RowName": "SliverOfLife",
+		"ID_XX": 11111
+	},
+	{
+		"RowName": "Aloe_seeds",
+		"ID_XX": 11113
+	},
+	{
+		"RowName": "handle_short",
+		"ID_XX": 11114
+	},
+	{
+		"RowName": "handle_long",
+		"ID_XX": 11115
+	},
+	{
+		"RowName": "frame_shield",
+		"ID_XX": 11116
+	},
+	{
+		"RowName": "sturdy_string",
+		"ID_XX": 11117
+	},
+	{
+		"RowName": "dagger_handle",
+		"ID_XX": 11118
+	},
+	{
+		"RowName": "spear_handle",
+		"ID_XX": 11119
+	},
+	{
+		"RowName": "throwingaxe_handle",
+		"ID_XX": 11120
+	},
+	{
+		"RowName": "White_Lotus_Powder",
+		"ID_XX": 11121
+	},
+	{
+		"RowName": "Yellow_Lotus_Powder",
+		"ID_XX": 11122
+	},
+	{
+		"RowName": "Golden_Lotus_Powder",
+		"ID_XX": 11123
+	},
+	{
+		"RowName": "Crimson_Lotus_Flower",
+		"ID_XX": 11124
+	},
+	{
+		"RowName": "Crimson_Lotus_Powder",
+		"ID_XX": 11125
+	},
+	{
+		"RowName": "Crimson_Lotus_Seeds",
+		"ID_XX": 11126
+	},
+	{
+		"RowName": "Albino_BatDemon_Blood",
+		"ID_XX": 11127
+	},
+	{
+		"RowName": "True_Indigo_seeds",
+		"ID_XX": 11128
+	},
+	{
+		"RowName": "Corrupted_Stone",
+		"ID_XX": 11500
 	},
 	{
 		"RowName": "Iron_Bar",
@@ -96,6 +560,14 @@
 		"ID_XX": 12514
 	},
 	{
+		"RowName": "Silk_layered",
+		"ID_XX": 12515
+	},
+	{
+		"RowName": "Hardened_Leather",
+		"ID_XX": 12516
+	},
+	{
 		"RowName": "Raw_Stringy_Meat",
 		"ID_XX": 13001
 	},
@@ -134,6 +606,10 @@
 	{
 		"RowName": "Food_EyesOfInnocence",
 		"ID_XX": 13052
+	},
+	{
+		"RowName": "Food_HumanFlesh_cooked",
+		"ID_XX": 13053
 	},
 	{
 		"RowName": "Shredded_Meat_Roast",
@@ -188,8 +664,32 @@
 		"ID_XX": 14102
 	},
 	{
+		"RowName": "Halloween_potion",
+		"ID_XX": 14150
+	},
+	{
 		"RowName": "Yellow_Lotus_Blossom",
 		"ID_XX": 14151
+	},
+	{
+		"RowName": "CompositeObsidian",
+		"ID_XX": 14152
+	},
+	{
+		"RowName": "BearerThrallPackage_T1",
+		"ID_XX": 14155
+	},
+	{
+		"RowName": "BearerThrallPackage_T2",
+		"ID_XX": 14156
+	},
+	{
+		"RowName": "BearerThrallPackage_T3",
+		"ID_XX": 14157
+	},
+	{
+		"RowName": "BearerThrallPackage_T4",
+		"ID_XX": 14158
 	},
 	{
 		"RowName": "Brimstone",
@@ -268,10 +768,6 @@
 		"ID_XX": 14197
 	},
 	{
-		"RowName": "Bombardier_Beetle",
-		"ID_XX": 14198
-	},
-	{
 		"RowName": "Magenta_Flower",
 		"ID_XX": 14199
 	},
@@ -298,6 +794,10 @@
 	{
 		"RowName": "Mitra_Spark_of_Life",
 		"ID_XX": 15003
+	},
+	{
+		"RowName": "JhebbalSag_Essence",
+		"ID_XX": 15004
 	},
 	{
 		"RowName": "Yog_Favor",
@@ -338,6 +838,62 @@
 	{
 		"RowName": "DeathknightHeart",
 		"ID_XX": 15504
+	},
+	{
+		"RowName": "StaffoftheTriumvirate",
+		"ID_XX": 15505
+	},
+	{
+		"RowName": "AwakenedStaffoftheTriumvirate",
+		"ID_XX": 15506
+	},
+	{
+		"RowName": "DiademoftheGiant-kings",
+		"ID_XX": 15507
+	},
+	{
+		"RowName": "MaskoftheWitchQueen",
+		"ID_XX": 15508
+	},
+	{
+		"RowName": "TearsofTwoRaces",
+		"ID_XX": 15509
+	},
+	{
+		"RowName": "TheShiningTrapezohedron",
+		"ID_XX": 15510
+	},
+	{
+		"RowName": "StaroftheChampion",
+		"ID_XX": 15511
+	},
+	{
+		"RowName": "HeartoftheSands(Scourgestone)",
+		"ID_XX": 15512
+	},
+	{
+		"RowName": "EssenceoftheSerpentRing",
+		"ID_XX": 15513
+	},
+	{
+		"RowName": "JaggedScourgestonePiece",
+		"ID_XX": 15514
+	},
+	{
+		"RowName": "ShatteredScourgestonePiece",
+		"ID_XX": 15515
+	},
+	{
+		"RowName": "BrokenScourgestonePiece",
+		"ID_XX": 15516
+	},
+	{
+		"RowName": "TheKeystone",
+		"ID_XX": 15517
+	},
+	{
+		"RowName": "KeytoRazmasQuarters",
+		"ID_XX": 15518
 	},
 	{
 		"RowName": "Ingredient_BuildingBinding",
@@ -568,6 +1124,14 @@
 		"ID_XX": 17114
 	},
 	{
+		"RowName": "Dye_White",
+		"ID_XX": 17115
+	},
+	{
+		"RowName": "Dye_Black",
+		"ID_XX": 17116
+	},
+	{
 		"RowName": "Hops",
 		"ID_XX": 18000
 	},
@@ -672,6 +1236,10 @@
 		"ID_XX": 18053
 	},
 	{
+		"RowName": "Fur_layered",
+		"ID_XX": 18054
+	},
+	{
 		"RowName": "Starmetal_Ore",
 		"ID_XX": 18060
 	},
@@ -734,6 +1302,10 @@
 	{
 		"RowName": "ExplodingGland",
 		"ID_XX": 18188
+	},
+	{
+		"RowName": "Fishstrips",
+		"ID_XX": 18199
 	},
 	{
 		"RowName": "CookedFish1",
@@ -992,6 +1564,18 @@
 		"ID_XX": 18264
 	},
 	{
+		"RowName": "qatestitem_maxfood",
+		"ID_XX": 18265
+	},
+	{
+		"RowName": "qatestitem_nofood",
+		"ID_XX": 18266
+	},
+	{
+		"RowName": "qatestitem_removebuffs",
+		"ID_XX": 18267
+	},
+	{
 		"RowName": "Honeyglazed_Roast",
 		"ID_XX": 18268
 	},
@@ -1020,16 +1604,184 @@
 		"ID_XX": 18274
 	},
 	{
-		"RowName": "qatestitem_maxfood",
-		"ID_XX": 18265
+		"RowName": "Penis_enhancement_potion",
+		"ID_XX": 18275
 	},
 	{
-		"RowName": "qatestitem_nofood",
-		"ID_XX": 18266
+		"RowName": "Blood_sausage",
+		"ID_XX": 18276
 	},
 	{
-		"RowName": "qatestitem_removebuffs",
-		"ID_XX": 18267
+		"RowName": "Cooked_Fatty_meat",
+		"ID_XX": 18277
+	},
+	{
+		"RowName": "Delicious_meat_strips",
+		"ID_XX": 18278
+	},
+	{
+		"RowName": "Fatty_meat",
+		"ID_XX": 18279
+	},
+	{
+		"RowName": "Fatty_meat_feast",
+		"ID_XX": 18280
+	},
+	{
+		"RowName": "Lumpy_Soup",
+		"ID_XX": 18281
+	},
+	{
+		"RowName": "Meat_Strip_Mix",
+		"ID_XX": 18282
+	},
+	{
+		"RowName": "Salted_Fatty_meat",
+		"ID_XX": 18283
+	},
+	{
+		"RowName": "Spiced_fatty_meat",
+		"ID_XX": 18284
+	},
+	{
+		"RowName": "Cooked_Perfect_Cut_of_Meat",
+		"ID_XX": 18285
+	},
+	{
+		"RowName": "Perfect_Cut_of_Meat",
+		"ID_XX": 18286
+	},
+	{
+		"RowName": "Salted_Perfect_Cut_of_Meat",
+		"ID_XX": 18287
+	},
+	{
+		"RowName": "Spiced_Perfect_Cut_of_Meat",
+		"ID_XX": 18288
+	},
+	{
+		"RowName": "Accuracy_potion_buff",
+		"ID_XX": 18289
+	},
+	{
+		"RowName": "Agility_potion_buff",
+		"ID_XX": 18290
+	},
+	{
+		"RowName": "Black_Lotus_Potion",
+		"ID_XX": 18291
+	},
+	{
+		"RowName": "Encumberance_potion_buff",
+		"ID_XX": 18292
+	},
+	{
+		"RowName": "Golden_Lotus_Potion",
+		"ID_XX": 18293
+	},
+	{
+		"RowName": "Grey_Lotus_Potion",
+		"ID_XX": 18294
+	},
+	{
+		"RowName": "Grit_potion_buff",
+		"ID_XX": 18295
+	},
+	{
+		"RowName": "Purple_Lotus_Potion",
+		"ID_XX": 18296
+	},
+	{
+		"RowName": "Strength_potion_buff",
+		"ID_XX": 18297
+	},
+	{
+		"RowName": "Survival_potion_buff",
+		"ID_XX": 18298
+	},
+	{
+		"RowName": "Vitality_potion_buff",
+		"ID_XX": 18299
+	},
+	{
+		"RowName": "White_Lotus_Potion",
+		"ID_XX": 18300
+	},
+	{
+		"RowName": "Improved_Breathing_potion",
+		"ID_XX": 18301
+	},
+	{
+		"RowName": "Feast_of_Jhebbal_Sag",
+		"ID_XX": 18302
+	},
+	{
+		"RowName": "Feast_of_Derketo",
+		"ID_XX": 18303
+	},
+	{
+		"RowName": "Free_movement_potion",
+		"ID_XX": 18304
+	},
+	{
+		"RowName": "Hunters_potion",
+		"ID_XX": 18305
+	},
+	{
+		"RowName": "Bat_Demon_Lure",
+		"ID_XX": 18306
+	},
+	{
+		"RowName": "Crocodile_Lure",
+		"ID_XX": 18308
+	},
+	{
+		"RowName": "Dragon_Lure",
+		"ID_XX": 18309
+	},
+	{
+		"RowName": "Elephant_Lure",
+		"ID_XX": 18310
+	},
+	{
+		"RowName": "Hyena_Lure",
+		"ID_XX": 18311
+	},
+	{
+		"RowName": "Imp_Lure",
+		"ID_XX": 18312
+	},
+	{
+		"RowName": "Locust_Lure",
+		"ID_XX": 18313
+	},
+	{
+		"RowName": "Ostrich_Lure",
+		"ID_XX": 18314
+	},
+	{
+		"RowName": "Rhino_Lure",
+		"ID_XX": 18315
+	},
+	{
+		"RowName": "Rocknose_Lure",
+		"ID_XX": 18316
+	},
+	{
+		"RowName": "Sabretooth_Lure",
+		"ID_XX": 18317
+	},
+	{
+		"RowName": "Scorpion_Lure",
+		"ID_XX": 18318
+	},
+	{
+		"RowName": "Spider_Lure",
+		"ID_XX": 18319
+	},
+	{
+		"RowName": "jhebbal_sag_trap",
+		"ID_XX": 18322
 	},
 	{
 		"RowName": "HealingWraps",
@@ -1096,8 +1848,612 @@
 		"ID_XX": 18512
 	},
 	{
-		"RowName": "Workshop_Tanner",
-		"ID_XX": 18513
+		"RowName": "Workshop_Slaver",
+		"ID_XX": 18514
+	},
+	{
+		"RowName": "Epic_Stove",
+		"ID_XX": 18515
+	},
+	{
+		"RowName": "VolcanicForge",
+		"ID_XX": 18518
+	},
+	{
+		"RowName": "CompostHeap",
+		"ID_XX": 18519
+	},
+	{
+		"RowName": "Planter_T1",
+		"ID_XX": 18520
+	},
+	{
+		"RowName": "Planter_T2",
+		"ID_XX": 18521
+	},
+	{
+		"RowName": "Planter_T3",
+		"ID_XX": 18522
+	},
+	{
+		"RowName": "Epic_Armormaking_Bench",
+		"ID_XX": 18523
+	},
+	{
+		"RowName": "StaffAwakeningMachine",
+		"ID_XX": 18524
+	},
+	{
+		"RowName": "Altar_of_Chaosmouth",
+		"ID_XX": 18525
+	},
+	{
+		"RowName": "Workshop_Dismantler",
+		"ID_XX": 18999
+	},
+	{
+		"RowName": "kibble",
+		"ID_XX": 19000
+	},
+	{
+		"RowName": "petpen_t1",
+		"ID_XX": 19001
+	},
+	{
+		"RowName": "petpen_t2",
+		"ID_XX": 19002
+	},
+	{
+		"RowName": "petpen_t3",
+		"ID_XX": 19003
+	},
+	{
+		"RowName": "dung",
+		"ID_XX": 19004
+	},
+	{
+		"RowName": "feeding_trough",
+		"ID_XX": 19005
+	},
+	{
+		"RowName": "feeding_trough_humanthralls",
+		"ID_XX": 19006
+	},
+	{
+		"RowName": "baby_bear",
+		"ID_XX": 19010
+	},
+	{
+		"RowName": "baby_stripedhyena",
+		"ID_XX": 19011
+	},
+	{
+		"RowName": "baby_spottedhyena",
+		"ID_XX": 19012
+	},
+	{
+		"RowName": "baby_crocodile",
+		"ID_XX": 19013
+	},
+	{
+		"RowName": "baby_ostrich",
+		"ID_XX": 19014
+	},
+	{
+		"RowName": "baby_rhino",
+		"ID_XX": 19015
+	},
+	{
+		"RowName": "baby_locust",
+		"ID_XX": 19016
+	},
+	{
+		"RowName": "baby_boar",
+		"ID_XX": 19017
+	},
+	{
+		"RowName": "baby_fawn",
+		"ID_XX": 19018
+	},
+	{
+		"RowName": "baby_shaleback",
+		"ID_XX": 19019
+	},
+	{
+		"RowName": "baby_shaleback_egg",
+		"ID_XX": 19020
+	},
+	{
+		"RowName": "baby_spider_egg",
+		"ID_XX": 19021
+	},
+	{
+		"RowName": "baby_ostrich_egg",
+		"ID_XX": 19022
+	},
+	{
+		"RowName": "baby_junglebird_egg",
+		"ID_XX": 19023
+	},
+	{
+		"RowName": "baby_locust_egg",
+		"ID_XX": 19024
+	},
+	{
+		"RowName": "baby_crocodile_egg",
+		"ID_XX": 19025
+	},
+	{
+		"RowName": "baby_rocknose_egg",
+		"ID_XX": 19026
+	},
+	{
+		"RowName": "baby_tiger",
+		"ID_XX": 19027
+	},
+	{
+		"RowName": "baby_jaguar",
+		"ID_XX": 19028
+	},
+	{
+		"RowName": "baby_panther",
+		"ID_XX": 19029
+	},
+	{
+		"RowName": "baby_sabretooth",
+		"ID_XX": 19030
+	},
+	{
+		"RowName": "baby_wolf",
+		"ID_XX": 19031
+	},
+	{
+		"RowName": "baby_wolfwhite",
+		"ID_XX": 19032
+	},
+	{
+		"RowName": "baby_spiderling",
+		"ID_XX": 19033
+	},
+	{
+		"RowName": "baby_camel",
+		"ID_XX": 19034
+	},
+	{
+		"RowName": "baby_rocknose",
+		"ID_XX": 19035
+	},
+	{
+		"RowName": "baby_junglebird",
+		"ID_XX": 19036
+	},
+	{
+		"RowName": "kibbled_Corrupted_Flesh",
+		"ID_XX": 19050
+	},
+	{
+		"RowName": "kibbled_Raw_Stringy_Meat",
+		"ID_XX": 19051
+	},
+	{
+		"RowName": "kibbled_Food_HumanFlesh",
+		"ID_XX": 19052
+	},
+	{
+		"RowName": "kibbled_Raw_Succulent_Meat",
+		"ID_XX": 19053
+	},
+	{
+		"RowName": "kibbled_Fatty_meat",
+		"ID_XX": 19054
+	},
+	{
+		"RowName": "kibbled_Perfect_Cut_of_Meat",
+		"ID_XX": 19055
+	},
+	{
+		"RowName": "kibbled_Raw_Tough_Meat",
+		"ID_XX": 19056
+	},
+	{
+		"RowName": "kibbled_BadFish",
+		"ID_XX": 19057
+	},
+	{
+		"RowName": "kibbled_berries_desert",
+		"ID_XX": 19058
+	},
+	{
+		"RowName": "kibbled_Fish",
+		"ID_XX": 19059
+	},
+	{
+		"RowName": "kibbled_berries_highlands",
+		"ID_XX": 19060
+	},
+	{
+		"RowName": "kibbled_GoodFish",
+		"ID_XX": 19061
+	},
+	{
+		"RowName": "kibbled_Honey",
+		"ID_XX": 19062
+	},
+	{
+		"RowName": "kibbled_Insects",
+		"ID_XX": 19063
+	},
+	{
+		"RowName": "kibbled_Fat_Grub",
+		"ID_XX": 19064
+	},
+	{
+		"RowName": "kibbled_Plant_fiber",
+		"ID_XX": 19065
+	},
+	{
+		"RowName": "kibbled_Vines",
+		"ID_XX": 19066
+	},
+	{
+		"RowName": "kibbled_Bark",
+		"ID_XX": 19067
+	},
+	{
+		"RowName": "kibbled_Rotten_meat",
+		"ID_XX": 19068
+	},
+	{
+		"RowName": "kibbled_shroomamanita",
+		"ID_XX": 19069
+	},
+	{
+		"RowName": "kibbled_shroompuffer",
+		"ID_XX": 19070
+	},
+	{
+		"RowName": "kibbled_Badshellfish",
+		"ID_XX": 19071
+	},
+	{
+		"RowName": "kibbled_Shellfish",
+		"ID_XX": 19072
+	},
+	{
+		"RowName": "kibbled_GoodShellfish",
+		"ID_XX": 19073
+	},
+	{
+		"RowName": "kibbled_Demon_Blood",
+		"ID_XX": 19074
+	},
+	{
+		"RowName": "kibbled_Stone",
+		"ID_XX": 19075
+	},
+	{
+		"RowName": "kibbled_Crystal",
+		"ID_XX": 19076
+	},
+	{
+		"RowName": "kibbled_iron_ore",
+		"ID_XX": 19077
+	},
+	{
+		"RowName": "kibbled_gold",
+		"ID_XX": 19078
+	},
+	{
+		"RowName": "kibbled_Gold_Dust",
+		"ID_XX": 19079
+	},
+	{
+		"RowName": "kibbled_Silver",
+		"ID_XX": 19080
+	},
+	{
+		"RowName": "kibbled_Silver_Dust",
+		"ID_XX": 19081
+	},
+	{
+		"RowName": "pet_Bear",
+		"ID_XX": 19100
+	},
+	{
+		"RowName": "pet_Stripedhyena",
+		"ID_XX": 19101
+	},
+	{
+		"RowName": "pet_SpottedHyena",
+		"ID_XX": 19102
+	},
+	{
+		"RowName": "pet_Crocodile",
+		"ID_XX": 19103
+	},
+	{
+		"RowName": "pet_Ostrich",
+		"ID_XX": 19104
+	},
+	{
+		"RowName": "pet_GreenJungleBird",
+		"ID_XX": 19105
+	},
+	{
+		"RowName": "pet_Rhino",
+		"ID_XX": 19106
+	},
+	{
+		"RowName": "pet_GreenLocust",
+		"ID_XX": 19107
+	},
+	{
+		"RowName": "pet_YellowLocust",
+		"ID_XX": 19108
+	},
+	{
+		"RowName": "pet_OrangeLocust",
+		"ID_XX": 19109
+	},
+	{
+		"RowName": "pet_Rocknose",
+		"ID_XX": 19110
+	},
+	{
+		"RowName": "pet_Boar",
+		"ID_XX": 19111
+	},
+	{
+		"RowName": "pet_Gazelle",
+		"ID_XX": 19112
+	},
+	{
+		"RowName": "pet_Camel",
+		"ID_XX": 19113
+	},
+	{
+		"RowName": "pet_ShalebackGreen",
+		"ID_XX": 19114
+	},
+	{
+		"RowName": "pet_ShalebackBlue",
+		"ID_XX": 19115
+	},
+	{
+		"RowName": "pet_ShalebackPurple",
+		"ID_XX": 19116
+	},
+	{
+		"RowName": "pet_ShalebackRed",
+		"ID_XX": 19117
+	},
+	{
+		"RowName": "pet_GraySpider",
+		"ID_XX": 19118
+	},
+	{
+		"RowName": "pet_GreenSpider",
+		"ID_XX": 19119
+	},
+	{
+		"RowName": "pet_BlackWidow",
+		"ID_XX": 19120
+	},
+	{
+		"RowName": "pet_RedWidow",
+		"ID_XX": 19121
+	},
+	{
+		"RowName": "pet_CorruptedSpider",
+		"ID_XX": 19122
+	},
+	{
+		"RowName": "pet_Whitetiger",
+		"ID_XX": 19123
+	},
+	{
+		"RowName": "pet_SabretoothAlpha",
+		"ID_XX": 19124
+	},
+	{
+		"RowName": "pet_JaguarAlpha",
+		"ID_XX": 19125
+	},
+	{
+		"RowName": "pet_WolfAlpha",
+		"ID_XX": 19126
+	},
+	{
+		"RowName": "pet_BearAlpha",
+		"ID_XX": 19127
+	},
+	{
+		"RowName": "pet_HyenaAlpha",
+		"ID_XX": 19128
+	},
+	{
+		"RowName": "pet_CrocodileAlpha",
+		"ID_XX": 19129
+	},
+	{
+		"RowName": "pet_BlueOstrich",
+		"ID_XX": 19130
+	},
+	{
+		"RowName": "pet_RedOstrich",
+		"ID_XX": 19131
+	},
+	{
+		"RowName": "pet_RedJungleBird",
+		"ID_XX": 19132
+	},
+	{
+		"RowName": "pet_WhiteJungleBird",
+		"ID_XX": 19133
+	},
+	{
+		"RowName": "pet_WhiteRhino",
+		"ID_XX": 19134
+	},
+	{
+		"RowName": "pet_BlackRhino",
+		"ID_XX": 19135
+	},
+	{
+		"RowName": "pet_RhinoKing",
+		"ID_XX": 19136
+	},
+	{
+		"RowName": "pet_LocustQueen",
+		"ID_XX": 19137
+	},
+	{
+		"RowName": "pet_RocknoseKing",
+		"ID_XX": 19138
+	},
+	{
+		"RowName": "pet_GoldRocknose",
+		"ID_XX": 19140
+	},
+	{
+		"RowName": "pet_SilverRocknose",
+		"ID_XX": 19141
+	},
+	{
+		"RowName": "pet_BoarAlpha",
+		"ID_XX": 19142
+	},
+	{
+		"RowName": "pet_KappaKing",
+		"ID_XX": 19143
+	},
+	{
+		"RowName": "pet_DemonSpider",
+		"ID_XX": 19144
+	},
+	{
+		"RowName": "pet_wolf",
+		"ID_XX": 19145
+	},
+	{
+		"RowName": "pet_jaguar",
+		"ID_XX": 19146
+	},
+	{
+		"RowName": "pet_tiger",
+		"ID_XX": 19147
+	},
+	{
+		"RowName": "pet_sabretooth",
+		"ID_XX": 19148
+	},
+	{
+		"RowName": "pet_panther",
+		"ID_XX": 19149
+	},
+	{
+		"RowName": "pet_pantheralpha",
+		"ID_XX": 19150
+	},
+	{
+		"RowName": "bear_carcass",
+		"ID_XX": 19151
+	},
+	{
+		"RowName": "hyena_carcass",
+		"ID_XX": 19152
+	},
+	{
+		"RowName": "crocodile_carcass",
+		"ID_XX": 19153
+	},
+	{
+		"RowName": "ostrich_carcass",
+		"ID_XX": 19154
+	},
+	{
+		"RowName": "junglebird_carcass",
+		"ID_XX": 19155
+	},
+	{
+		"RowName": "rhino_carcass",
+		"ID_XX": 19156
+	},
+	{
+		"RowName": "locust_carcass",
+		"ID_XX": 19157
+	},
+	{
+		"RowName": "rocknose_carcass",
+		"ID_XX": 19158
+	},
+	{
+		"RowName": "boar_carcass",
+		"ID_XX": 19159
+	},
+	{
+		"RowName": "gazelle_carcass",
+		"ID_XX": 19160
+	},
+	{
+		"RowName": "camel_carcass",
+		"ID_XX": 19161
+	},
+	{
+		"RowName": "shaleback_carcass",
+		"ID_XX": 19162
+	},
+	{
+		"RowName": "spider_carcass",
+		"ID_XX": 19163
+	},
+	{
+		"RowName": "tiger_carcass",
+		"ID_XX": 19164
+	},
+	{
+		"RowName": "sabretooth_carcass",
+		"ID_XX": 19165
+	},
+	{
+		"RowName": "jaguar_carcass",
+		"ID_XX": 19166
+	},
+	{
+		"RowName": "wolf_carcass",
+		"ID_XX": 19167
+	},
+	{
+		"RowName": "rocknose_carcass_gold",
+		"ID_XX": 19168
+	},
+	{
+		"RowName": "rocknose_carcass_silver",
+		"ID_XX": 19169
+	},
+	{
+		"RowName": "panther_carcass",
+		"ID_XX": 19170
+	},
+	{
+		"RowName": "jhebbal_sag_learnreligion",
+		"ID_XX": 19500
+	},
+	{
+		"RowName": "jhebbal_sag_dungeonteleport",
+		"ID_XX": 19501
+	},
+	{
+		"RowName": "jhebbal_sag_nightvisionpotion",
+		"ID_XX": 19502
+	},
+	{
+		"RowName": "jhebbal_sag_yellowlotuspotion1",
+		"ID_XX": 19503
+	},
+	{
+		"RowName": "jhebbal_sag_yellowlotuspotion2",
+		"ID_XX": 19504
 	},
 	{
 		"RowName": "Generic_Animal_Weapon",
@@ -1492,12 +2848,60 @@
 		"ID_XX": 20105
 	},
 	{
+		"RowName": "ImpKing_bc_1",
+		"ID_XX": 20106
+	},
+	{
+		"RowName": "ImpKing_bc_2",
+		"ID_XX": 20107
+	},
+	{
+		"RowName": "ImpKing_bc_3",
+		"ID_XX": 20108
+	},
+	{
+		"RowName": "ImpKing_bc_4",
+		"ID_XX": 20109
+	},
+	{
 		"RowName": "Imp_Explosive_bc_1",
 		"ID_XX": 20121
 	},
 	{
 		"RowName": "Imp_Explosive_t_1",
 		"ID_XX": 20122
+	},
+	{
+		"RowName": "KappaUndead_bc_1",
+		"ID_XX": 20130
+	},
+	{
+		"RowName": "KappaUndead_bc_2",
+		"ID_XX": 20131
+	},
+	{
+		"RowName": "KappaUndead_bc_3",
+		"ID_XX": 20132
+	},
+	{
+		"RowName": "KappaUndead_bc_4",
+		"ID_XX": 20133
+	},
+	{
+		"RowName": "KappaUndead_charge_1",
+		"ID_XX": 20134
+	},
+	{
+		"RowName": "Alpha_Hyena_bc_1",
+		"ID_XX": 20135
+	},
+	{
+		"RowName": "Alpha_Hyena_bc_2",
+		"ID_XX": 20136
+	},
+	{
+		"RowName": "Alpha_Hyena_charge_1",
+		"ID_XX": 20137
 	},
 	{
 		"RowName": "Hyena_bc_1",
@@ -1514,6 +2918,50 @@
 	{
 		"RowName": "Hyena_t_1",
 		"ID_XX": 20145
+	},
+	{
+		"RowName": "HyenaUndead_bc_1",
+		"ID_XX": 20146
+	},
+	{
+		"RowName": "HyenaUndead_bc_2",
+		"ID_XX": 20147
+	},
+	{
+		"RowName": "HyenaUndead_charge_1",
+		"ID_XX": 20148
+	},
+	{
+		"RowName": "Alpha_Crocodile_bc_1",
+		"ID_XX": 20149
+	},
+	{
+		"RowName": "Alpha_Crocodile_bc_2",
+		"ID_XX": 20150
+	},
+	{
+		"RowName": "Alpha_Crocodile_bc_3",
+		"ID_XX": 20151
+	},
+	{
+		"RowName": "Alpha_Crocodile_bc_4",
+		"ID_XX": 20152
+	},
+	{
+		"RowName": "Komodo_bc_1",
+		"ID_XX": 20157
+	},
+	{
+		"RowName": "Komodo_bc_2",
+		"ID_XX": 20158
+	},
+	{
+		"RowName": "Komodo_bc_3",
+		"ID_XX": 20159
+	},
+	{
+		"RowName": "Komodo_bc_4",
+		"ID_XX": 20160
 	},
 	{
 		"RowName": "Crocodile_bc_1",
@@ -1552,12 +3000,56 @@
 		"ID_XX": 20174
 	},
 	{
+		"RowName": "Crocodile_Giant_Tailswipe",
+		"ID_XX": 20175
+	},
+	{
 		"RowName": "Pikefish_bc_1",
 		"ID_XX": 20181
 	},
 	{
 		"RowName": "Piranha_bc_1",
 		"ID_XX": 20201
+	},
+	{
+		"RowName": "SwampKing_Jab_1",
+		"ID_XX": 20211
+	},
+	{
+		"RowName": "SwampKing_Jab_2",
+		"ID_XX": 20212
+	},
+	{
+		"RowName": "SwampKing_Slam",
+		"ID_XX": 20213
+	},
+	{
+		"RowName": "SwampKing_Spin",
+		"ID_XX": 20214
+	},
+	{
+		"RowName": "SwampKing_EntanglingRoots",
+		"ID_XX": 20215
+	},
+	{
+		"RowName": "pet_Kappa_bc_1",
+		"ID_XX": 20216
+	},
+	{
+		"RowName": "pet_Kappa_bc_2",
+		"ID_XX": 20217
+	},
+	{
+		"RowName": "pet_Kappa_bc_3",
+		"ID_XX": 20218
+	},
+	{
+		"RowName": "pet_Kappa_bc_4",
+		"ID_XX": 20219
+	},
+	{
+		"RowName": "pet_Kappa_slam_slow",
+		"ID_XX": 20220
 	},
 	{
 		"RowName": "Kappa_bc_1",
@@ -1582,6 +3074,10 @@
 	{
 		"RowName": "Kappa_charge_1",
 		"ID_XX": 20227
+	},
+	{
+		"RowName": "Kappa_slam_slow",
+		"ID_XX": 20228
 	},
 	{
 		"RowName": "Kappa_King_bc_1",
@@ -1616,6 +3112,66 @@
 		"ID_XX": 20243
 	},
 	{
+		"RowName": "Locust_SprayLine",
+		"ID_XX": 20244
+	},
+	{
+		"RowName": "Locust_SprayCone",
+		"ID_XX": 20245
+	},
+	{
+		"RowName": "Locust_Green_bc_1",
+		"ID_XX": 20246
+	},
+	{
+		"RowName": "Locust_Green_bc_2",
+		"ID_XX": 20247
+	},
+	{
+		"RowName": "Locust_Green_SprayLine",
+		"ID_XX": 20248
+	},
+	{
+		"RowName": "Locust_Green_SprayCone",
+		"ID_XX": 20249
+	},
+	{
+		"RowName": "Locust_White_bc_1",
+		"ID_XX": 20250
+	},
+	{
+		"RowName": "Locust_White_bc_2",
+		"ID_XX": 20251
+	},
+	{
+		"RowName": "Locust_White_SprayLine",
+		"ID_XX": 20252
+	},
+	{
+		"RowName": "Locust_White_SprayCone",
+		"ID_XX": 20253
+	},
+	{
+		"RowName": "Locust_Queen_bc_1",
+		"ID_XX": 20254
+	},
+	{
+		"RowName": "Locust_Queen_bc_2",
+		"ID_XX": 20255
+	},
+	{
+		"RowName": "Locust_Queen_SprayLine",
+		"ID_XX": 20256
+	},
+	{
+		"RowName": "Locust_Queen_SprayCone",
+		"ID_XX": 20257
+	},
+	{
+		"RowName": "Locust_Queen_SpecialAttack",
+		"ID_XX": 20258
+	},
+	{
 		"RowName": "Bat_Demon_bc_1",
 		"ID_XX": 20261
 	},
@@ -1644,6 +3200,10 @@
 		"ID_XX": 20273
 	},
 	{
+		"RowName": "Bat_Demon_White_bc_4",
+		"ID_XX": 20274
+	},
+	{
 		"RowName": "Skeleton_Serpent_Man_bc_1",
 		"ID_XX": 20281
 	},
@@ -1670,6 +3230,34 @@
 	{
 		"RowName": "Dragon_bc_3",
 		"ID_XX": 20303
+	},
+	{
+		"RowName": "Dragon_Headswipe_Left",
+		"ID_XX": 20304
+	},
+	{
+		"RowName": "Dragon_Headswipe_Right",
+		"ID_XX": 20305
+	},
+	{
+		"RowName": "Dragon_Headbutt",
+		"ID_XX": 20306
+	},
+	{
+		"RowName": "Dragon_Firebreath_Line",
+		"ID_XX": 20307
+	},
+	{
+		"RowName": "Dragon_Firebreath_Cone",
+		"ID_XX": 20308
+	},
+	{
+		"RowName": "Dragon_Taunt",
+		"ID_XX": 20309
+	},
+	{
+		"RowName": "Dragon_Spin_360",
+		"ID_XX": 20310
 	},
 	{
 		"RowName": "Dragon_Undead_bc1",
@@ -1702,6 +3290,30 @@
 	{
 		"RowName": "Dragon_Hatchling_bc3",
 		"ID_XX": 20318
+	},
+	{
+		"RowName": "Dragon_Hatchling_HeadDash",
+		"ID_XX": 20319
+	},
+	{
+		"RowName": "Dragon_Hatchling_Headswipe_Left",
+		"ID_XX": 20320
+	},
+	{
+		"RowName": "Dragon_Hatchling_Headswipe_Right",
+		"ID_XX": 20321
+	},
+	{
+		"RowName": "RocknoseWhite_bc_1",
+		"ID_XX": 20331
+	},
+	{
+		"RowName": "RocknoseWhite_bc_2",
+		"ID_XX": 20332
+	},
+	{
+		"RowName": "RocknoseWhite_bc_3",
+		"ID_XX": 20333
 	},
 	{
 		"RowName": "Rocknose_bc_1",
@@ -1752,8 +3364,8 @@
 		"ID_XX": 20363
 	},
 	{
-		"RowName": "Scorpion_bc_4",
-		"ID_XX": 20364
+		"RowName": "Scorpion_Tailspin",
+		"ID_XX": 20365
 	},
 	{
 		"RowName": "ScorpionLarge_bc_1",
@@ -1768,10 +3380,6 @@
 		"ID_XX": 20373
 	},
 	{
-		"RowName": "ScorpionLarge_bc_4",
-		"ID_XX": 20374
-	},
-	{
 		"RowName": "ScorpionKing_bc_1",
 		"ID_XX": 20381
 	},
@@ -1784,8 +3392,20 @@
 		"ID_XX": 20383
 	},
 	{
-		"RowName": "ScorpionKing_bc_4",
+		"RowName": "ScorpionKing_Spin",
 		"ID_XX": 20384
+	},
+	{
+		"RowName": "Scorpion_burrow",
+		"ID_XX": 20385
+	},
+	{
+		"RowName": "Corrupted_Spider_bc_1",
+		"ID_XX": 20386
+	},
+	{
+		"RowName": "Corrupted_Spider_bc_2",
+		"ID_XX": 20387
 	},
 	{
 		"RowName": "Spider_bc_1",
@@ -1812,12 +3432,100 @@
 		"ID_XX": 20396
 	},
 	{
+		"RowName": "Spider_web",
+		"ID_XX": 20397
+	},
+	{
+		"RowName": "Spider_web_projectile",
+		"ID_XX": 20398
+	},
+	{
+		"RowName": "Spider_dash",
+		"ID_XX": 20399
+	},
+	{
+		"RowName": "SpiderGiant_pull",
+		"ID_XX": 20400
+	},
+	{
 		"RowName": "Cobra_bc_1",
-		"ID_XX": 20401
+		"ID_XX": 20421
 	},
 	{
 		"RowName": "Cobra_bc_2",
-		"ID_XX": 20402
+		"ID_XX": 20422
+	},
+	{
+		"RowName": "Rhino_CircleRun_L",
+		"ID_XX": 20441
+	},
+	{
+		"RowName": "Rhino_CircleRun_R",
+		"ID_XX": 20442
+	},
+	{
+		"RowName": "RhinoBlack_CircleRun_L",
+		"ID_XX": 20443
+	},
+	{
+		"RowName": "RhinoBlack_CircleRun_R",
+		"ID_XX": 20444
+	},
+	{
+		"RowName": "RhinoKing_CircleRun_L",
+		"ID_XX": 20445
+	},
+	{
+		"RowName": "RhinoKing_CircleRun_R",
+		"ID_XX": 20446
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_CircleRun_L",
+		"ID_XX": 20447
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_CircleRun_R",
+		"ID_XX": 20448
+	},
+	{
+		"RowName": "Rhino_Reptile_CircleRun_L",
+		"ID_XX": 20449
+	},
+	{
+		"RowName": "Rhino_Reptile_CircleRun_R",
+		"ID_XX": 20450
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_bc_1",
+		"ID_XX": 20453
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_bc_2",
+		"ID_XX": 20454
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_bc_3",
+		"ID_XX": 20455
+	},
+	{
+		"RowName": "Rhino_ReptileBoss_charge_1",
+		"ID_XX": 20456
+	},
+	{
+		"RowName": "Rhino_Reptile_bc_1",
+		"ID_XX": 20457
+	},
+	{
+		"RowName": "Rhino_Reptile_bc_2",
+		"ID_XX": 20458
+	},
+	{
+		"RowName": "Rhino_Reptile_bc_3",
+		"ID_XX": 20459
+	},
+	{
+		"RowName": "Rhino_Reptile_charge_1",
+		"ID_XX": 20460
 	},
 	{
 		"RowName": "Rhino_bc_1",
@@ -1868,6 +3576,22 @@
 		"ID_XX": 20474
 	},
 	{
+		"RowName": "Pet_Highlevel_Ostrich_bc_1",
+		"ID_XX": 20475
+	},
+	{
+		"RowName": "Pet_Highlevel_Ostrich_bc_2",
+		"ID_XX": 20476
+	},
+	{
+		"RowName": "Pet_Highlevel_Ostrich_bc_3",
+		"ID_XX": 20477
+	},
+	{
+		"RowName": "Pet_Highlevel_Ostrich_charge_1",
+		"ID_XX": 20478
+	},
+	{
 		"RowName": "Ostrich_bc_1",
 		"ID_XX": 20481
 	},
@@ -1888,6 +3612,38 @@
 		"ID_XX": 20485
 	},
 	{
+		"RowName": "Bull_bc_1",
+		"ID_XX": 20491
+	},
+	{
+		"RowName": "Bull_bc_2",
+		"ID_XX": 20492
+	},
+	{
+		"RowName": "Bull_bc_3",
+		"ID_XX": 20493
+	},
+	{
+		"RowName": "Bull_charge_1",
+		"ID_XX": 20494
+	},
+	{
+		"RowName": "Bull_CircleDash_Left",
+		"ID_XX": 20495
+	},
+	{
+		"RowName": "Bull_CircleDash_Right",
+		"ID_XX": 20496
+	},
+	{
+		"RowName": "Bull_charge_2",
+		"ID_XX": 20497
+	},
+	{
+		"RowName": "Bull_charge_3",
+		"ID_XX": 20498
+	},
+	{
 		"RowName": "Elephant_bc_1",
 		"ID_XX": 20501
 	},
@@ -1904,12 +3660,56 @@
 		"ID_XX": 20504
 	},
 	{
+		"RowName": "Elephant_charge",
+		"ID_XX": 20505
+	},
+	{
+		"RowName": "Alphaelephant_charge",
+		"ID_XX": 20506
+	},
+	{
+		"RowName": "Elephant_Stomp",
+		"ID_XX": 20507
+	},
+	{
+		"RowName": "Alphaelephant_Stomp",
+		"ID_XX": 20508
+	},
+	{
 		"RowName": "Mammoth_bc_1",
 		"ID_XX": 20510
 	},
 	{
 		"RowName": "Mammoth_bc_2",
 		"ID_XX": 20511
+	},
+	{
+		"RowName": "Mammoth_charge",
+		"ID_XX": 20512
+	},
+	{
+		"RowName": "Mammoth_Stomp",
+		"ID_XX": 20513
+	},
+	{
+		"RowName": "Mammoth_Spin",
+		"ID_XX": 20514
+	},
+	{
+		"RowName": "Elephant_Stomp_Small",
+		"ID_XX": 20515
+	},
+	{
+		"RowName": "AlphaElephant_Stomp_Small",
+		"ID_XX": 20516
+	},
+	{
+		"RowName": "AlphaElephant_Stomp_Small_Left_Sweep",
+		"ID_XX": 20517
+	},
+	{
+		"RowName": "AlphaElephant_Stomp_Small_Right_Sweep",
+		"ID_XX": 20518
 	},
 	{
 		"RowName": "Werehyena_bc_1",
@@ -1928,6 +3728,26 @@
 		"ID_XX": 20524
 	},
 	{
+		"RowName": "SnakePeople_Brute_bc_1",
+		"ID_XX": 20531
+	},
+	{
+		"RowName": "SnakePeople_Brute_bc_2",
+		"ID_XX": 20532
+	},
+	{
+		"RowName": "SnakePeople_Brute_charge_1",
+		"ID_XX": 20533
+	},
+	{
+		"RowName": "SnakePeople_Brute_t_1",
+		"ID_XX": 20534
+	},
+	{
+		"RowName": "BigSnake_bc_1",
+		"ID_XX": 20540
+	},
+	{
 		"RowName": "GiantSnake_bc_1",
 		"ID_XX": 20541
 	},
@@ -1944,24 +3764,40 @@
 		"ID_XX": 20544
 	},
 	{
-		"RowName": "Komodo_bc_1",
+		"RowName": "Komodo2_bc_1",
 		"ID_XX": 20561
 	},
 	{
-		"RowName": "Komodo_bc_2",
+		"RowName": "Komodo2_bc_2",
 		"ID_XX": 20562
 	},
 	{
-		"RowName": "Komodo_bc_3",
+		"RowName": "Komodo2_bc_3",
 		"ID_XX": 20563
 	},
 	{
-		"RowName": "Komodo_bc_4",
+		"RowName": "Komodo2_bc_4",
 		"ID_XX": 20564
 	},
 	{
 		"RowName": "Komodo_t_1",
 		"ID_XX": 20565
+	},
+	{
+		"RowName": "Alpha_Wolf_bc_1",
+		"ID_XX": 20566
+	},
+	{
+		"RowName": "Alpha_Wolf_bc_2",
+		"ID_XX": 20567
+	},
+	{
+		"RowName": "Alpha_Wolf_bc_3",
+		"ID_XX": 20568
+	},
+	{
+		"RowName": "Alpha_Wolf_charge_1",
+		"ID_XX": 20569
 	},
 	{
 		"RowName": "SewerAbomination_bc_1",
@@ -2048,6 +3884,14 @@
 		"ID_XX": 20605
 	},
 	{
+		"RowName": "BigCatPanther_Boss_Swipe_L",
+		"ID_XX": 20606
+	},
+	{
+		"RowName": "BigCatPanther_Boss_Swipe_R",
+		"ID_XX": 20607
+	},
+	{
 		"RowName": "Wolf_bc_1",
 		"ID_XX": 20610
 	},
@@ -2064,6 +3908,46 @@
 		"ID_XX": 20613
 	},
 	{
+		"RowName": "Wolf_Dire_bc_1",
+		"ID_XX": 20614
+	},
+	{
+		"RowName": "Wolf_Dire_bc_2",
+		"ID_XX": 20615
+	},
+	{
+		"RowName": "Wolf_Dire_bc_3",
+		"ID_XX": 20616
+	},
+	{
+		"RowName": "Wolf_Dire_charge_1",
+		"ID_XX": 20617
+	},
+	{
+		"RowName": "Wolf_sidestep_left",
+		"ID_XX": 20618
+	},
+	{
+		"RowName": "Wolf_sidestep_right",
+		"ID_XX": 20619
+	},
+	{
+		"RowName": "Wolf_Bite_1",
+		"ID_XX": 20620
+	},
+	{
+		"RowName": "Wolf_Bite_2",
+		"ID_XX": 20621
+	},
+	{
+		"RowName": "Wolf_Dire_Bite_1",
+		"ID_XX": 20622
+	},
+	{
+		"RowName": "Wolf_Dire_Bite_2",
+		"ID_XX": 20623
+	},
+	{
 		"RowName": "Elk_bc_1",
 		"ID_XX": 20630
 	},
@@ -2076,16 +3960,100 @@
 		"ID_XX": 20632
 	},
 	{
+		"RowName": "Elk_OverheadSmash",
+		"ID_XX": 20633
+	},
+	{
+		"RowName": "Elk_King_bc_1",
+		"ID_XX": 20636
+	},
+	{
+		"RowName": "Elk_King_bc_2",
+		"ID_XX": 20637
+	},
+	{
+		"RowName": "Elk_King_bc_3",
+		"ID_XX": 20638
+	},
+	{
+		"RowName": "Elk_King_OverheadSmash",
+		"ID_XX": 20639
+	},
+	{
+		"RowName": "Kudo_bc_1",
+		"ID_XX": 20640
+	},
+	{
+		"RowName": "Kudo_bc_2",
+		"ID_XX": 20641
+	},
+	{
+		"RowName": "Kudo_bc_3",
+		"ID_XX": 20642
+	},
+	{
+		"RowName": "Kudo_OverheadSmash",
+		"ID_XX": 20643
+	},
+	{
 		"RowName": "Mountain_Goat_bc_1",
 		"ID_XX": 20650
+	},
+	{
+		"RowName": "Mountain_Goat_OverheadSmash",
+		"ID_XX": 20651
+	},
+	{
+		"RowName": "Gazeller_Scared",
+		"ID_XX": 20655
+	},
+	{
+		"RowName": "Gazeller_bc_1",
+		"ID_XX": 20656
+	},
+	{
+		"RowName": "Gazeller_bc_2",
+		"ID_XX": 20657
+	},
+	{
+		"RowName": "Gazeller_bc_3",
+		"ID_XX": 20658
 	},
 	{
 		"RowName": "Wild_Boar_bc_1",
 		"ID_XX": 20660
 	},
 	{
-		"RowName": "Wild_Boar_Boss_bc_1",
+		"RowName": "Wild_Boar_bc_2",
 		"ID_XX": 20661
+	},
+	{
+		"RowName": "Wild_Boar_charge",
+		"ID_XX": 20662
+	},
+	{
+		"RowName": "Wild_Boar_Boss_bc_1",
+		"ID_XX": 20664
+	},
+	{
+		"RowName": "Wild_Boar_Boss_bc_2",
+		"ID_XX": 20665
+	},
+	{
+		"RowName": "Wild_Boar_Boss_charge",
+		"ID_XX": 20666
+	},
+	{
+		"RowName": "Wild_Boar_taunt",
+		"ID_XX": 20667
+	},
+	{
+		"RowName": "Wild_Boar_Boss_Special",
+		"ID_XX": 20668
+	},
+	{
+		"RowName": "Wild_Boar_Boss_taunt",
+		"ID_XX": 20669
 	},
 	{
 		"RowName": "Bear_bc_1",
@@ -2096,12 +4064,72 @@
 		"ID_XX": 20671
 	},
 	{
+		"RowName": "Bear_medium_1",
+		"ID_XX": 20672
+	},
+	{
+		"RowName": "Bear_medium_2",
+		"ID_XX": 20673
+	},
+	{
+		"RowName": "Bear_taunt",
+		"ID_XX": 20674
+	},
+	{
+		"RowName": "Alpha_Bear_Black_bc_1",
+		"ID_XX": 20675
+	},
+	{
+		"RowName": "Alpha_Bear_Black_bc_2",
+		"ID_XX": 20676
+	},
+	{
+		"RowName": "Alpha_Bear_Black_medium_1",
+		"ID_XX": 20677
+	},
+	{
+		"RowName": "Alpha_Bear_Black_medium_2",
+		"ID_XX": 20678
+	},
+	{
 		"RowName": "Bear_Black_bc_1",
 		"ID_XX": 20680
 	},
 	{
 		"RowName": "Bear_Black_bc_2",
 		"ID_XX": 20681
+	},
+	{
+		"RowName": "Bear_Black_medium_1",
+		"ID_XX": 20682
+	},
+	{
+		"RowName": "Bear_Black_medium_2",
+		"ID_XX": 20683
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_1",
+		"ID_XX": 20684
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_2",
+		"ID_XX": 20685
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_3",
+		"ID_XX": 20686
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_4",
+		"ID_XX": 20687
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_5",
+		"ID_XX": 20688
+	},
+	{
+		"RowName": "Alpha_Sabretooth_bc_6",
+		"ID_XX": 20689
 	},
 	{
 		"RowName": "Sabretooth_bc_1",
@@ -2126,6 +4154,30 @@
 	{
 		"RowName": "Sabretooth_bc_6",
 		"ID_XX": 20695
+	},
+	{
+		"RowName": "Jaguar_Jab1",
+		"ID_XX": 20700
+	},
+	{
+		"RowName": "Jaguar_Jab2",
+		"ID_XX": 20701
+	},
+	{
+		"RowName": "Jaguar_Overhead",
+		"ID_XX": 20702
+	},
+	{
+		"RowName": "Jaguar_Sidedash_Left",
+		"ID_XX": 20703
+	},
+	{
+		"RowName": "Jaguar_Sidedash_Right",
+		"ID_XX": 20704
+	},
+	{
+		"RowName": "Jaguar_Charge",
+		"ID_XX": 20705
 	},
 	{
 		"RowName": "Rocknose_King_Boss_Moss_bc_1",
@@ -2192,6 +4244,18 @@
 		"ID_XX": 20735
 	},
 	{
+		"RowName": "Frost_Giant_taunt",
+		"ID_XX": 20736
+	},
+	{
+		"RowName": "Witch_Queen_Statue_Slam",
+		"ID_XX": 20741
+	},
+	{
+		"RowName": "Witch_Queen_Statue_Stomp",
+		"ID_XX": 20742
+	},
+	{
 		"RowName": "Death_Knight_bc_1",
 		"ID_XX": 20750
 	},
@@ -2214,6 +4278,850 @@
 	{
 		"RowName": "Death_Knight_bc_6",
 		"ID_XX": 20755
+	},
+	{
+		"RowName": "RavenousWolf_bc_1",
+		"ID_XX": 20760
+	},
+	{
+		"RowName": "RavenousWolf_bc_2",
+		"ID_XX": 20761
+	},
+	{
+		"RowName": "RavenousWolf_bc_3",
+		"ID_XX": 20762
+	},
+	{
+		"RowName": "RavenousWolf_charge_1",
+		"ID_XX": 20763
+	},
+	{
+		"RowName": "RavenousWolf_sidestep_left",
+		"ID_XX": 20764
+	},
+	{
+		"RowName": "RavenousWolf_sidestep_right",
+		"ID_XX": 20765
+	},
+	{
+		"RowName": "RavenousWolf_Bite_1",
+		"ID_XX": 20766
+	},
+	{
+		"RowName": "RavenousWolf_Bite_2",
+		"ID_XX": 20767
+	},
+	{
+		"RowName": "Vulture_FlyAway_1",
+		"ID_XX": 20771
+	},
+	{
+		"RowName": "SnakePeople_hordeling_light_1",
+		"ID_XX": 20777
+	},
+	{
+		"RowName": "SnakePeople_hordeling_special",
+		"ID_XX": 20778
+	},
+	{
+		"RowName": "SnakePeople_hordeling_bow",
+		"ID_XX": 20779
+	},
+	{
+		"RowName": "SnakePeople_light_1",
+		"ID_XX": 20780
+	},
+	{
+		"RowName": "SnakePeople_light_2",
+		"ID_XX": 20781
+	},
+	{
+		"RowName": "SnakePeople_special",
+		"ID_XX": 20782
+	},
+	{
+		"RowName": "SnakePeople_bow",
+		"ID_XX": 20783
+	},
+	{
+		"RowName": "SnakePeople_bow_projectile",
+		"ID_XX": 20784
+	},
+	{
+		"RowName": "SnakePeople_Illusion_light_1",
+		"ID_XX": 20785
+	},
+	{
+		"RowName": "SnakePeople_Illusion_light_2",
+		"ID_XX": 20786
+	},
+	{
+		"RowName": "SnakePeople_Illusion_special",
+		"ID_XX": 20787
+	},
+	{
+		"RowName": "DemonSpider_left",
+		"ID_XX": 20790
+	},
+	{
+		"RowName": "DemonSpider_Right",
+		"ID_XX": 20791
+	},
+	{
+		"RowName": "DemonSpider_Mid",
+		"ID_XX": 20792
+	},
+	{
+		"RowName": "DemonSpider_Special_Buff",
+		"ID_XX": 20793
+	},
+	{
+		"RowName": "DemonSpider_Special_Poison",
+		"ID_XX": 20794
+	},
+	{
+		"RowName": "DemonSpider_Special_Web",
+		"ID_XX": 20795
+	},
+	{
+		"RowName": "DemonSpider_left_short",
+		"ID_XX": 20796
+	},
+	{
+		"RowName": "DemonSpider_right_short",
+		"ID_XX": 20797
+	},
+	{
+		"RowName": "DemonSpider_mid_short",
+		"ID_XX": 20798
+	},
+	{
+		"RowName": "Yeti_Roar",
+		"ID_XX": 20800
+	},
+	{
+		"RowName": "Yeti_Smash",
+		"ID_XX": 20801
+	},
+	{
+		"RowName": "Yeti_Stomp",
+		"ID_XX": 20802
+	},
+	{
+		"RowName": "Yeti_Throw",
+		"ID_XX": 20803
+	},
+	{
+		"RowName": "Yeti_JumpSmash",
+		"ID_XX": 20804
+	},
+	{
+		"RowName": "Yeti_Throw_Projectile",
+		"ID_XX": 20805
+	},
+	{
+		"RowName": "Yeti_Taunt",
+		"ID_XX": 20806
+	},
+	{
+		"RowName": "Yeti_Smash_miniboss",
+		"ID_XX": 20807
+	},
+	{
+		"RowName": "Yeti_Stomp_miniboss",
+		"ID_XX": 20808
+	},
+	{
+		"RowName": "Yeti_JumpSmash_miniboss",
+		"ID_XX": 20809
+	},
+	{
+		"RowName": "GreyApe_Roar",
+		"ID_XX": 20810
+	},
+	{
+		"RowName": "GreyApe_Smash",
+		"ID_XX": 20811
+	},
+	{
+		"RowName": "GreyApe_Stomp",
+		"ID_XX": 20812
+	},
+	{
+		"RowName": "GreyApe_Throw",
+		"ID_XX": 20813
+	},
+	{
+		"RowName": "GreyApe_JumpSmash",
+		"ID_XX": 20814
+	},
+	{
+		"RowName": "Gorilla_Jab_1",
+		"ID_XX": 20820
+	},
+	{
+		"RowName": "Gorilla_Jab_2",
+		"ID_XX": 20821
+	},
+	{
+		"RowName": "Gorilla_Jab_3",
+		"ID_XX": 20822
+	},
+	{
+		"RowName": "Gorilla_Jab_4",
+		"ID_XX": 20823
+	},
+	{
+		"RowName": "Gorilla_Smash",
+		"ID_XX": 20824
+	},
+	{
+		"RowName": "Gorilla_Charge",
+		"ID_XX": 20825
+	},
+	{
+		"RowName": "Gorilla_taunt",
+		"ID_XX": 20826
+	},
+	{
+		"RowName": "JungleBird_light_1",
+		"ID_XX": 20830
+	},
+	{
+		"RowName": "JungleBird_light_2",
+		"ID_XX": 20831
+	},
+	{
+		"RowName": "JungleBird_light_3",
+		"ID_XX": 20832
+	},
+	{
+		"RowName": "JungleBird_charge",
+		"ID_XX": 20833
+	},
+	{
+		"RowName": "Salamander_left",
+		"ID_XX": 20840
+	},
+	{
+		"RowName": "Salamander_mid",
+		"ID_XX": 20841
+	},
+	{
+		"RowName": "Salamander_right",
+		"ID_XX": 20842
+	},
+	{
+		"RowName": "Salamander_dash",
+		"ID_XX": 20843
+	},
+	{
+		"RowName": "Salamander_spit",
+		"ID_XX": 20844
+	},
+	{
+		"RowName": "Salamander_poison",
+		"ID_XX": 20845
+	},
+	{
+		"RowName": "Salamander_spit_projectile",
+		"ID_XX": 20846
+	},
+	{
+		"RowName": "Children_of_Jhil_bc_1",
+		"ID_XX": 20850
+	},
+	{
+		"RowName": "Children_of_Jhil_bc_2",
+		"ID_XX": 20851
+	},
+	{
+		"RowName": "Children_of_Jhil_taunt",
+		"ID_XX": 20852
+	},
+	{
+		"RowName": "Children_of_Jhil_special_1",
+		"ID_XX": 20853
+	},
+	{
+		"RowName": "Children_of_Jhil_special_2",
+		"ID_XX": 20854
+	},
+	{
+		"RowName": "Children_of_Jhil_special_3",
+		"ID_XX": 20855
+	},
+	{
+		"RowName": "Tiger_Jab1",
+		"ID_XX": 20860
+	},
+	{
+		"RowName": "Tiger_Jab2",
+		"ID_XX": 20861
+	},
+	{
+		"RowName": "Tiger_Overhead",
+		"ID_XX": 20862
+	},
+	{
+		"RowName": "Tiger_Sidedash_Left",
+		"ID_XX": 20863
+	},
+	{
+		"RowName": "Tiger_Sidedash_Right",
+		"ID_XX": 20864
+	},
+	{
+		"RowName": "Tiger_Charge",
+		"ID_XX": 20865
+	},
+	{
+		"RowName": "Tiger_White_Jab1",
+		"ID_XX": 20870
+	},
+	{
+		"RowName": "Tiger_White_Jab2",
+		"ID_XX": 20871
+	},
+	{
+		"RowName": "Tiger_White_Overhead",
+		"ID_XX": 20872
+	},
+	{
+		"RowName": "Tiger_White_Sidedash_Left",
+		"ID_XX": 20873
+	},
+	{
+		"RowName": "Tiger_White_Sidedash_Right",
+		"ID_XX": 20874
+	},
+	{
+		"RowName": "Tiger_White_Charge",
+		"ID_XX": 20875
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Jab1",
+		"ID_XX": 20876
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Jab2",
+		"ID_XX": 20877
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Overhead",
+		"ID_XX": 20878
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Sidedash_Left",
+		"ID_XX": 20879
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Sidedash_Right",
+		"ID_XX": 20880
+	},
+	{
+		"RowName": "Alpha_Tiger_White_Charge",
+		"ID_XX": 20881
+	},
+	{
+		"RowName": "LavaWorm_Bite",
+		"ID_XX": 20890
+	},
+	{
+		"RowName": "LavaWorm_LavaSpray",
+		"ID_XX": 20891
+	},
+	{
+		"RowName": "LavaWorm_Spit_1",
+		"ID_XX": 20892
+	},
+	{
+		"RowName": "LavaWorm_Spit_2",
+		"ID_XX": 20893
+	},
+	{
+		"RowName": "LavaWorm_Spit_3",
+		"ID_XX": 20894
+	},
+	{
+		"RowName": "LavaWorm_lavaProjectile",
+		"ID_XX": 20895
+	},
+	{
+		"RowName": "Ooze_Jab1",
+		"ID_XX": 20901
+	},
+	{
+		"RowName": "Ooze_Jab2",
+		"ID_XX": 20902
+	},
+	{
+		"RowName": "Ooze_SelfDestruct",
+		"ID_XX": 20903
+	},
+	{
+		"RowName": "Werewolf_Attack",
+		"ID_XX": 20910
+	},
+	{
+		"RowName": "Werewolf_Boss_Attack",
+		"ID_XX": 20911
+	},
+	{
+		"RowName": "GorillaBoss_Jab_1",
+		"ID_XX": 20921
+	},
+	{
+		"RowName": "GorillaBoss_Jab_2",
+		"ID_XX": 20922
+	},
+	{
+		"RowName": "GorillaBoss_Jab_3",
+		"ID_XX": 20923
+	},
+	{
+		"RowName": "GorillaBoss_Smash",
+		"ID_XX": 20924
+	},
+	{
+		"RowName": "GorillaBoss_Charge",
+		"ID_XX": 20925
+	},
+	{
+		"RowName": "GorillaBoss_GroundPound_Single",
+		"ID_XX": 20926
+	},
+	{
+		"RowName": "GorrilaBoss_GroundPound_Multi",
+		"ID_XX": 20927
+	},
+	{
+		"RowName": "GorillaBoss_Throw",
+		"ID_XX": 20928
+	},
+	{
+		"RowName": "GorillaBoss_taunt",
+		"ID_XX": 20929
+	},
+	{
+		"RowName": "DeepOne_Fishpeople_c0",
+		"ID_XX": 20941
+	},
+	{
+		"RowName": "DeepOne_Fishpeople_c1",
+		"ID_XX": 20942
+	},
+	{
+		"RowName": "DeepOne_Fishpeople_c2",
+		"ID_XX": 20943
+	},
+	{
+		"RowName": "DeepOne_Fishpeople_SonicScream",
+		"ID_XX": 20944
+	},
+	{
+		"RowName": "DeepOne_Fishpeople_PoisonBreath",
+		"ID_XX": 20945
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_Swipe_c0",
+		"ID_XX": 20951
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_Swipe_c1",
+		"ID_XX": 20952
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_GroundPound",
+		"ID_XX": 20953
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_PoisonBreath_Standing",
+		"ID_XX": 20954
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_PoisonBreath_Ground",
+		"ID_XX": 20955
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_Rake_Charge",
+		"ID_XX": 20956
+	},
+	{
+		"RowName": "DeepOne_Monstrosity_Rake_Standing",
+		"ID_XX": 20957
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_1",
+		"ID_XX": 20970
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_2",
+		"ID_XX": 20971
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_3",
+		"ID_XX": 20972
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_4",
+		"ID_XX": 20973
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_5",
+		"ID_XX": 20974
+	},
+	{
+		"RowName": "Alpha_BigCatPanther_bc_6",
+		"ID_XX": 20975
+	},
+	{
+		"RowName": "Alpha_Jaguar_Jab1",
+		"ID_XX": 20980
+	},
+	{
+		"RowName": "Alpha_Jaguar_Jab2",
+		"ID_XX": 20981
+	},
+	{
+		"RowName": "Alpha_Jaguar_Overhead",
+		"ID_XX": 20982
+	},
+	{
+		"RowName": "Alpha_Jaguar_Sidedash_Left",
+		"ID_XX": 20983
+	},
+	{
+		"RowName": "Alpha_Jaguar_Sidedash_Right",
+		"ID_XX": 20984
+	},
+	{
+		"RowName": "Alpha_Jaguar_Charge",
+		"ID_XX": 20985
+	},
+	{
+		"RowName": "Pet_RhinoKing_bc_1",
+		"ID_XX": 20990
+	},
+	{
+		"RowName": "Pet_RhinoKing_bc_2",
+		"ID_XX": 20991
+	},
+	{
+		"RowName": "Pet_RhinoKing_bc_3",
+		"ID_XX": 20992
+	},
+	{
+		"RowName": "Pet_RhinoKing_charge_1",
+		"ID_XX": 20993
+	},
+	{
+		"RowName": "Camel_Scared",
+		"ID_XX": 21000
+	},
+	{
+		"RowName": "Camel_Bite",
+		"ID_XX": 21001
+	},
+	{
+		"RowName": "Miniboss_Bear_bc_1",
+		"ID_XX": 21015
+	},
+	{
+		"RowName": "Miniboss_Bear_bc_2",
+		"ID_XX": 21016
+	},
+	{
+		"RowName": "Miniboss_Bear_medium_1",
+		"ID_XX": 21017
+	},
+	{
+		"RowName": "Miniboss_Bear_medium_2",
+		"ID_XX": 21018
+	},
+	{
+		"RowName": "Miniboss_Kappa_bc_1",
+		"ID_XX": 21019
+	},
+	{
+		"RowName": "Miniboss_Kappa_bc_2",
+		"ID_XX": 21020
+	},
+	{
+		"RowName": "Miniboss_Kappa_bc_3",
+		"ID_XX": 21021
+	},
+	{
+		"RowName": "Miniboss_Kappa_bc_4",
+		"ID_XX": 21022
+	},
+	{
+		"RowName": "Miniboss_GreyApe_Smash",
+		"ID_XX": 21023
+	},
+	{
+		"RowName": "Miniboss_GreyApe_JumpSmash",
+		"ID_XX": 21024
+	},
+	{
+		"RowName": "Miniboss_Hyena_bc_1",
+		"ID_XX": 21025
+	},
+	{
+		"RowName": "Miniboss_Hyena_bc_2",
+		"ID_XX": 21026
+	},
+	{
+		"RowName": "Miniboss_Hyena_charge_1",
+		"ID_XX": 21027
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Jab1",
+		"ID_XX": 21028
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Jab2",
+		"ID_XX": 21029
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Overhead",
+		"ID_XX": 21030
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Sidedash_Left",
+		"ID_XX": 21031
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Sidedash_Right",
+		"ID_XX": 21032
+	},
+	{
+		"RowName": "Miniboss_Jaguar_Charge",
+		"ID_XX": 21033
+	},
+	{
+		"RowName": "Miniboss_Ostrich_bc_1",
+		"ID_XX": 21034
+	},
+	{
+		"RowName": "Miniboss_Ostrich_bc_2",
+		"ID_XX": 21035
+	},
+	{
+		"RowName": "Miniboss_Ostrich_bc_3",
+		"ID_XX": 21036
+	},
+	{
+		"RowName": "Miniboss_Ostrich_charge_1",
+		"ID_XX": 21037
+	},
+	{
+		"RowName": "Miniboss2_Kappa_bc_1",
+		"ID_XX": 21038
+	},
+	{
+		"RowName": "Miniboss2_Kappa_bc_2",
+		"ID_XX": 21039
+	},
+	{
+		"RowName": "Miniboss2_Kappa_bc_3",
+		"ID_XX": 21040
+	},
+	{
+		"RowName": "Miniboss2_Kappa_bc_4",
+		"ID_XX": 21041
+	},
+	{
+		"RowName": "Miniboss_Locust_bc_1",
+		"ID_XX": 21042
+	},
+	{
+		"RowName": "Miniboss_Locust_bc_2",
+		"ID_XX": 21043
+	},
+	{
+		"RowName": "Miniboss_Crocodile_bc_1",
+		"ID_XX": 21044
+	},
+	{
+		"RowName": "Miniboss_Crocodile_bc_2",
+		"ID_XX": 21045
+	},
+	{
+		"RowName": "Miniboss_Crocodile_bc_3",
+		"ID_XX": 21046
+	},
+	{
+		"RowName": "Miniboss_Crocodile_bc_4",
+		"ID_XX": 21047
+	},
+	{
+		"RowName": "Miniboss_Rocknose_bc_1",
+		"ID_XX": 21048
+	},
+	{
+		"RowName": "Miniboss_Rocknose_bc_2",
+		"ID_XX": 21049
+	},
+	{
+		"RowName": "Miniboss_Rocknose_bc_3",
+		"ID_XX": 21050
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_1",
+		"ID_XX": 21051
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_2",
+		"ID_XX": 21052
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_3",
+		"ID_XX": 21053
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_4",
+		"ID_XX": 21054
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_5",
+		"ID_XX": 21055
+	},
+	{
+		"RowName": "Miniboss_Sabretooth_bc_6",
+		"ID_XX": 21056
+	},
+	{
+		"RowName": "Miniboss_Tiger_Jab1",
+		"ID_XX": 21057
+	},
+	{
+		"RowName": "Miniboss_Tiger_Jab2",
+		"ID_XX": 21058
+	},
+	{
+		"RowName": "Miniboss_Tiger_Overhead",
+		"ID_XX": 21059
+	},
+	{
+		"RowName": "Miniboss_Tiger_Sidedash_Left",
+		"ID_XX": 21060
+	},
+	{
+		"RowName": "Miniboss_Tiger_Sidedash_Right",
+		"ID_XX": 21061
+	},
+	{
+		"RowName": "Miniboss_Tiger_Charge",
+		"ID_XX": 21062
+	},
+	{
+		"RowName": "Miniboss_Wolf_Dire_bc_1",
+		"ID_XX": 21063
+	},
+	{
+		"RowName": "Miniboss_Wolf_Dire_bc_2",
+		"ID_XX": 21064
+	},
+	{
+		"RowName": "Miniboss_Wolf_Dire_bc_3",
+		"ID_XX": 21065
+	},
+	{
+		"RowName": "Miniboss_Wolf_Dire_charge_1",
+		"ID_XX": 21066
+	},
+	{
+		"RowName": "Miniboss_Wolf_sidestep_left",
+		"ID_XX": 21067
+	},
+	{
+		"RowName": "Miniboss_Wolf_sidestep_right",
+		"ID_XX": 21068
+	},
+	{
+		"RowName": "ClimbingBoots_t2_teacher",
+		"ID_XX": 29000
+	},
+	{
+		"RowName": "DarkLibrary_teacher1",
+		"ID_XX": 29001
+	},
+	{
+		"RowName": "DarkLibrary_teacher2",
+		"ID_XX": 29002
+	},
+	{
+		"RowName": "DarkLibrary_teacher3",
+		"ID_XX": 29003
+	},
+	{
+		"RowName": "DarkLibrary_teacher4",
+		"ID_XX": 29004
+	},
+	{
+		"RowName": "DarkLibrary_teacher5",
+		"ID_XX": 29005
+	},
+	{
+		"RowName": "DarkLibrary_teacher6",
+		"ID_XX": 29006
+	},
+	{
+		"RowName": "DarkLibrary_teacher7",
+		"ID_XX": 29007
+	},
+	{
+		"RowName": "DarkLibrary_teacher8",
+		"ID_XX": 29008
+	},
+	{
+		"RowName": "DarkLibrary_teacher9",
+		"ID_XX": 29009
+	},
+	{
+		"RowName": "DarkLibrary_teacher10",
+		"ID_XX": 29010
+	},
+	{
+		"RowName": "DarkLibrary_teacher11",
+		"ID_XX": 29011
+	},
+	{
+		"RowName": "DarkLibrary_teacher12",
+		"ID_XX": 29012
+	},
+	{
+		"RowName": "DarkLibrary_teacher13",
+		"ID_XX": 29013
+	},
+	{
+		"RowName": "DarkLibrary_teacher14",
+		"ID_XX": 29014
+	},
+	{
+		"RowName": "DarkLibrary_teacher15",
+		"ID_XX": 29015
+	},
+	{
+		"RowName": "DarkLibrary_teacher16",
+		"ID_XX": 29016
+	},
+	{
+		"RowName": "DarkLibrary_teacher17",
+		"ID_XX": 29017
+	},
+	{
+		"RowName": "DarkLibrary_teacher18",
+		"ID_XX": 29018
+	},
+	{
+		"RowName": "DarkLibrary_teacher19",
+		"ID_XX": 29019
+	},
+	{
+		"RowName": "DarkLibrary_Note",
+		"ID_XX": 30000
 	},
 	{
 		"RowName": "Scrawled_Note",
@@ -2284,24 +5192,8 @@
 		"ID_XX": 30017
 	},
 	{
-		"RowName": "Hunters_Note_Shalebacks",
-		"ID_XX": 30018
-	},
-	{
 		"RowName": "Priests_Journal",
 		"ID_XX": 30019
-	},
-	{
-		"RowName": "Hunters_Note_Hyenas",
-		"ID_XX": 30020
-	},
-	{
-		"RowName": "Hunters_Note_Imps",
-		"ID_XX": 30021
-	},
-	{
-		"RowName": "Hunters_Note_Crocodiles",
-		"ID_XX": 30022
 	},
 	{
 		"RowName": "Merc_Diary_Page",
@@ -2392,6 +5284,50 @@
 		"ID_XX": 30044
 	},
 	{
+		"RowName": "Repairkit_armor_tier1",
+		"ID_XX": 41020
+	},
+	{
+		"RowName": "Repairkit_armor_tier2",
+		"ID_XX": 41021
+	},
+	{
+		"RowName": "Repairkit_armor_tier3",
+		"ID_XX": 41022
+	},
+	{
+		"RowName": "Repairkit_armor_tier4",
+		"ID_XX": 41023
+	},
+	{
+		"RowName": "Repairkit_weapon_tier1",
+		"ID_XX": 41024
+	},
+	{
+		"RowName": "Repairkit_weapon_tier2",
+		"ID_XX": 41025
+	},
+	{
+		"RowName": "Repairkit_weapon_tier3",
+		"ID_XX": 41026
+	},
+	{
+		"RowName": "Repairkit_weapon_tier4",
+		"ID_XX": 41027
+	},
+	{
+		"RowName": "Cleaver_Steel",
+		"ID_XX": 41028
+	},
+	{
+		"RowName": "Cleaver_HardenedSteel",
+		"ID_XX": 41029
+	},
+	{
+		"RowName": "Cleaver_Starmetal",
+		"ID_XX": 41030
+	},
+	{
 		"RowName": "Improvised_Torch",
 		"ID_XX": 41031
 	},
@@ -2404,7 +5340,7 @@
 		"ID_XX": 41033
 	},
 	{
-		"RowName": "Hand_Lantern",
+		"RowName": "Cleaver_Stone",
 		"ID_XX": 41034
 	},
 	{
@@ -2412,8 +5348,180 @@
 		"ID_XX": 41035
 	},
 	{
-		"RowName": "Compass",
-		"ID_XX": 41050
+		"RowName": "Cleaver_Iron",
+		"ID_XX": 41036
+	},
+	{
+		"RowName": "Repairkit_weapon_tier5",
+		"ID_XX": 41037
+	},
+	{
+		"RowName": "modkit_wpn_reducestaminause",
+		"ID_XX": 41051
+	},
+	{
+		"RowName": "modkit_wpn_increasedamage_t1",
+		"ID_XX": 41052
+	},
+	{
+		"RowName": "modkit_wpn_increasedamage_t2",
+		"ID_XX": 41053
+	},
+	{
+		"RowName": "modkit_wpn_increasedamage_t3",
+		"ID_XX": 41054
+	},
+	{
+		"RowName": "modkit_wpn_increaseharvestingdamage_t1",
+		"ID_XX": 41056
+	},
+	{
+		"RowName": "modkit_wpn_increaseharvestingdamage_t2",
+		"ID_XX": 41057
+	},
+	{
+		"RowName": "modkit_wpn_increaseharvestingdamage_t3",
+		"ID_XX": 41058
+	},
+	{
+		"RowName": "modkit_wpn_increaseconcussdamage_t1",
+		"ID_XX": 41059
+	},
+	{
+		"RowName": "modkit_wpn_increaseconcussdamage_t2",
+		"ID_XX": 41060
+	},
+	{
+		"RowName": "modkit_wpn_increaseconcussdamage_t3",
+		"ID_XX": 41061
+	},
+	{
+		"RowName": "modkit_wpn_decreaseweight",
+		"ID_XX": 41063
+	},
+	{
+		"RowName": "modkit_wpn_increasedurability_t1",
+		"ID_XX": 41064
+	},
+	{
+		"RowName": "modkit_wpn_increasedurability_t2",
+		"ID_XX": 41065
+	},
+	{
+		"RowName": "modkit_wpn_increasedurability_t3",
+		"ID_XX": 41066
+	},
+	{
+		"RowName": "modkit_wpn_increasearmorpenetration",
+		"ID_XX": 41067
+	},
+	{
+		"RowName": "modkit_arm_reduceweight",
+		"ID_XX": 41068
+	},
+	{
+		"RowName": "modkit_arm_increasearmor_t1",
+		"ID_XX": 41069
+	},
+	{
+		"RowName": "modkit_arm_increasearmor_t2",
+		"ID_XX": 41070
+	},
+	{
+		"RowName": "modkit_arm_increasearmor_t3",
+		"ID_XX": 41071
+	},
+	{
+		"RowName": "modkit_arm_poise_t1",
+		"ID_XX": 41072
+	},
+	{
+		"RowName": "modkit_arm_poise_t2",
+		"ID_XX": 41073
+	},
+	{
+		"RowName": "modkit_arm_poise_t3",
+		"ID_XX": 41074
+	},
+	{
+		"RowName": "modkit_arm_climbingbonus_t1",
+		"ID_XX": 41075
+	},
+	{
+		"RowName": "modkit_arm_climbingbonus_t2",
+		"ID_XX": 41076
+	},
+	{
+		"RowName": "modkit_arm_climbingbonus_t3",
+		"ID_XX": 41077
+	},
+	{
+		"RowName": "TheShank",
+		"ID_XX": 50501
+	},
+	{
+		"RowName": "ThePredatoryBlade",
+		"ID_XX": 50502
+	},
+	{
+		"RowName": "Maelstrom",
+		"ID_XX": 50503
+	},
+	{
+		"RowName": "SiegeHammer",
+		"ID_XX": 50504
+	},
+	{
+		"RowName": "LyingBastardSword",
+		"ID_XX": 50505
+	},
+	{
+		"RowName": "SwordofCrom",
+		"ID_XX": 50506
+	},
+	{
+		"RowName": "CorruptedAxe",
+		"ID_XX": 50507
+	},
+	{
+		"RowName": "TheFesteringOne",
+		"ID_XX": 50508
+	},
+	{
+		"RowName": "BladeofSevenWinds",
+		"ID_XX": 50509
+	},
+	{
+		"RowName": "LifebloodSpear",
+		"ID_XX": 50510
+	},
+	{
+		"RowName": "DrunkardsBlade",
+		"ID_XX": 50511
+	},
+	{
+		"RowName": "WightBlade",
+		"ID_XX": 50512
+	},
+	{
+		"RowName": "Quake",
+		"ID_XX": 50513
+	},
+	{
+		"RowName": "HeatedArgument",
+		"ID_XX": 50514
+	},
+	{
+		"RowName": "QuiveringArrow",
+		"ID_XX": 50515
+	},
+	{
+		"RowName": "Riptide",
+		"ID_XX": 50516
+	},
+	{
+		"RowName": "Riptide_Projectile",
+		"ID_XX": 50517
 	},
 	{
 		"RowName": "Stone_Pick",
@@ -2448,6 +5556,10 @@
 		"ID_XX": 51015
 	},
 	{
+		"RowName": "Starmetal_Pickaxe",
+		"ID_XX": 51020
+	},
+	{
 		"RowName": "Steel_Pickaxe",
 		"ID_XX": 51021
 	},
@@ -2474,6 +5586,34 @@
 	{
 		"RowName": "Star_metal_sickle",
 		"ID_XX": 51042
+	},
+	{
+		"RowName": "Stone_TwoHanded_Sword",
+		"ID_XX": 51043
+	},
+	{
+		"RowName": "Iron_TwoHanded_Sword",
+		"ID_XX": 51044
+	},
+	{
+		"RowName": "Iron_TwoHanded_Sword_Exceptional",
+		"ID_XX": 51045
+	},
+	{
+		"RowName": "Iron_TwoHanded_Sword_Flawless",
+		"ID_XX": 51046
+	},
+	{
+		"RowName": "Steel_TwoHanded_Sword",
+		"ID_XX": 51047
+	},
+	{
+		"RowName": "Steel_TwoHanded_Sword_Exceptional",
+		"ID_XX": 51048
+	},
+	{
+		"RowName": "Steel_TwoHanded_Sword_Flawless",
+		"ID_XX": 51049
 	},
 	{
 		"RowName": "Hardened_Steel_two-handed_sword",
@@ -2536,16 +5676,116 @@
 		"ID_XX": 51074
 	},
 	{
+		"RowName": "Undead_TwoHanded_Sword",
+		"ID_XX": 51075
+	},
+	{
+		"RowName": "cimmerian_steel_mace",
+		"ID_XX": 51078
+	},
+	{
+		"RowName": "cimmerian_steel_mace_exceptional",
+		"ID_XX": 51079
+	},
+	{
+		"RowName": "cimmerian_steel_mace_flawless",
+		"ID_XX": 51080
+	},
+	{
+		"RowName": "starmetal_mace",
+		"ID_XX": 51081
+	},
+	{
+		"RowName": "starmetal_mace_exceptional",
+		"ID_XX": 51082
+	},
+	{
+		"RowName": "starmetal_mace_flawless",
+		"ID_XX": 51083
+	},
+	{
+		"RowName": "ancient_javelin",
+		"ID_XX": 51084
+	},
+	{
+		"RowName": "Undead_Axe_NPCversion",
+		"ID_XX": 51085
+	},
+	{
+		"RowName": "Undead_Sword_NPCversion",
+		"ID_XX": 51086
+	},
+	{
+		"RowName": "ancient_mace",
+		"ID_XX": 51087
+	},
+	{
+		"RowName": "ancient_spear",
+		"ID_XX": 51090
+	},
+	{
+		"RowName": "katana",
+		"ID_XX": 51091
+	},
+	{
+		"RowName": "katana_exceptional",
+		"ID_XX": 51092
+	},
+	{
+		"RowName": "katana_flawless",
+		"ID_XX": 51093
+	},
+	{
+		"RowName": "endgame_katana",
+		"ID_XX": 51094
+	},
+	{
+		"RowName": "endgame_katana_exceptional",
+		"ID_XX": 51095
+	},
+	{
+		"RowName": "endgame_katana_flawless",
+		"ID_XX": 51096
+	},
+	{
+		"RowName": "venomsteel_1h_sword",
+		"ID_XX": 51097
+	},
+	{
+		"RowName": "venomsteel_2h_sword",
+		"ID_XX": 51098
+	},
+	{
+		"RowName": "venomsteel_waraxe",
+		"ID_XX": 51099
+	},
+	{
+		"RowName": "venomsteel_daggers",
+		"ID_XX": 51100
+	},
+	{
+		"RowName": "venomsteel_pike",
+		"ID_XX": 51101
+	},
+	{
+		"RowName": "knockout_javelin",
+		"ID_XX": 51102
+	},
+	{
+		"RowName": "blunt_arrow",
+		"ID_XX": 51103
+	},
+	{
+		"RowName": "blunt_bolt",
+		"ID_XX": 51104
+	},
+	{
 		"RowName": "Warhammer",
 		"ID_XX": 51151
 	},
 	{
 		"RowName": "Exile_Stone_Maul",
 		"ID_XX": 51152
-	},
-	{
-		"RowName": "Named_Hammer_1",
-		"ID_XX": 51153
 	},
 	{
 		"RowName": "Steel_Warhammer",
@@ -2668,12 +5908,124 @@
 		"ID_XX": 51183
 	},
 	{
+		"RowName": "Bone_arrow",
+		"ID_XX": 51184
+	},
+	{
+		"RowName": "Bone_bolt",
+		"ID_XX": 51185
+	},
+	{
+		"RowName": "Iron_Mace2",
+		"ID_XX": 51186
+	},
+	{
+		"RowName": "Exceptional_Iron_Mace2",
+		"ID_XX": 51187
+	},
+	{
+		"RowName": "Flawless_Iron_Mace2",
+		"ID_XX": 51188
+	},
+	{
+		"RowName": "Impr_Iron_Spear",
+		"ID_XX": 51189
+	},
+	{
+		"RowName": "Exceptional_Impr_Iron_Spear",
+		"ID_XX": 51190
+	},
+	{
+		"RowName": "Flawless_Impr_Iron_Spear",
+		"ID_XX": 51191
+	},
+	{
+		"RowName": "Impr_Iron_Javelin",
+		"ID_XX": 51192
+	},
+	{
+		"RowName": "Exceptional_Impr_Iron_Javelin",
+		"ID_XX": 51193
+	},
+	{
+		"RowName": "Flawless_Impr_Iron_Javelin",
+		"ID_XX": 51194
+	},
+	{
+		"RowName": "Impr_Iron_Axe",
+		"ID_XX": 51195
+	},
+	{
+		"RowName": "Exceptional_Impr_Iron_Axe",
+		"ID_XX": 51196
+	},
+	{
+		"RowName": "Flawless_Impr_Iron_Axe",
+		"ID_XX": 51197
+	},
+	{
+		"RowName": "Impr_Iron_Mace",
+		"ID_XX": 51198
+	},
+	{
+		"RowName": "Exceptional_Impr_Iron_Mace",
+		"ID_XX": 51199
+	},
+	{
+		"RowName": "Flawless_Impr_Iron_Mace",
+		"ID_XX": 51200
+	},
+	{
+		"RowName": "Steel_Throwing_axe",
+		"ID_XX": 51201
+	},
+	{
+		"RowName": "Exceptional_Steel_Throwing_axe",
+		"ID_XX": 51202
+	},
+	{
+		"RowName": "Flawless_Steel_Throwing_axe",
+		"ID_XX": 51203
+	},
+	{
 		"RowName": "Unarmed_Right",
 		"ID_XX": 51204
 	},
 	{
 		"RowName": "Unarmed_Left",
 		"ID_XX": 51205
+	},
+	{
+		"RowName": "Steel_Javelin",
+		"ID_XX": 51206
+	},
+	{
+		"RowName": "Exceptional_Steel_Javelin",
+		"ID_XX": 51207
+	},
+	{
+		"RowName": "Flawless_Steel_Javelin",
+		"ID_XX": 51208
+	},
+	{
+		"RowName": "Steel_Spear",
+		"ID_XX": 51209
+	},
+	{
+		"RowName": "Exceptional_Steel_Spear",
+		"ID_XX": 51210
+	},
+	{
+		"RowName": "Flawless_Steel_Spear",
+		"ID_XX": 51211
+	},
+	{
+		"RowName": "Ancient_Axe",
+		"ID_XX": 51212
+	},
+	{
+		"RowName": "Ancient_Throwing_axe",
+		"ID_XX": 51215
 	},
 	{
 		"RowName": "Exile_Stone_Club",
@@ -2696,6 +6048,50 @@
 		"ID_XX": 51305
 	},
 	{
+		"RowName": "Truncheon_Iron",
+		"ID_XX": 51306
+	},
+	{
+		"RowName": "Truncheon_Steel",
+		"ID_XX": 51307
+	},
+	{
+		"RowName": "SkinningDagger_stone",
+		"ID_XX": 51308
+	},
+	{
+		"RowName": "SkinningDagger_iron",
+		"ID_XX": 51309
+	},
+	{
+		"RowName": "SkinningDagger_steel",
+		"ID_XX": 51310
+	},
+	{
+		"RowName": "SkinningDagger_hardenedsteel",
+		"ID_XX": 51311
+	},
+	{
+		"RowName": "SkinningDagger_starmetal",
+		"ID_XX": 51312
+	},
+	{
+		"RowName": "SkinningDagger_serpentmen",
+		"ID_XX": 51313
+	},
+	{
+		"RowName": "SkinningDagger_obsidian",
+		"ID_XX": 51314
+	},
+	{
+		"RowName": "Steel_Mace_Exceptional",
+		"ID_XX": 51315
+	},
+	{
+		"RowName": "Steel_Mace_Flawless",
+		"ID_XX": 51316
+	},
+	{
 		"RowName": "Hunting_Bow",
 		"ID_XX": 51401
 	},
@@ -2716,6 +6112,18 @@
 		"ID_XX": 51406
 	},
 	{
+		"RowName": "New_Hyrkanian_Bow",
+		"ID_XX": 51407
+	},
+	{
+		"RowName": "New_Exceptional_Hyrkanian_Bow",
+		"ID_XX": 51408
+	},
+	{
+		"RowName": "New_Flawless_Hyrkanian_Bow",
+		"ID_XX": 51409
+	},
+	{
 		"RowName": "Crossbow",
 		"ID_XX": 51451
 	},
@@ -2732,6 +6140,574 @@
 		"ID_XX": 51454
 	},
 	{
+		"RowName": "Blood_letter_(Jhebbal_Sag_tool)",
+		"ID_XX": 51455
+	},
+	{
+		"RowName": "SliverOfLifeExtractor_(Derketo_tool)",
+		"ID_XX": 51456
+	},
+	{
+		"RowName": "Improved_Mitraen_Ankh",
+		"ID_XX": 51457
+	},
+	{
+		"RowName": "Improved_Yog_Cleaver",
+		"ID_XX": 51458
+	},
+	{
+		"RowName": "Improved_Setite_Ritual_Knife",
+		"ID_XX": 51459
+	},
+	{
+		"RowName": "Improved_Hoar_Frost_Hatchet",
+		"ID_XX": 51460
+	},
+	{
+		"RowName": "Improved_Blood_letter_(Jhebbal_Sag_tool)",
+		"ID_XX": 51461
+	},
+	{
+		"RowName": "Improved_SliverOfLifeExtractor_(Derketo_tool)",
+		"ID_XX": 51462
+	},
+	{
+		"RowName": "Legendary_weapon_Ymir",
+		"ID_XX": 51463
+	},
+	{
+		"RowName": "Legendary_weapon_Derketo",
+		"ID_XX": 51464
+	},
+	{
+		"RowName": "Legendary_weapon_Mitra",
+		"ID_XX": 51465
+	},
+	{
+		"RowName": "Legendary_weapon_Yog",
+		"ID_XX": 51466
+	},
+	{
+		"RowName": "Legendary_weapon_Set",
+		"ID_XX": 51467
+	},
+	{
+		"RowName": "Legendary_weapon_Jhebbal_Sag",
+		"ID_XX": 51468
+	},
+	{
+		"RowName": "Star_Metal_Repair_Hammer",
+		"ID_XX": 51469
+	},
+	{
+		"RowName": "Steel_Repair_Hammer",
+		"ID_XX": 51470
+	},
+	{
+		"RowName": "Ivory_Arrow",
+		"ID_XX": 51471
+	},
+	{
+		"RowName": "Ivory_Bolt",
+		"ID_XX": 51472
+	},
+	{
+		"RowName": "Obsidian_2H_Hammer",
+		"ID_XX": 51476
+	},
+	{
+		"RowName": "Exceptional_Obsidian_2H_Hammer",
+		"ID_XX": 51477
+	},
+	{
+		"RowName": "Flawless_Obsidian_2H_Hammer",
+		"ID_XX": 51478
+	},
+	{
+		"RowName": "Obsidian_2H_Sword",
+		"ID_XX": 51479
+	},
+	{
+		"RowName": "Exceptional_Obsidian_2H_Sword",
+		"ID_XX": 51480
+	},
+	{
+		"RowName": "Flawless_Obsidian_2H_Sword",
+		"ID_XX": 51481
+	},
+	{
+		"RowName": "Obsidian_Dagger",
+		"ID_XX": 51482
+	},
+	{
+		"RowName": "Exceptional_Obsidian_Dagger",
+		"ID_XX": 51483
+	},
+	{
+		"RowName": "Flawless_Obsidian_Dagger",
+		"ID_XX": 51484
+	},
+	{
+		"RowName": "Obsidian_Mace",
+		"ID_XX": 51485
+	},
+	{
+		"RowName": "Exceptional_Obsidian_Mace",
+		"ID_XX": 51486
+	},
+	{
+		"RowName": "Flawless_Obsidian_Mace",
+		"ID_XX": 51487
+	},
+	{
+		"RowName": "Obsidian_Shield",
+		"ID_XX": 51488
+	},
+	{
+		"RowName": "Exceptional_Obsidian_Shield",
+		"ID_XX": 51489
+	},
+	{
+		"RowName": "Flawless_Obsidian_Shield",
+		"ID_XX": 51490
+	},
+	{
+		"RowName": "Obsidian_Spear",
+		"ID_XX": 51491
+	},
+	{
+		"RowName": "Exceptional_Obsidian_Spear",
+		"ID_XX": 51492
+	},
+	{
+		"RowName": "Flawless_Obsidian_Spear",
+		"ID_XX": 51493
+	},
+	{
+		"RowName": "Obsidian_Sword",
+		"ID_XX": 51494
+	},
+	{
+		"RowName": "Exceptional_Obsidian_Sword",
+		"ID_XX": 51495
+	},
+	{
+		"RowName": "Flawless_Obsidian_Sword",
+		"ID_XX": 51496
+	},
+	{
+		"RowName": "Carapace_shield",
+		"ID_XX": 51497
+	},
+	{
+		"RowName": "Exceptional_Carapace_shield",
+		"ID_XX": 51498
+	},
+	{
+		"RowName": "Flawless_Carapace_shield",
+		"ID_XX": 51499
+	},
+	{
+		"RowName": "Shell_Shield",
+		"ID_XX": 51500
+	},
+	{
+		"RowName": "Exceptional_Shell_Shield",
+		"ID_XX": 51501
+	},
+	{
+		"RowName": "Flawless_Shell_Shield",
+		"ID_XX": 51502
+	},
+	{
+		"RowName": "Obsidian_Arrow",
+		"ID_XX": 51503
+	},
+	{
+		"RowName": "Obsidian_Bolt",
+		"ID_XX": 51504
+	},
+	{
+		"RowName": "Serpentmen_crossbow",
+		"ID_XX": 51505
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_crossbow",
+		"ID_XX": 51506
+	},
+	{
+		"RowName": "Flawless_Serpentmen_crossbow",
+		"ID_XX": 51507
+	},
+	{
+		"RowName": "Serpentmen_shield",
+		"ID_XX": 51508
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_shield",
+		"ID_XX": 51509
+	},
+	{
+		"RowName": "Flawless_Serpentmen_shield",
+		"ID_XX": 51510
+	},
+	{
+		"RowName": "Serpentmen_dagger",
+		"ID_XX": 51511
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_dagger",
+		"ID_XX": 51512
+	},
+	{
+		"RowName": "Flawless_Serpentmen_dagger",
+		"ID_XX": 51513
+	},
+	{
+		"RowName": "Serpentmen_2h_spear",
+		"ID_XX": 51514
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_2h_spear",
+		"ID_XX": 51515
+	},
+	{
+		"RowName": "Flawless_Serpentmen_2h_spear",
+		"ID_XX": 51516
+	},
+	{
+		"RowName": "Serpentmen_1h_sword",
+		"ID_XX": 51517
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_1h_sword",
+		"ID_XX": 51518
+	},
+	{
+		"RowName": "Flawless_Serpentmen_1h_sword",
+		"ID_XX": 51519
+	},
+	{
+		"RowName": "Serpentmen_1h_war_axe",
+		"ID_XX": 51520
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_1h_war_axe",
+		"ID_XX": 51521
+	},
+	{
+		"RowName": "Flawless_Serpentmen_1h_war_axe",
+		"ID_XX": 51522
+	},
+	{
+		"RowName": "Serpentmen_2h_hammer",
+		"ID_XX": 51523
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_2h_hammer",
+		"ID_XX": 51524
+	},
+	{
+		"RowName": "Flawless_Serpentmen_2h_hammer",
+		"ID_XX": 51525
+	},
+	{
+		"RowName": "Serpentmen_1h_mace",
+		"ID_XX": 51526
+	},
+	{
+		"RowName": "Exceptional_Serpentmen_1h_mace",
+		"ID_XX": 51527
+	},
+	{
+		"RowName": "Flawless_Serpentmen_1h_mace",
+		"ID_XX": 51528
+	},
+	{
+		"RowName": "Serpentmen_arrow",
+		"ID_XX": 51529
+	},
+	{
+		"RowName": "Serpentmen_bolt",
+		"ID_XX": 51530
+	},
+	{
+		"RowName": "Legendary_Sword_01",
+		"ID_XX": 51531
+	},
+	{
+		"RowName": "Legendary_Sword_02",
+		"ID_XX": 51532
+	},
+	{
+		"RowName": "Legendary_Sword_03",
+		"ID_XX": 51533
+	},
+	{
+		"RowName": "Legendary_Sword_04",
+		"ID_XX": 51534
+	},
+	{
+		"RowName": "Legendary_Sword_05",
+		"ID_XX": 51535
+	},
+	{
+		"RowName": "Legendary_Dagger_01",
+		"ID_XX": 51536
+	},
+	{
+		"RowName": "Legendary_Dagger_02",
+		"ID_XX": 51537
+	},
+	{
+		"RowName": "Legendary_Dagger_03",
+		"ID_XX": 51538
+	},
+	{
+		"RowName": "Legendary_Dagger_04",
+		"ID_XX": 51539
+	},
+	{
+		"RowName": "Legendary_Dagger_05",
+		"ID_XX": 51540
+	},
+	{
+		"RowName": "Legendary_2hSword_01",
+		"ID_XX": 51541
+	},
+	{
+		"RowName": "Legendary_2hSword_02",
+		"ID_XX": 51542
+	},
+	{
+		"RowName": "Legendary_2hSword_03",
+		"ID_XX": 51543
+	},
+	{
+		"RowName": "Legendary_2hSword_04",
+		"ID_XX": 51544
+	},
+	{
+		"RowName": "Legendary_2hSword_05",
+		"ID_XX": 51545
+	},
+	{
+		"RowName": "Legendary_Mace_01",
+		"ID_XX": 51546
+	},
+	{
+		"RowName": "Legendary_Mace_02",
+		"ID_XX": 51547
+	},
+	{
+		"RowName": "Legendary_Mace_03",
+		"ID_XX": 51548
+	},
+	{
+		"RowName": "Legendary_Mace_04",
+		"ID_XX": 51549
+	},
+	{
+		"RowName": "Legendary_Mace_05",
+		"ID_XX": 51550
+	},
+	{
+		"RowName": "Legendary_2hHammer_01",
+		"ID_XX": 51551
+	},
+	{
+		"RowName": "Legendary_2hHammer_02",
+		"ID_XX": 51552
+	},
+	{
+		"RowName": "Legendary_2hHammer_03",
+		"ID_XX": 51553
+	},
+	{
+		"RowName": "Legendary_2hHammer_04",
+		"ID_XX": 51554
+	},
+	{
+		"RowName": "Legendary_2hHammer_05",
+		"ID_XX": 51555
+	},
+	{
+		"RowName": "Legendary_Bow_01",
+		"ID_XX": 51556
+	},
+	{
+		"RowName": "Legendary_Bow_02",
+		"ID_XX": 51557
+	},
+	{
+		"RowName": "Legendary_Bow_03",
+		"ID_XX": 51558
+	},
+	{
+		"RowName": "Legendary_Bow_04",
+		"ID_XX": 51559
+	},
+	{
+		"RowName": "Legendary_Bow_05",
+		"ID_XX": 51560
+	},
+	{
+		"RowName": "Legendary_Crossbow_01",
+		"ID_XX": 51561
+	},
+	{
+		"RowName": "Legendary_Crossbow_02",
+		"ID_XX": 51562
+	},
+	{
+		"RowName": "Legendary_Crossbow_03",
+		"ID_XX": 51563
+	},
+	{
+		"RowName": "Legendary_Crossbow_04",
+		"ID_XX": 51564
+	},
+	{
+		"RowName": "Legendary_Crossbow_05",
+		"ID_XX": 51565
+	},
+	{
+		"RowName": "Legendary_Shield_01",
+		"ID_XX": 51566
+	},
+	{
+		"RowName": "Legendary_Shield_02",
+		"ID_XX": 51567
+	},
+	{
+		"RowName": "Legendary_Shield_03",
+		"ID_XX": 51568
+	},
+	{
+		"RowName": "Legendary_Shield_04",
+		"ID_XX": 51569
+	},
+	{
+		"RowName": "Legendary_Shield_05",
+		"ID_XX": 51570
+	},
+	{
+		"RowName": "Legendary_Pike_01",
+		"ID_XX": 51571
+	},
+	{
+		"RowName": "Legendary_Pike_02",
+		"ID_XX": 51572
+	},
+	{
+		"RowName": "Legendary_Pike_03",
+		"ID_XX": 51573
+	},
+	{
+		"RowName": "Legendary_Pike_04",
+		"ID_XX": 51574
+	},
+	{
+		"RowName": "Legendary_Pike_05",
+		"ID_XX": 51575
+	},
+	{
+		"RowName": "Legendary_WarAxe_01",
+		"ID_XX": 51576
+	},
+	{
+		"RowName": "Legendary_WarAxe_02",
+		"ID_XX": 51577
+	},
+	{
+		"RowName": "Legendary_WarAxe_03",
+		"ID_XX": 51578
+	},
+	{
+		"RowName": "Legendary_WarAxe_04",
+		"ID_XX": 51579
+	},
+	{
+		"RowName": "Legendary_WarAxe_05",
+		"ID_XX": 51580
+	},
+	{
+		"RowName": "Obsidian_Pick",
+		"ID_XX": 51581
+	},
+	{
+		"RowName": "Obsidian_Hatchet",
+		"ID_XX": 51582
+	},
+	{
+		"RowName": "Obsidian_Sickle",
+		"ID_XX": 51583
+	},
+	{
+		"RowName": "serpentmen_javelin",
+		"ID_XX": 51584
+	},
+	{
+		"RowName": "obsidian_javelin",
+		"ID_XX": 51585
+	},
+	{
+		"RowName": "StarMetalBow",
+		"ID_XX": 51586
+	},
+	{
+		"RowName": "Exceptional_StarMetalBow",
+		"ID_XX": 51587
+	},
+	{
+		"RowName": "Flawless_StarMetalBow",
+		"ID_XX": 51588
+	},
+	{
+		"RowName": "HardenedSteelBow",
+		"ID_XX": 51589
+	},
+	{
+		"RowName": "Exceptional_HardenedSteelBow",
+		"ID_XX": 51590
+	},
+	{
+		"RowName": "Flawless_HardenedSteelBow",
+		"ID_XX": 51591
+	},
+	{
+		"RowName": "Lemurian_Pike",
+		"ID_XX": 51592
+	},
+	{
+		"RowName": "Lemurian_Sword",
+		"ID_XX": 51593
+	},
+	{
+		"RowName": "Stone_Javelin",
+		"ID_XX": 51594
+	},
+	{
+		"RowName": "HardenedSteel_Javelin",
+		"ID_XX": 51595
+	},
+	{
+		"RowName": "Exceptional_HardenedSteel_Javelin",
+		"ID_XX": 51596
+	},
+	{
+		"RowName": "Flawless_HardenedSteel_Javelin",
+		"ID_XX": 51597
+	},
+	{
+		"RowName": "BlackIce_Javelin",
+		"ID_XX": 51598
+	},
+	{
+		"RowName": "Acheronian_TwoHanded_Sword",
+		"ID_XX": 51599
+	},
+	{
 		"RowName": "Wooden_Shield",
 		"ID_XX": 51600
 	},
@@ -2742,6 +6718,14 @@
 	{
 		"RowName": "Reinforced_Wooden_Shield",
 		"ID_XX": 51602
+	},
+	{
+		"RowName": "Legendary_Mace_06",
+		"ID_XX": 51604
+	},
+	{
+		"RowName": "Legendary_Katana_01",
+		"ID_XX": 51605
 	},
 	{
 		"RowName": "Ornate_Exile_Shield",
@@ -2812,10 +6796,6 @@
 		"ID_XX": 51721
 	},
 	{
-		"RowName": "Named_Pike_1",
-		"ID_XX": 51722
-	},
-	{
 		"RowName": "Cimmerian_Spear",
 		"ID_XX": 51723
 	},
@@ -2842,6 +6822,10 @@
 	{
 		"RowName": "Exile_Stone_Sword",
 		"ID_XX": 51801
+	},
+	{
+		"RowName": "Stygian_Khopesh_Bossversion",
+		"ID_XX": 51810
 	},
 	{
 		"RowName": "Exile_Broadsword",
@@ -2876,6 +6860,10 @@
 		"ID_XX": 51818
 	},
 	{
+		"RowName": "Flawless_Stygian_Khopesh",
+		"ID_XX": 51819
+	},
+	{
 		"RowName": "Falcata",
 		"ID_XX": 51821
 	},
@@ -2886,6 +6874,10 @@
 	{
 		"RowName": "Exceptional_Cutlass",
 		"ID_XX": 51823
+	},
+	{
+		"RowName": "Flawless_Cutlass",
+		"ID_XX": 51824
 	},
 	{
 		"RowName": "Tool_Thrall_Saw",
@@ -2916,14 +6908,6 @@
 		"ID_XX": 51833
 	},
 	{
-		"RowName": "Named_Sword_1",
-		"ID_XX": 51834
-	},
-	{
-		"RowName": "Named_Sword_2",
-		"ID_XX": 51835
-	},
-	{
 		"RowName": "Exceptional_Longsword",
 		"ID_XX": 51836
 	},
@@ -2942,6 +6926,18 @@
 	{
 		"RowName": "Hardened_Steel_sword_Flawless",
 		"ID_XX": 51843
+	},
+	{
+		"RowName": "Hardened_Steel_WarAxe",
+		"ID_XX": 51844
+	},
+	{
+		"RowName": "Hardened_Steel_WarAxe_Exceptional",
+		"ID_XX": 51845
+	},
+	{
+		"RowName": "Hardened_Steel_WarAxe_Flawless",
+		"ID_XX": 51846
 	},
 	{
 		"RowName": "Darfari_Cudgel",
@@ -3012,6 +7008,30 @@
 		"ID_XX": 51940
 	},
 	{
+		"RowName": "Ancient_TwoHanded_Sword",
+		"ID_XX": 51941
+	},
+	{
+		"RowName": "Ancient_Dagger",
+		"ID_XX": 51942
+	},
+	{
+		"RowName": "Black_Ice_throwing_axe",
+		"ID_XX": 51943
+	},
+	{
+		"RowName": "Obsidian_throwing_axe",
+		"ID_XX": 51944
+	},
+	{
+		"RowName": "Serpentmen_throwing_axe",
+		"ID_XX": 51945
+	},
+	{
+		"RowName": "Stone_throwing_axe",
+		"ID_XX": 51946
+	},
+	{
 		"RowName": "Stone_Dagger",
 		"ID_XX": 51951
 	},
@@ -3022,10 +7042,6 @@
 	{
 		"RowName": "Steel_Dagger",
 		"ID_XX": 51953
-	},
-	{
-		"RowName": "Named_Dagger_1",
-		"ID_XX": 51954
 	},
 	{
 		"RowName": "Exceptional_Iron_Dagger",
@@ -3088,6 +7104,10 @@
 		"ID_XX": 51969
 	},
 	{
+		"RowName": "Acheronian_sickle",
+		"ID_XX": 51970
+	},
+	{
 		"RowName": "Orb_Fire",
 		"ID_XX": 51971
 	},
@@ -3116,6 +7136,86 @@
 		"ID_XX": 51977
 	},
 	{
+		"RowName": "Acheronian_pick",
+		"ID_XX": 51978
+	},
+	{
+		"RowName": "Acheronian_sword",
+		"ID_XX": 51979
+	},
+	{
+		"RowName": "Acheronian_sword_Exceptional",
+		"ID_XX": 51980
+	},
+	{
+		"RowName": "Acheronian_sword_Flawless",
+		"ID_XX": 51981
+	},
+	{
+		"RowName": "Acheronian_spear",
+		"ID_XX": 51982
+	},
+	{
+		"RowName": "Acheronian_spear_Exceptional",
+		"ID_XX": 51983
+	},
+	{
+		"RowName": "Acheronian_spear_Flawless",
+		"ID_XX": 51984
+	},
+	{
+		"RowName": "Acheronian_waraxe",
+		"ID_XX": 51985
+	},
+	{
+		"RowName": "Acheronian_waraxe_Exceptional",
+		"ID_XX": 51986
+	},
+	{
+		"RowName": "Acheronian_waraxe_Flawless",
+		"ID_XX": 51987
+	},
+	{
+		"RowName": "Acheronian_highlevel_shield",
+		"ID_XX": 51988
+	},
+	{
+		"RowName": "Acheronian_highlevel_shield_Exceptional",
+		"ID_XX": 51989
+	},
+	{
+		"RowName": "Acheronian_highlevel_shield_Flawless",
+		"ID_XX": 51990
+	},
+	{
+		"RowName": "Dragonbone_Shield",
+		"ID_XX": 51991
+	},
+	{
+		"RowName": "JhebbalSagPriest_Head",
+		"ID_XX": 51995
+	},
+	{
+		"RowName": "DerketoPriest_Head",
+		"ID_XX": 51996
+	},
+	{
+		"RowName": "DerketoPriest_Chest",
+		"ID_XX": 51997
+	},
+	{
+		"RowName": "DerketoPriest_Gloves",
+		"ID_XX": 51998
+	},
+	{
+		"RowName": "DerketoPriest_Tasset",
+		"ID_XX": 51999
+	},
+	{
+		"RowName": "DerketoPriest_Boots",
+		"ID_XX": 52000
+	},
+	{
 		"RowName": "Light_Exile_Cap",
 		"ID_XX": 52001
 	},
@@ -3134,6 +7234,26 @@
 	{
 		"RowName": "Light_Exile_Boots",
 		"ID_XX": 52005
+	},
+	{
+		"RowName": "cultist_robe",
+		"ID_XX": 52006
+	},
+	{
+		"RowName": "cultist_hood",
+		"ID_XX": 52007
+	},
+	{
+		"RowName": "cultist_handwraps",
+		"ID_XX": 52008
+	},
+	{
+		"RowName": "cultist_sandals",
+		"ID_XX": 52009
+	},
+	{
+		"RowName": "cultist_skirt",
+		"ID_XX": 52010
 	},
 	{
 		"RowName": "Medium_Exile_Cap",
@@ -3276,6 +7396,26 @@
 		"ID_XX": 52045
 	},
 	{
+		"RowName": "Flawless_Darfari_Observer_Mask",
+		"ID_XX": 52046
+	},
+	{
+		"RowName": "Flawless_Darfari_Chestpiece",
+		"ID_XX": 52047
+	},
+	{
+		"RowName": "Flawless_Darfari_Gauntlets",
+		"ID_XX": 52048
+	},
+	{
+		"RowName": "Flawless_Darfari_Leggings",
+		"ID_XX": 52049
+	},
+	{
+		"RowName": "Flawless_Darfari_Boots",
+		"ID_XX": 52050
+	},
+	{
 		"RowName": "Heavy_Faction_Helmet",
 		"ID_XX": 52051
 	},
@@ -3376,6 +7516,10 @@
 		"ID_XX": 52076
 	},
 	{
+		"RowName": "BearerGear",
+		"ID_XX": 52080
+	},
+	{
 		"RowName": "Sandstorm_Breather",
 		"ID_XX": 52081
 	},
@@ -3386,6 +7530,30 @@
 	{
 		"RowName": "Lowerbody_Cloth",
 		"ID_XX": 52094
+	},
+	{
+		"RowName": "Exceptional_Darfari_Observer_Mask",
+		"ID_XX": 52095
+	},
+	{
+		"RowName": "Exceptional_Darfari_Chestpiece",
+		"ID_XX": 52096
+	},
+	{
+		"RowName": "Exceptional_Darfari_Gauntlets",
+		"ID_XX": 52097
+	},
+	{
+		"RowName": "Exceptional_Darfari_Leggings",
+		"ID_XX": 52098
+	},
+	{
+		"RowName": "Exceptional_Darfari_Boots",
+		"ID_XX": 52099
+	},
+	{
+		"RowName": "Witch_queen_mask",
+		"ID_XX": 52100
 	},
 	{
 		"RowName": "Zamorian_Dancer_Headdress",
@@ -3468,12 +7636,24 @@
 		"ID_XX": 52225
 	},
 	{
+		"RowName": "Shemite_Gloves",
+		"ID_XX": 52226
+	},
+	{
 		"RowName": "Climbing_Gloves",
 		"ID_XX": 52293
 	},
 	{
 		"RowName": "Climbing_Boots",
 		"ID_XX": 52295
+	},
+	{
+		"RowName": "Climbing_Gloves_T2",
+		"ID_XX": 52296
+	},
+	{
+		"RowName": "Climbing_Boots_T2",
+		"ID_XX": 52297
 	},
 	{
 		"RowName": "Exceptional_Light_Exile_Cap",
@@ -3496,6 +7676,66 @@
 		"ID_XX": 52305
 	},
 	{
+		"RowName": "Stygian_Heavy_Cap",
+		"ID_XX": 52306
+	},
+	{
+		"RowName": "Stygian_Heavy_Armor",
+		"ID_XX": 52307
+	},
+	{
+		"RowName": "Stygian_Heavy_Gauntlets",
+		"ID_XX": 52308
+	},
+	{
+		"RowName": "Stygian_Heavy_Tasset",
+		"ID_XX": 52309
+	},
+	{
+		"RowName": "Stygian_Heavy_Boots",
+		"ID_XX": 52310
+	},
+	{
+		"RowName": "Exceptional_Stygian_Heavy_Cap",
+		"ID_XX": 52311
+	},
+	{
+		"RowName": "Exceptional_Stygian_Heavy_Armor",
+		"ID_XX": 52312
+	},
+	{
+		"RowName": "Exceptional_Stygian_Heavy_Gauntlets",
+		"ID_XX": 52313
+	},
+	{
+		"RowName": "Exceptional_Stygian_Heavy_Tasset",
+		"ID_XX": 52314
+	},
+	{
+		"RowName": "Exceptional_Stygian_Heavy_Boots",
+		"ID_XX": 52315
+	},
+	{
+		"RowName": "Flawless_Stygian_Heavy_Cap",
+		"ID_XX": 52316
+	},
+	{
+		"RowName": "Flawless_Stygian_Heavy_Armor",
+		"ID_XX": 52317
+	},
+	{
+		"RowName": "Flawless_Stygian_Heavy_Gauntlets",
+		"ID_XX": 52318
+	},
+	{
+		"RowName": "Flawless_Stygian_Heavy_Tasset",
+		"ID_XX": 52319
+	},
+	{
+		"RowName": "Flawless_Stygian_Heavy_Boots",
+		"ID_XX": 52320
+	},
+	{
 		"RowName": "Flawless_Light_Exile_Cap",
 		"ID_XX": 52401
 	},
@@ -3516,6 +7756,350 @@
 		"ID_XX": 52405
 	},
 	{
+		"RowName": "Hyrkanian_Cap",
+		"ID_XX": 52406
+	},
+	{
+		"RowName": "Hyrkanian_Armor",
+		"ID_XX": 52407
+	},
+	{
+		"RowName": "Hyrkanian_Gauntlets",
+		"ID_XX": 52408
+	},
+	{
+		"RowName": "Hyrkanian_Tasset",
+		"ID_XX": 52409
+	},
+	{
+		"RowName": "Hyrkanian_Boots",
+		"ID_XX": 52410
+	},
+	{
+		"RowName": "Exceptional_Hyrkanian_Cap",
+		"ID_XX": 52411
+	},
+	{
+		"RowName": "Exceptional_Hyrkanian_Armor",
+		"ID_XX": 52412
+	},
+	{
+		"RowName": "Exceptional_Hyrkanian_Gauntlets",
+		"ID_XX": 52413
+	},
+	{
+		"RowName": "Exceptional_Hyrkanian_Tasset",
+		"ID_XX": 52414
+	},
+	{
+		"RowName": "Exceptional_Hyrkanian_Boots",
+		"ID_XX": 52415
+	},
+	{
+		"RowName": "Flawless_Hyrkanian_Cap",
+		"ID_XX": 52416
+	},
+	{
+		"RowName": "Flawless_Hyrkanian_Armor",
+		"ID_XX": 52417
+	},
+	{
+		"RowName": "Flawless_Hyrkanian_Gauntlets",
+		"ID_XX": 52418
+	},
+	{
+		"RowName": "Flawless_Hyrkanian_Tasset",
+		"ID_XX": 52419
+	},
+	{
+		"RowName": "Flawless_Hyrkanian_Boots",
+		"ID_XX": 52420
+	},
+	{
+		"RowName": "Stygian_Medium_Helmet",
+		"ID_XX": 52421
+	},
+	{
+		"RowName": "Stygian_Medium_Armor",
+		"ID_XX": 52422
+	},
+	{
+		"RowName": "Stygian_Medium_Gauntlets",
+		"ID_XX": 52423
+	},
+	{
+		"RowName": "Stygian_Medium_Tasset",
+		"ID_XX": 52424
+	},
+	{
+		"RowName": "Stygian_Medium_Boots",
+		"ID_XX": 52425
+	},
+	{
+		"RowName": "Exceptional_Stygian_Medium_Helmet",
+		"ID_XX": 52426
+	},
+	{
+		"RowName": "Exceptional_Stygian_Medium_Armor",
+		"ID_XX": 52427
+	},
+	{
+		"RowName": "Exceptional_Stygian_Medium_Gauntlets",
+		"ID_XX": 52428
+	},
+	{
+		"RowName": "Exceptional_Stygian_Medium_Tasset",
+		"ID_XX": 52429
+	},
+	{
+		"RowName": "Exceptional_Stygian_Medium_Boots",
+		"ID_XX": 52430
+	},
+	{
+		"RowName": "Flawless_Stygian_Medium_Helmet",
+		"ID_XX": 52431
+	},
+	{
+		"RowName": "Flawless_Stygian_Medium_Armor",
+		"ID_XX": 52432
+	},
+	{
+		"RowName": "Flawless_Stygian_Medium_Gauntlets",
+		"ID_XX": 52433
+	},
+	{
+		"RowName": "Flawless_Stygian_Medium_Tasset",
+		"ID_XX": 52434
+	},
+	{
+		"RowName": "Flawless_Stygian_Medium_Boots",
+		"ID_XX": 52435
+	},
+	{
+		"RowName": "Kambujan_Shaman_Helmet",
+		"ID_XX": 52436
+	},
+	{
+		"RowName": "Kambujan_Shaman_Armor",
+		"ID_XX": 52437
+	},
+	{
+		"RowName": "Kambujan_Shaman_Gauntlets",
+		"ID_XX": 52438
+	},
+	{
+		"RowName": "Kambujan_Shaman_Tasset",
+		"ID_XX": 52439
+	},
+	{
+		"RowName": "Kambujan_Shaman_Boots",
+		"ID_XX": 52440
+	},
+	{
+		"RowName": "Exceptional_Kambujan_Shaman_Helmet",
+		"ID_XX": 52441
+	},
+	{
+		"RowName": "Exceptional_Kambujan_Shaman_Armor",
+		"ID_XX": 52442
+	},
+	{
+		"RowName": "Exceptional_Kambujan_Shaman_Gauntlets",
+		"ID_XX": 52443
+	},
+	{
+		"RowName": "Exceptional_Kambujan_Shaman_Tasset",
+		"ID_XX": 52444
+	},
+	{
+		"RowName": "Exceptional_Kambujan_Shaman_Boots",
+		"ID_XX": 52445
+	},
+	{
+		"RowName": "Flawless_Kambujan_Shaman_Helmet",
+		"ID_XX": 52446
+	},
+	{
+		"RowName": "Flawless_Kambujan_Shaman_Armor",
+		"ID_XX": 52447
+	},
+	{
+		"RowName": "Flawless_Kambujan_Shaman_Gauntlets",
+		"ID_XX": 52448
+	},
+	{
+		"RowName": "Flawless_Kambujan_Shaman_Tasset",
+		"ID_XX": 52449
+	},
+	{
+		"RowName": "Flawless_Kambujan_Shaman_Boots",
+		"ID_XX": 52450
+	},
+	{
+		"RowName": "Lemurian_Warrior_Helmet",
+		"ID_XX": 52451
+	},
+	{
+		"RowName": "Lemurian_Warrior_Armor",
+		"ID_XX": 52452
+	},
+	{
+		"RowName": "Lemurian_Warrior_Gauntlets",
+		"ID_XX": 52453
+	},
+	{
+		"RowName": "Lemurian_Warrior_Tasset",
+		"ID_XX": 52454
+	},
+	{
+		"RowName": "Lemurian_Warrior_Boots",
+		"ID_XX": 52455
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Warrior_Helmet",
+		"ID_XX": 52456
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Warrior_Armor",
+		"ID_XX": 52457
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Warrior_Gauntlets",
+		"ID_XX": 52458
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Warrior_Tasset",
+		"ID_XX": 52459
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Warrior_Boots",
+		"ID_XX": 52460
+	},
+	{
+		"RowName": "Flawless_Lemurian_Warrior_Helmet",
+		"ID_XX": 52461
+	},
+	{
+		"RowName": "Flawless_Lemurian_Warrior_Armor",
+		"ID_XX": 52462
+	},
+	{
+		"RowName": "Flawless_Lemurian_Warrior_Gauntlets",
+		"ID_XX": 52463
+	},
+	{
+		"RowName": "Flawless_Lemurian_Warrior_Tasset",
+		"ID_XX": 52464
+	},
+	{
+		"RowName": "Flawless_Lemurian_Warrior_Boots",
+		"ID_XX": 52465
+	},
+	{
+		"RowName": "Lemurian_Queen_Helmet",
+		"ID_XX": 52466
+	},
+	{
+		"RowName": "Lemurian_Queen_Armor",
+		"ID_XX": 52467
+	},
+	{
+		"RowName": "Lemurian_Queen_Gauntlets",
+		"ID_XX": 52468
+	},
+	{
+		"RowName": "Lemurian_Queen_Tasset",
+		"ID_XX": 52469
+	},
+	{
+		"RowName": "Lemurian_Queen_Boots",
+		"ID_XX": 52470
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Queen_Helmet",
+		"ID_XX": 52471
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Queen_Armor",
+		"ID_XX": 52472
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Queen_Gauntlets",
+		"ID_XX": 52473
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Queen_Tasset",
+		"ID_XX": 52474
+	},
+	{
+		"RowName": "Exceptional_Lemurian_Queen_Boots",
+		"ID_XX": 52475
+	},
+	{
+		"RowName": "Flawless_Lemurian_Queen_Helmet",
+		"ID_XX": 52476
+	},
+	{
+		"RowName": "Flawless_Lemurian_Queen_Armor",
+		"ID_XX": 52477
+	},
+	{
+		"RowName": "Flawless_Lemurian_Queen_Gauntlets",
+		"ID_XX": 52478
+	},
+	{
+		"RowName": "Flawless_Lemurian_Queen_Tasset",
+		"ID_XX": 52479
+	},
+	{
+		"RowName": "Flawless_Lemurian_Queen_Boots",
+		"ID_XX": 52480
+	},
+	{
+		"RowName": "snakerags_robe",
+		"ID_XX": 52481
+	},
+	{
+		"RowName": "snakerags_robe_cut",
+		"ID_XX": 52482
+	},
+	{
+		"RowName": "snakerags_robe_nohood",
+		"ID_XX": 52483
+	},
+	{
+		"RowName": "snakerags_robe_king",
+		"ID_XX": 52484
+	},
+	{
+		"RowName": "black_hand_pirate_hook_right",
+		"ID_XX": 52494
+	},
+	{
+		"RowName": "black_hand_pirate_pegleg_right",
+		"ID_XX": 52495
+	},
+	{
+		"RowName": "black_hand_pirate_earrings",
+		"ID_XX": 52496
+	},
+	{
+		"RowName": "black_hand_pirate_hook",
+		"ID_XX": 52497
+	},
+	{
+		"RowName": "black_hand_pirate_pegleg",
+		"ID_XX": 52498
+	},
+	{
+		"RowName": "black_hand_pirate_boots",
+		"ID_XX": 52499
+	},
+	{
+		"RowName": "black_hand_pirate_eyepatch",
+		"ID_XX": 52500
+	},
+	{
 		"RowName": "Setite_Mask",
 		"ID_XX": 52501
 	},
@@ -3530,6 +8114,10 @@
 	{
 		"RowName": "Setite_Sandals",
 		"ID_XX": 52505
+	},
+	{
+		"RowName": "NunuMask",
+		"ID_XX": 52510
 	},
 	{
 		"RowName": "Yogite_Mask",
@@ -3552,6 +8140,26 @@
 		"ID_XX": 52515
 	},
 	{
+		"RowName": "Flawless_Desert_Dogs_Helmet",
+		"ID_XX": 52516
+	},
+	{
+		"RowName": "Flawless_Desert_Dogs_Chestpiece",
+		"ID_XX": 52517
+	},
+	{
+		"RowName": "Flawless_Desert_Dogs_Gauntlets",
+		"ID_XX": 52518
+	},
+	{
+		"RowName": "Flawless_Desert_Dogs_Tasset",
+		"ID_XX": 52519
+	},
+	{
+		"RowName": "Flawless_Desert_Dogs_Boots",
+		"ID_XX": 52520
+	},
+	{
 		"RowName": "Mitrean_Robe",
 		"ID_XX": 52522
 	},
@@ -3568,12 +8176,52 @@
 		"ID_XX": 52525
 	},
 	{
+		"RowName": "Flawless_Relic_Hunter_Helmet",
+		"ID_XX": 52526
+	},
+	{
+		"RowName": "Flawless_Relic_Hunter_Chestpiece",
+		"ID_XX": 52527
+	},
+	{
+		"RowName": "Flawless_Relic_Hunter_Gauntlets",
+		"ID_XX": 52528
+	},
+	{
+		"RowName": "Flawless_Relic_Hunter_Trousers",
+		"ID_XX": 52529
+	},
+	{
+		"RowName": "Flawless_Relic_Hunter_Boots",
+		"ID_XX": 52530
+	},
+	{
 		"RowName": "Black_Hand_Chestpiece",
 		"ID_XX": 52532
 	},
 	{
 		"RowName": "Black_Hand_Trousers",
 		"ID_XX": 52534
+	},
+	{
+		"RowName": "Exceptional_Relic_Hunter_Helmet",
+		"ID_XX": 52535
+	},
+	{
+		"RowName": "Exceptional_Relic_Hunter_Chestpiece",
+		"ID_XX": 52536
+	},
+	{
+		"RowName": "Exceptional_Relic_Hunter_Gauntlets",
+		"ID_XX": 52537
+	},
+	{
+		"RowName": "Exceptional_Relic_Hunter_Trousers",
+		"ID_XX": 52538
+	},
+	{
+		"RowName": "Exceptional_Relic_Hunter_Boots",
+		"ID_XX": 52539
 	},
 	{
 		"RowName": "Relic_Hunter_Helmet",
@@ -3594,6 +8242,26 @@
 	{
 		"RowName": "Relic_Hunter_Boots",
 		"ID_XX": 52545
+	},
+	{
+		"RowName": "Exceptional_Desert_Dogs_Helmet",
+		"ID_XX": 52546
+	},
+	{
+		"RowName": "Exceptional_Desert_Dogs_Chestpiece",
+		"ID_XX": 52547
+	},
+	{
+		"RowName": "Exceptional_Desert_Dogs_Gauntlets",
+		"ID_XX": 52548
+	},
+	{
+		"RowName": "Exceptional_Desert_Dogs_Tasset",
+		"ID_XX": 52549
+	},
+	{
+		"RowName": "Exceptional_Desert_Dogs_Boots",
+		"ID_XX": 52550
 	},
 	{
 		"RowName": "Desert_Dogs_Helmet",
@@ -3824,6 +8492,10 @@
 		"ID_XX": 52607
 	},
 	{
+		"RowName": "Heavy_Helmet_Variation3",
+		"ID_XX": 52608
+	},
+	{
 		"RowName": "Ymir_Helmet",
 		"ID_XX": 52610
 	},
@@ -3904,6 +8576,126 @@
 		"ID_XX": 52629
 	},
 	{
+		"RowName": "Aquilonian_Helmet",
+		"ID_XX": 52630
+	},
+	{
+		"RowName": "Aquilonian_Chestpiece",
+		"ID_XX": 52631
+	},
+	{
+		"RowName": "Aquilonian_Gauntlets",
+		"ID_XX": 52632
+	},
+	{
+		"RowName": "Aquilonian_Tasset",
+		"ID_XX": 52633
+	},
+	{
+		"RowName": "Aquilonian_Boots",
+		"ID_XX": 52634
+	},
+	{
+		"RowName": "Aquilonian_Helmet_Exceptional",
+		"ID_XX": 52635
+	},
+	{
+		"RowName": "Aquilonian_Chestpiece_Exceptional",
+		"ID_XX": 52636
+	},
+	{
+		"RowName": "Aquilonian_Gauntlets_Exceptional",
+		"ID_XX": 52637
+	},
+	{
+		"RowName": "Aquilonian_Tasset_Exceptional",
+		"ID_XX": 52638
+	},
+	{
+		"RowName": "Aquilonian_Boots_Exceptional",
+		"ID_XX": 52639
+	},
+	{
+		"RowName": "Aquilonian_Helmet_Flawless",
+		"ID_XX": 52640
+	},
+	{
+		"RowName": "Aquilonian_Chestpiece_Flawless",
+		"ID_XX": 52641
+	},
+	{
+		"RowName": "Aquilonian_Gauntlets_Flawless",
+		"ID_XX": 52642
+	},
+	{
+		"RowName": "Aquilonian_Tasset_Flawless",
+		"ID_XX": 52643
+	},
+	{
+		"RowName": "Aquilonian_Boots_Flawless",
+		"ID_XX": 52644
+	},
+	{
+		"RowName": "Endgame_Medium_Helmet_Padding",
+		"ID_XX": 52896
+	},
+	{
+		"RowName": "Endgame_Medium_Chest_Padding",
+		"ID_XX": 52897
+	},
+	{
+		"RowName": "Endgame_Medium_Gloves_Padding",
+		"ID_XX": 52898
+	},
+	{
+		"RowName": "Endgame_Medium_Legs_Padding",
+		"ID_XX": 52899
+	},
+	{
+		"RowName": "Endgame_Medium_Boots_Padding",
+		"ID_XX": 52900
+	},
+	{
+		"RowName": "Endgame_Heavy_Helmet_Padding",
+		"ID_XX": 52901
+	},
+	{
+		"RowName": "Endgame_Heavy_Chest_Padding",
+		"ID_XX": 52902
+	},
+	{
+		"RowName": "Endgame_Heavy_Gloves_Padding",
+		"ID_XX": 52903
+	},
+	{
+		"RowName": "Endgame_Heavy_Legs_Padding",
+		"ID_XX": 52904
+	},
+	{
+		"RowName": "Endgame_Heavy_Boots_Padding",
+		"ID_XX": 52905
+	},
+	{
+		"RowName": "Endgame_Light_Helmet_Padding",
+		"ID_XX": 52906
+	},
+	{
+		"RowName": "Endgame_Light_Chest_Padding",
+		"ID_XX": 52907
+	},
+	{
+		"RowName": "Endgame_Light_Gloves_Padding",
+		"ID_XX": 52908
+	},
+	{
+		"RowName": "Endgame_Light_Legs_Padding",
+		"ID_XX": 52909
+	},
+	{
+		"RowName": "Endgame_Light_Boots_Padding",
+		"ID_XX": 52910
+	},
+	{
 		"RowName": "Medium_Helmet_Padding",
 		"ID_XX": 52911
 	},
@@ -3964,6 +8756,226 @@
 		"ID_XX": 52934
 	},
 	{
+		"RowName": "Zamorian_Helmet",
+		"ID_XX": 52935
+	},
+	{
+		"RowName": "Zamorian_Chestpiece",
+		"ID_XX": 52936
+	},
+	{
+		"RowName": "Zamorian_Gauntlets",
+		"ID_XX": 52937
+	},
+	{
+		"RowName": "Zamorian_Leggings",
+		"ID_XX": 52938
+	},
+	{
+		"RowName": "Zamorian_Boots",
+		"ID_XX": 52939
+	},
+	{
+		"RowName": "Exceptional_Zamorian_Helmet",
+		"ID_XX": 52940
+	},
+	{
+		"RowName": "Exceptional_Zamorian_Chestpiece",
+		"ID_XX": 52941
+	},
+	{
+		"RowName": "Exceptional_Zamorian_Gauntlets",
+		"ID_XX": 52942
+	},
+	{
+		"RowName": "Exceptional_Zamorian_Leggings",
+		"ID_XX": 52943
+	},
+	{
+		"RowName": "Exceptional_Zamorian_Boots",
+		"ID_XX": 52944
+	},
+	{
+		"RowName": "Flawless_Zamorian_Helmet",
+		"ID_XX": 52945
+	},
+	{
+		"RowName": "Flawless_Zamorian_Chestpiece",
+		"ID_XX": 52946
+	},
+	{
+		"RowName": "Flawless_Zamorian_Gauntlets",
+		"ID_XX": 52947
+	},
+	{
+		"RowName": "Flawless_Zamorian_Leggings",
+		"ID_XX": 52948
+	},
+	{
+		"RowName": "Flawless_Zamorian_Boots",
+		"ID_XX": 52949
+	},
+	{
+		"RowName": "Barbarian_waistguard",
+		"ID_XX": 52950
+	},
+	{
+		"RowName": "Barbarian_bracers",
+		"ID_XX": 52951
+	},
+	{
+		"RowName": "Exceptional_Barbarian_waistguard",
+		"ID_XX": 52952
+	},
+	{
+		"RowName": "Exceptional_Barbarian_bracers",
+		"ID_XX": 52953
+	},
+	{
+		"RowName": "Flawless_Barbarian_waistguard",
+		"ID_XX": 52954
+	},
+	{
+		"RowName": "Flawless_Barbarian_bracers",
+		"ID_XX": 52955
+	},
+	{
+		"RowName": "Barbarian_loincloth",
+		"ID_XX": 52956
+	},
+	{
+		"RowName": "Barbarian_helmet",
+		"ID_XX": 52957
+	},
+	{
+		"RowName": "Barbarian_boots",
+		"ID_XX": 52958
+	},
+	{
+		"RowName": "Exceptional_Barbarian_loincloth",
+		"ID_XX": 52959
+	},
+	{
+		"RowName": "Exceptional_Barbarian_helmet",
+		"ID_XX": 52960
+	},
+	{
+		"RowName": "Exceptional_Barbarian_boots",
+		"ID_XX": 52961
+	},
+	{
+		"RowName": "Flawless_Barbarian_loincloth",
+		"ID_XX": 52962
+	},
+	{
+		"RowName": "Flawless_Barbarian_helmet",
+		"ID_XX": 52963
+	},
+	{
+		"RowName": "Flawless_Barbarian_boots",
+		"ID_XX": 52964
+	},
+	{
+		"RowName": "Exceptional_Shemite_Headdress",
+		"ID_XX": 52965
+	},
+	{
+		"RowName": "Exceptional_Shemite_Shirt",
+		"ID_XX": 52966
+	},
+	{
+		"RowName": "Exceptional_Shemite_Trousers",
+		"ID_XX": 52967
+	},
+	{
+		"RowName": "Exceptional_Shemite_Shoes",
+		"ID_XX": 52968
+	},
+	{
+		"RowName": "Exceptional_Shemite_Gloves",
+		"ID_XX": 52969
+	},
+	{
+		"RowName": "Flawless_Shemite_Headdress",
+		"ID_XX": 52970
+	},
+	{
+		"RowName": "Flawless_Shemite_Shirt",
+		"ID_XX": 52971
+	},
+	{
+		"RowName": "Flawless_Shemite_Trousers",
+		"ID_XX": 52972
+	},
+	{
+		"RowName": "Flawless_Shemite_Shoes",
+		"ID_XX": 52973
+	},
+	{
+		"RowName": "Flawless_Shemite_Gloves",
+		"ID_XX": 52974
+	},
+	{
+		"RowName": "Vanir_Light_Helmet",
+		"ID_XX": 52975
+	},
+	{
+		"RowName": "Vanir_Light_Chestpiece",
+		"ID_XX": 52976
+	},
+	{
+		"RowName": "Vanir_Light_Gauntlets",
+		"ID_XX": 52977
+	},
+	{
+		"RowName": "Vanir_Light_Leggings",
+		"ID_XX": 52978
+	},
+	{
+		"RowName": "Vanir_Light_Boots",
+		"ID_XX": 52979
+	},
+	{
+		"RowName": "Exceptional_Vanir_Light_Helmet",
+		"ID_XX": 52980
+	},
+	{
+		"RowName": "Exceptional_Vanir_Light_Chestpiece",
+		"ID_XX": 52981
+	},
+	{
+		"RowName": "Exceptional_Vanir_Light_Gauntlets",
+		"ID_XX": 52982
+	},
+	{
+		"RowName": "Exceptional_Vanir_Light_Leggings",
+		"ID_XX": 52983
+	},
+	{
+		"RowName": "Exceptional_Vanir_Light_Boots",
+		"ID_XX": 52984
+	},
+	{
+		"RowName": "Flawless_Vanir_Light_Helmet",
+		"ID_XX": 52985
+	},
+	{
+		"RowName": "Flawless_Vanir_Light_Chestpiece",
+		"ID_XX": 52986
+	},
+	{
+		"RowName": "Flawless_Vanir_Light_Gauntlets",
+		"ID_XX": 52987
+	},
+	{
+		"RowName": "Flawless_Vanir_Light_Leggings",
+		"ID_XX": 52988
+	},
+	{
+		"RowName": "Flawless_Vanir_Light_Boots",
+		"ID_XX": 52989
+	},
+	{
 		"RowName": "Aloe_Extract",
 		"ID_XX": 53001
 	},
@@ -4016,6 +9028,78 @@
 		"ID_XX": 53514
 	},
 	{
+		"RowName": "Warpaint_blackhand",
+		"ID_XX": 53520
+	},
+	{
+		"RowName": "Warpaint_cimmerian",
+		"ID_XX": 53521
+	},
+	{
+		"RowName": "Warpaint_darfari",
+		"ID_XX": 53522
+	},
+	{
+		"RowName": "Warpaint_dogsofthedesert",
+		"ID_XX": 53523
+	},
+	{
+		"RowName": "Warpaint_frostgiant",
+		"ID_XX": 53524
+	},
+	{
+		"RowName": "Warpaint_relichunters",
+		"ID_XX": 53525
+	},
+	{
+		"RowName": "Warpaint_vanir",
+		"ID_XX": 53526
+	},
+	{
+		"RowName": "Warpaint_strength",
+		"ID_XX": 53527
+	},
+	{
+		"RowName": "Warpaint_agility",
+		"ID_XX": 53528
+	},
+	{
+		"RowName": "Warpaint_vitality",
+		"ID_XX": 53529
+	},
+	{
+		"RowName": "Warpaint_accuracy",
+		"ID_XX": 53530
+	},
+	{
+		"RowName": "Warpaint_grit",
+		"ID_XX": 53531
+	},
+	{
+		"RowName": "Warpaint_encumberance",
+		"ID_XX": 53532
+	},
+	{
+		"RowName": "Warpaint_survival",
+		"ID_XX": 53533
+	},
+	{
+		"RowName": "Warpaint_remover",
+		"ID_XX": 53548
+	},
+	{
+		"RowName": "Paintbrush",
+		"ID_XX": 53549
+	},
+	{
+		"RowName": "Warpaint_lemurian",
+		"ID_XX": 53550
+	},
+	{
+		"RowName": "Warpaint_votaries",
+		"ID_XX": 53551
+	},
+	{
 		"RowName": "Stonetip_Arrows",
 		"ID_XX": 53611
 	},
@@ -4030,6 +9114,54 @@
 	{
 		"RowName": "Fire_Arrows",
 		"ID_XX": 53614
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Aloe",
+		"ID_XX": 53615
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Corruption",
+		"ID_XX": 53616
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Explosive",
+		"ID_XX": 53617
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Light",
+		"ID_XX": 53618
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Poison",
+		"ID_XX": 53619
+	},
+	{
+		"RowName": "SpecialAmmo_Arrow_Tar",
+		"ID_XX": 53620
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Aloe",
+		"ID_XX": 53622
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Corruption",
+		"ID_XX": 53623
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Explosive",
+		"ID_XX": 53624
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Light",
+		"ID_XX": 53625
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Poison",
+		"ID_XX": 53626
+	},
+	{
+		"RowName": "SpecialAmmo_Bolt_Tar",
+		"ID_XX": 53627
 	},
 	{
 		"RowName": "Snake_Arrows",
@@ -4116,6 +9248,118 @@
 		"ID_XX": 53711
 	},
 	{
+		"RowName": "Bodypart_Arm",
+		"ID_XX": 53712
+	},
+	{
+		"RowName": "Bodypart_Leg",
+		"ID_XX": 53713
+	},
+	{
+		"RowName": "ancient_javelin_projectile",
+		"ID_XX": 53714
+	},
+	{
+		"RowName": "knockout_javelin_projectile",
+		"ID_XX": 53715
+	},
+	{
+		"RowName": "impr_iron_javelin_projectile",
+		"ID_XX": 53716
+	},
+	{
+		"RowName": "steel_javelin_projectile",
+		"ID_XX": 53717
+	},
+	{
+		"RowName": "serpentmen_javelin_projectile",
+		"ID_XX": 53718
+	},
+	{
+		"RowName": "obsidian_javelin_projectile",
+		"ID_XX": 53719
+	},
+	{
+		"RowName": "Steel_Throwing_Axe_Proj",
+		"ID_XX": 53720
+	},
+	{
+		"RowName": "Ancient_Throwing_Axe_Proj",
+		"ID_XX": 53721
+	},
+	{
+		"RowName": "Hardened_Steel_Throwing_Axe_Proj",
+		"ID_XX": 53722
+	},
+	{
+		"RowName": "Starmetal_Throwing_Axe_Proj",
+		"ID_XX": 53723
+	},
+	{
+		"RowName": "BlackIce_Throwing_Axe_Proj",
+		"ID_XX": 53724
+	},
+	{
+		"RowName": "Obsidian_Throwing_Axe_Proj",
+		"ID_XX": 53725
+	},
+	{
+		"RowName": "Serpentmen_Throwing_Axe_Proj",
+		"ID_XX": 53726
+	},
+	{
+		"RowName": "Stone_Throwing_Axe_Proj",
+		"ID_XX": 53727
+	},
+	{
+		"RowName": "stone_javelin_projectile",
+		"ID_XX": 53728
+	},
+	{
+		"RowName": "hardenedsteel_javelin_projectile",
+		"ID_XX": 53729
+	},
+	{
+		"RowName": "exceptional_hardenedsteel_javelin_projectile",
+		"ID_XX": 53730
+	},
+	{
+		"RowName": "flawless_hardenedsteel_javelin_projectile",
+		"ID_XX": 53731
+	},
+	{
+		"RowName": "blackice_javelin_projectile",
+		"ID_XX": 53732
+	},
+	{
+		"RowName": "dragonbone_javelin_projectile",
+		"ID_XX": 53733
+	},
+	{
+		"RowName": "dragonbone_Throwing_Axe_Proj",
+		"ID_XX": 53734
+	},
+	{
+		"RowName": "Dragonbone_Throwing_Axe",
+		"ID_XX": 53735
+	},
+	{
+		"RowName": "Dragonbone_Javelin",
+		"ID_XX": 53736
+	},
+	{
+		"RowName": "Undead_Dragonbone_Dagger",
+		"ID_XX": 53998
+	},
+	{
+		"RowName": "Undead_Dragonbone_2hsword",
+		"ID_XX": 53999
+	},
+	{
+		"RowName": "Undead_Dragonbone_Waraxe",
+		"ID_XX": 54000
+	},
+	{
 		"RowName": "Undead_Dragonhorn_Spear",
 		"ID_XX": 54001
 	},
@@ -4136,18 +9380,6 @@
 		"ID_XX": 54005
 	},
 	{
-		"RowName": "Undead_Dragonhorn_Helmet",
-		"ID_XX": 54006
-	},
-	{
-		"RowName": "Undead_Dragonhorn_Shield",
-		"ID_XX": 54007
-	},
-	{
-		"RowName": "Undead_Dragonhorn_Trophy",
-		"ID_XX": 54008
-	},
-	{
 		"RowName": "Summon_Set_Avatar",
 		"ID_XX": 55001
 	},
@@ -4164,12 +9396,16 @@
 		"ID_XX": 55004
 	},
 	{
-		"RowName": "Religion_Token",
-		"ID_XX": 55100
+		"RowName": "Summon_Derketo_Avatar",
+		"ID_XX": 55005
 	},
 	{
-		"RowName": "Vanir_Light_Tasset",
-		"ID_XX": 56230
+		"RowName": "Summon_JhebbalSag_Avatar",
+		"ID_XX": 55006
+	},
+	{
+		"RowName": "Religion_Token",
+		"ID_XX": 55100
 	},
 	{
 		"RowName": "Imp_Idol_Eye",
@@ -4252,12 +9488,56 @@
 		"ID_XX": 80206
 	},
 	{
+		"RowName": "Table_long",
+		"ID_XX": 80207
+	},
+	{
+		"RowName": "CrateSmallBox",
+		"ID_XX": 80208
+	},
+	{
+		"RowName": "CrateSmallRectangle",
+		"ID_XX": 80209
+	},
+	{
 		"RowName": "Simple_Palisade",
 		"ID_XX": 80210
 	},
 	{
 		"RowName": "Wall_Palisade",
 		"ID_XX": 80211
+	},
+	{
+		"RowName": "CrateLargeBox",
+		"ID_XX": 80212
+	},
+	{
+		"RowName": "CageSmall",
+		"ID_XX": 80213
+	},
+	{
+		"RowName": "CageLarge",
+		"ID_XX": 80214
+	},
+	{
+		"RowName": "CageRound",
+		"ID_XX": 80215
+	},
+	{
+		"RowName": "Pottery_Stygian5",
+		"ID_XX": 80216
+	},
+	{
+		"RowName": "WoodenFence",
+		"ID_XX": 80217
+	},
+	{
+		"RowName": "AcheronianBrazier",
+		"ID_XX": 80218
+	},
+	{
+		"RowName": "AcheronianBrazier2",
+		"ID_XX": 80219
 	},
 	{
 		"RowName": "Square_Stool",
@@ -4312,6 +9592,86 @@
 		"ID_XX": 80312
 	},
 	{
+		"RowName": "Papyrus_Scroll_Journalpage",
+		"ID_XX": 80313
+	},
+	{
+		"RowName": "Journal",
+		"ID_XX": 80314
+	},
+	{
+		"RowName": "Journalpage_onwall_dagger",
+		"ID_XX": 80315
+	},
+	{
+		"RowName": "Journalpage_onwall_arrow",
+		"ID_XX": 80316
+	},
+	{
+		"RowName": "PlantDecor_WhiteLotus",
+		"ID_XX": 80317
+	},
+	{
+		"RowName": "PlantDecor_YellowLotus",
+		"ID_XX": 80318
+	},
+	{
+		"RowName": "PlantDecor_PurpleLotus",
+		"ID_XX": 80319
+	},
+	{
+		"RowName": "PlantDecor_BlackLotus",
+		"ID_XX": 80320
+	},
+	{
+		"RowName": "PlantDecor_GoldenLotus",
+		"ID_XX": 80321
+	},
+	{
+		"RowName": "PlantDecor_GreyLotus",
+		"ID_XX": 80322
+	},
+	{
+		"RowName": "PlantDecor_DesertBerryBush",
+		"ID_XX": 80323
+	},
+	{
+		"RowName": "PlantDecor_HighlandsBerryBush",
+		"ID_XX": 80324
+	},
+	{
+		"RowName": "PlantDecor_Hops",
+		"ID_XX": 80325
+	},
+	{
+		"RowName": "PlantDecor_Leavening",
+		"ID_XX": 80326
+	},
+	{
+		"RowName": "PlantDecor_MagentaFlower",
+		"ID_XX": 80327
+	},
+	{
+		"RowName": "PlantDecor_MidnightBlueFlower",
+		"ID_XX": 80328
+	},
+	{
+		"RowName": "PlantDecor_OrangePhykos",
+		"ID_XX": 80329
+	},
+	{
+		"RowName": "PlantDecor_Lupine",
+		"ID_XX": 80330
+	},
+	{
+		"RowName": "PlantDecor_FalseMandrake",
+		"ID_XX": 80331
+	},
+	{
+		"RowName": "PlantDecor_Aloe",
+		"ID_XX": 80332
+	},
+	{
 		"RowName": "Standing_Torch",
 		"ID_XX": 80501
 	},
@@ -4334,6 +9694,18 @@
 	{
 		"RowName": "Hanging_Brazier",
 		"ID_XX": 80506
+	},
+	{
+		"RowName": "Brazier_Ceiling1",
+		"ID_XX": 80507
+	},
+	{
+		"RowName": "Brazier_Ceiling2",
+		"ID_XX": 80508
+	},
+	{
+		"RowName": "Cimmerian_Brazier",
+		"ID_XX": 80509
 	},
 	{
 		"RowName": "Wall_Torch",
@@ -4364,8 +9736,44 @@
 		"ID_XX": 80525
 	},
 	{
-		"RowName": "Glowstone",
+		"RowName": "Radium_Gem",
 		"ID_XX": 80531
+	},
+	{
+		"RowName": "Witchfire_Powder",
+		"ID_XX": 80532
+	},
+	{
+		"RowName": "Radium_Gem_Standing_Torch",
+		"ID_XX": 80533
+	},
+	{
+		"RowName": "Radium_Gem_Hanging_Torch",
+		"ID_XX": 80534
+	},
+	{
+		"RowName": "Radium_Gem_Wall_Torch",
+		"ID_XX": 80535
+	},
+	{
+		"RowName": "Witchfire_Standing_Torch",
+		"ID_XX": 80536
+	},
+	{
+		"RowName": "Witchfire_Hanging_Torch",
+		"ID_XX": 80537
+	},
+	{
+		"RowName": "Witchfire_Wall_Torch",
+		"ID_XX": 80538
+	},
+	{
+		"RowName": "GlowingGoop_Standing_Torch",
+		"ID_XX": 80539
+	},
+	{
+		"RowName": "GlowingGoop_Wall_Torch",
+		"ID_XX": 80540
 	},
 	{
 		"RowName": "Tapestry",
@@ -4660,6 +10068,70 @@
 		"ID_XX": 80758
 	},
 	{
+		"RowName": "Incense",
+		"ID_XX": 80759
+	},
+	{
+		"RowName": "DrinkingHorn",
+		"ID_XX": 80760
+	},
+	{
+		"RowName": "IvoryDrinkingHorn",
+		"ID_XX": 80761
+	},
+	{
+		"RowName": "IvoryWarHorn",
+		"ID_XX": 80762
+	},
+	{
+		"RowName": "Display_Rack_Cross_holder",
+		"ID_XX": 80763
+	},
+	{
+		"RowName": "Display_Rack_Sword_Piedestal",
+		"ID_XX": 80764
+	},
+	{
+		"RowName": "Survivalist_Tent",
+		"ID_XX": 80765
+	},
+	{
+		"RowName": "Black_Hand_Tent_1",
+		"ID_XX": 80766
+	},
+	{
+		"RowName": "Black_Hand_Tent_2",
+		"ID_XX": 80767
+	},
+	{
+		"RowName": "Black_Hand_Tent_3",
+		"ID_XX": 80768
+	},
+	{
+		"RowName": "Black_Hand_Tent_4",
+		"ID_XX": 80769
+	},
+	{
+		"RowName": "Tent_Red_1",
+		"ID_XX": 80770
+	},
+	{
+		"RowName": "Tent_Red_2",
+		"ID_XX": 80771
+	},
+	{
+		"RowName": "Awning_Blue",
+		"ID_XX": 80772
+	},
+	{
+		"RowName": "Awning_Red",
+		"ID_XX": 80773
+	},
+	{
+		"RowName": "Awning_Green",
+		"ID_XX": 80774
+	},
+	{
 		"RowName": "Ladder",
 		"ID_XX": 80811
 	},
@@ -4698,6 +10170,30 @@
 	{
 		"RowName": "Trap_Explosive",
 		"ID_XX": 80915
+	},
+	{
+		"RowName": "Altar_of_Derketo",
+		"ID_XX": 80945
+	},
+	{
+		"RowName": "Altar_of_Derketo_2",
+		"ID_XX": 80946
+	},
+	{
+		"RowName": "Altar_of_Derketo_3",
+		"ID_XX": 80947
+	},
+	{
+		"RowName": "Altar_of_JhebbalSag",
+		"ID_XX": 80948
+	},
+	{
+		"RowName": "Altar_of_JhebbalSag_2",
+		"ID_XX": 80949
+	},
+	{
+		"RowName": "Altar_of_JhebbalSag_3",
+		"ID_XX": 80950
 	},
 	{
 		"RowName": "Altar_of_Set",
@@ -4830,6 +10326,10 @@
 	{
 		"RowName": "Giant_King_Polearm",
 		"ID_XX": 81019
+	},
+	{
+		"RowName": "Giant_King_Dagger",
+		"ID_XX": 81020
 	},
 	{
 		"RowName": "White_Rhino_Head",
@@ -5012,6 +10512,154 @@
 		"ID_XX": 82046
 	},
 	{
+		"RowName": "Bog_Bird_Head",
+		"ID_XX": 82047
+	},
+	{
+		"RowName": "Demon_Spider_Head",
+		"ID_XX": 82048
+	},
+	{
+		"RowName": "Spit_Lizard_Head",
+		"ID_XX": 82049
+	},
+	{
+		"RowName": "Jaguar_Head",
+		"ID_XX": 82050
+	},
+	{
+		"RowName": "Tiger_Head",
+		"ID_XX": 82051
+	},
+	{
+		"RowName": "Gray_Ape_head",
+		"ID_XX": 82052
+	},
+	{
+		"RowName": "Trophy_Bog_Bird",
+		"ID_XX": 82053
+	},
+	{
+		"RowName": "Trophy_Demon_Spider",
+		"ID_XX": 82054
+	},
+	{
+		"RowName": "Trophy_Spit_Lizard",
+		"ID_XX": 82055
+	},
+	{
+		"RowName": "Trophy_Jaguar",
+		"ID_XX": 82056
+	},
+	{
+		"RowName": "Trophy_Tiger",
+		"ID_XX": 82057
+	},
+	{
+		"RowName": "Trophy_Gray_Ape",
+		"ID_XX": 82058
+	},
+	{
+		"RowName": "Fish_type_1_trophy",
+		"ID_XX": 82059
+	},
+	{
+		"RowName": "Fish_type_2_trophy",
+		"ID_XX": 82060
+	},
+	{
+		"RowName": "Fish_type_3_trophy",
+		"ID_XX": 82061
+	},
+	{
+		"RowName": "Stuffed_Boar",
+		"ID_XX": 82062
+	},
+	{
+		"RowName": "Stuffed_Crocodile",
+		"ID_XX": 82063
+	},
+	{
+		"RowName": "Stuffed_Deer",
+		"ID_XX": 82064
+	},
+	{
+		"RowName": "Stuffed_Elk",
+		"ID_XX": 82065
+	},
+	{
+		"RowName": "Stuffed_Hyena",
+		"ID_XX": 82066
+	},
+	{
+		"RowName": "Stuffed_Kappa",
+		"ID_XX": 82067
+	},
+	{
+		"RowName": "Stuffed_Mtn_Goat",
+		"ID_XX": 82068
+	},
+	{
+		"RowName": "Stuffed_Sabretooth",
+		"ID_XX": 82069
+	},
+	{
+		"RowName": "Stuffed_Wolf",
+		"ID_XX": 82070
+	},
+	{
+		"RowName": "Tusk_trophy",
+		"ID_XX": 82071
+	},
+	{
+		"RowName": "Bog_Bird_Head_Grey",
+		"ID_XX": 82072
+	},
+	{
+		"RowName": "Bog_Bird_Head_Pink",
+		"ID_XX": 82073
+	},
+	{
+		"RowName": "Trophy_Bog_Bird_Grey",
+		"ID_XX": 82075
+	},
+	{
+		"RowName": "Trophy_Bog_Bird_Pink",
+		"ID_XX": 82076
+	},
+	{
+		"RowName": "Skeleton_Skull_Metal",
+		"ID_XX": 83000
+	},
+	{
+		"RowName": "Statue_Tyros",
+		"ID_XX": 83001
+	},
+	{
+		"RowName": "Statue_Serpentmen1",
+		"ID_XX": 83002
+	},
+	{
+		"RowName": "Statue_Serpentmen2",
+		"ID_XX": 83003
+	},
+	{
+		"RowName": "Statue_Serpentmen3",
+		"ID_XX": 83004
+	},
+	{
+		"RowName": "Statue_Serpentmen4",
+		"ID_XX": 83005
+	},
+	{
+		"RowName": "Statue_Serpentmen5",
+		"ID_XX": 83006
+	},
+	{
+		"RowName": "Furnace_Kiln",
+		"ID_XX": 83007
+	},
+	{
 		"RowName": "Bone_Pile_1",
 		"ID_XX": 88884
 	},
@@ -5044,6 +10692,54 @@
 		"ID_XX": 88892
 	},
 	{
+		"RowName": "Totem1",
+		"ID_XX": 88893
+	},
+	{
+		"RowName": "Totem2",
+		"ID_XX": 88894
+	},
+	{
+		"RowName": "Totem3",
+		"ID_XX": 88895
+	},
+	{
+		"RowName": "Totem4",
+		"ID_XX": 88896
+	},
+	{
+		"RowName": "Stygian_Pot1",
+		"ID_XX": 88897
+	},
+	{
+		"RowName": "Stygian_Pot2",
+		"ID_XX": 88898
+	},
+	{
+		"RowName": "Stygian_Folding_Screen",
+		"ID_XX": 88899
+	},
+	{
+		"RowName": "Stygian_Table1",
+		"ID_XX": 88900
+	},
+	{
+		"RowName": "Stygian_Table2",
+		"ID_XX": 88901
+	},
+	{
+		"RowName": "Displayrack_multislot",
+		"ID_XX": 88902
+	},
+	{
+		"RowName": "Displayrack_singleslot",
+		"ID_XX": 88903
+	},
+	{
+		"RowName": "Displayrack_shield",
+		"ID_XX": 88904
+	},
+	{
 		"RowName": "Campfire",
 		"ID_XX": 89001
 	},
@@ -5060,12 +10756,24 @@
 		"ID_XX": 89101
 	},
 	{
+		"RowName": "Furnace_T2",
+		"ID_XX": 89102
+	},
+	{
 		"RowName": "Mixer",
 		"ID_XX": 89103
 	},
 	{
 		"RowName": "Tannery",
 		"ID_XX": 89104
+	},
+	{
+		"RowName": "Tannery_T2",
+		"ID_XX": 89105
+	},
+	{
+		"RowName": "Mixer_T2",
+		"ID_XX": 89106
 	},
 	{
 		"RowName": "Armormaking_Bench",
@@ -5076,8 +10784,16 @@
 		"ID_XX": 89301
 	},
 	{
+		"RowName": "Metalworking_Bench_T2",
+		"ID_XX": 89302
+	},
+	{
 		"RowName": "Woodworking_Bench",
 		"ID_XX": 89401
+	},
+	{
+		"RowName": "Woodworking_Bench_T2",
+		"ID_XX": 89402
 	},
 	{
 		"RowName": "Siege_Foundation",
@@ -5108,10 +10824,6 @@
 		"ID_XX": 89853
 	},
 	{
-		"RowName": "Lashing_Post_(1_slot)",
-		"ID_XX": 89901
-	},
-	{
 		"RowName": "Wheel_of_Pain_(1_slot)",
 		"ID_XX": 89911
 	},
@@ -5126,6 +10838,10 @@
 	{
 		"RowName": "Wheel_of_Pain_DEV",
 		"ID_XX": 89919
+	},
+	{
+		"RowName": "World_Map_Placeable",
+		"ID_XX": 90000
 	},
 	{
 		"RowName": "T1_Foundation",
@@ -5192,20 +10908,244 @@
 		"ID_XX": 90018
 	},
 	{
-		"RowName": "T1_Window",
-		"ID_XX": 90019
-	},
-	{
 		"RowName": "T1_Fence_Foundation",
 		"ID_XX": 90020
 	},
 	{
-		"RowName": "T1_Gate_Frame",
-		"ID_XX": 90021
+		"RowName": "T1_Sloped_Roof_Corner",
+		"ID_XX": 90023
 	},
 	{
-		"RowName": "T1_Gate_Door",
-		"ID_XX": 90022
+		"RowName": "T2_Sloped_Roof_Corner",
+		"ID_XX": 90024
+	},
+	{
+		"RowName": "T3_Sloped_Roof_Corner",
+		"ID_XX": 90025
+	},
+	{
+		"RowName": "T1_Sloped_Roof_Corner_Inverted",
+		"ID_XX": 90026
+	},
+	{
+		"RowName": "T2_Sloped_Roof_Corner_Inverted",
+		"ID_XX": 90027
+	},
+	{
+		"RowName": "T3_Sloped_Roof_Corner_Inverted",
+		"ID_XX": 90028
+	},
+	{
+		"RowName": "T1_Rooftop_End",
+		"ID_XX": 90029
+	},
+	{
+		"RowName": "T2_Rooftop_End",
+		"ID_XX": 90030
+	},
+	{
+		"RowName": "T3_Rooftop_End",
+		"ID_XX": 90031
+	},
+	{
+		"RowName": "T1_Rooftop_Straight",
+		"ID_XX": 90032
+	},
+	{
+		"RowName": "T2_Rooftop_Straight",
+		"ID_XX": 90033
+	},
+	{
+		"RowName": "T3_Rooftop_Straight",
+		"ID_XX": 90034
+	},
+	{
+		"RowName": "T1_Rooftop_Corner",
+		"ID_XX": 90035
+	},
+	{
+		"RowName": "T2_Rooftop_Corner",
+		"ID_XX": 90036
+	},
+	{
+		"RowName": "T3_Rooftop_Corner",
+		"ID_XX": 90037
+	},
+	{
+		"RowName": "T1_Rooftop_T",
+		"ID_XX": 90038
+	},
+	{
+		"RowName": "T2_Rooftop_T",
+		"ID_XX": 90039
+	},
+	{
+		"RowName": "T3_Rooftop_T",
+		"ID_XX": 90040
+	},
+	{
+		"RowName": "T1_Rooftop_X",
+		"ID_XX": 90041
+	},
+	{
+		"RowName": "T2_Rooftop_X",
+		"ID_XX": 90042
+	},
+	{
+		"RowName": "T3_Rooftop_X",
+		"ID_XX": 90043
+	},
+	{
+		"RowName": "T1_Rooftop_Pyramid",
+		"ID_XX": 90044
+	},
+	{
+		"RowName": "T2_Rooftop_Pyramid",
+		"ID_XX": 90045
+	},
+	{
+		"RowName": "T3_Rooftop_Pyramid",
+		"ID_XX": 90046
+	},
+	{
+		"RowName": "T1_Awning",
+		"ID_XX": 90047
+	},
+	{
+		"RowName": "T1_Awning_Corner",
+		"ID_XX": 90048
+	},
+	{
+		"RowName": "HL_T2_Sloped_Roof_Corner",
+		"ID_XX": 90049
+	},
+	{
+		"RowName": "HL_T3_Sloped_Roof_Corner",
+		"ID_XX": 90050
+	},
+	{
+		"RowName": "HL_T2_Sloped_Roof_Corner_Inverted",
+		"ID_XX": 90051
+	},
+	{
+		"RowName": "HL_T3_Sloped_Roof_Corner_Inverted",
+		"ID_XX": 90052
+	},
+	{
+		"RowName": "HL_T2_Rooftop_End",
+		"ID_XX": 90053
+	},
+	{
+		"RowName": "HL_T3_Rooftop_End",
+		"ID_XX": 90054
+	},
+	{
+		"RowName": "HL_T2_Rooftop_Straight",
+		"ID_XX": 90055
+	},
+	{
+		"RowName": "HL_T3_Rooftop_Straight",
+		"ID_XX": 90056
+	},
+	{
+		"RowName": "HL_T2_Rooftop_Corner",
+		"ID_XX": 90057
+	},
+	{
+		"RowName": "HL_T3_Rooftop_Corner",
+		"ID_XX": 90058
+	},
+	{
+		"RowName": "HL_T2_Rooftop_T",
+		"ID_XX": 90059
+	},
+	{
+		"RowName": "HL_T3_Rooftop_T",
+		"ID_XX": 90060
+	},
+	{
+		"RowName": "HL_T2_Rooftop_X",
+		"ID_XX": 90061
+	},
+	{
+		"RowName": "HL_T3_Rooftop_X",
+		"ID_XX": 90062
+	},
+	{
+		"RowName": "HL_T2_Rooftop_Pyramid",
+		"ID_XX": 90063
+	},
+	{
+		"RowName": "HL_T3_Rooftop_Pyramid",
+		"ID_XX": 90064
+	},
+	{
+		"RowName": "T2_Awning",
+		"ID_XX": 90065
+	},
+	{
+		"RowName": "T2_Awning_Inverted",
+		"ID_XX": 90066
+	},
+	{
+		"RowName": "T3_Awning",
+		"ID_XX": 90067
+	},
+	{
+		"RowName": "T3_Awning_Inverted",
+		"ID_XX": 90068
+	},
+	{
+		"RowName": "T1_Stairs_Corner",
+		"ID_XX": 90069
+	},
+	{
+		"RowName": "T2_Stairs_Corner",
+		"ID_XX": 90070
+	},
+	{
+		"RowName": "T3_Stairs_Corner",
+		"ID_XX": 90071
+	},
+	{
+		"RowName": "HL_T2_Stairs_Corner",
+		"ID_XX": 90072
+	},
+	{
+		"RowName": "HL_T3_Stairs_Corner",
+		"ID_XX": 90073
+	},
+	{
+		"RowName": "HL_T2_Awning",
+		"ID_XX": 90074
+	},
+	{
+		"RowName": "HL_T2_Awning_Inverted",
+		"ID_XX": 90075
+	},
+	{
+		"RowName": "HL_T3_Awning",
+		"ID_XX": 90076
+	},
+	{
+		"RowName": "HL_T3_Awning_Inverted",
+		"ID_XX": 90077
+	},
+	{
+		"RowName": "T2_Stairs_Clean",
+		"ID_XX": 90078
+	},
+	{
+		"RowName": "T3_Stairs_Clean",
+		"ID_XX": 90079
+	},
+	{
+		"RowName": "HL_T2_Stairs_Clean",
+		"ID_XX": 90080
+	},
+	{
+		"RowName": "HL_T3_Stairs_Clean",
+		"ID_XX": 90081
 	},
 	{
 		"RowName": "T2_Foundation",
@@ -5270,10 +11210,6 @@
 	{
 		"RowName": "T2_Triangle_Sloped_Roof_Down",
 		"ID_XX": 90118
-	},
-	{
-		"RowName": "T2_Window",
-		"ID_XX": 90119
 	},
 	{
 		"RowName": "T2_Fence_Foundation",
@@ -5352,10 +11288,6 @@
 		"ID_XX": 90218
 	},
 	{
-		"RowName": "T3_Window",
-		"ID_XX": 90219
-	},
-	{
 		"RowName": "T3_Fence_Foundation",
 		"ID_XX": 90220
 	},
@@ -5386,6 +11318,18 @@
 	{
 		"RowName": "T3_Siege_Cauldron",
 		"ID_XX": 90227
+	},
+	{
+		"RowName": "T3_Door_prison1",
+		"ID_XX": 90229
+	},
+	{
+		"RowName": "T3_Door_w_window",
+		"ID_XX": 90230
+	},
+	{
+		"RowName": "T3_Hatchdoor_prison",
+		"ID_XX": 90231
 	},
 	{
 		"RowName": "HL_T2_Foundation",
@@ -5450,10 +11394,6 @@
 	{
 		"RowName": "HL_T2_Triangle_Sloped_Roof_Down",
 		"ID_XX": 90258
-	},
-	{
-		"RowName": "HL_T2_Window",
-		"ID_XX": 90259
 	},
 	{
 		"RowName": "HL_T2_Fence_Foundation",
@@ -5532,10 +11472,6 @@
 		"ID_XX": 90278
 	},
 	{
-		"RowName": "HL_T3_Window",
-		"ID_XX": 90279
-	},
-	{
 		"RowName": "HL_T3_Fence_Foundation",
 		"ID_XX": 90280
 	},
@@ -5552,7 +11488,1491 @@
 		"ID_XX": 90283
 	},
 	{
-		"RowName": "Nothing",
-		"ID_XX": 0
+		"RowName": "T1_Hatch",
+		"ID_XX": 90284
+	},
+	{
+		"RowName": "T2_Hatch",
+		"ID_XX": 90285
+	},
+	{
+		"RowName": "T3_Hatch",
+		"ID_XX": 90286
+	},
+	{
+		"RowName": "T2_HL_Hatch",
+		"ID_XX": 90287
+	},
+	{
+		"RowName": "T3_HL_Hatch",
+		"ID_XX": 90288
+	},
+	{
+		"RowName": "T1_Hatchdoor",
+		"ID_XX": 90289
+	},
+	{
+		"RowName": "T2_Hatchdoor",
+		"ID_XX": 90290
+	},
+	{
+		"RowName": "T3_Hatchdoor",
+		"ID_XX": 90291
+	},
+	{
+		"RowName": "T2_HL_Hatchdoor",
+		"ID_XX": 90292
+	},
+	{
+		"RowName": "T3_HL_Hatchdoor",
+		"ID_XX": 90293
+	},
+	{
+		"RowName": "T1_TriangleWall_Inv_Left",
+		"ID_XX": 90294
+	},
+	{
+		"RowName": "T2_TriangleWall_Inv_Left",
+		"ID_XX": 90295
+	},
+	{
+		"RowName": "T3_TriangleWall_Inv_Left",
+		"ID_XX": 90296
+	},
+	{
+		"RowName": "T2_HL_TriangleWall_Inv_Left",
+		"ID_XX": 90297
+	},
+	{
+		"RowName": "T3_HL_TriangleWall_Inv_Left",
+		"ID_XX": 90298
+	},
+	{
+		"RowName": "T1_TriangleWall_Inv_Right",
+		"ID_XX": 90299
+	},
+	{
+		"RowName": "T2_TriangleWall_Inv_Right",
+		"ID_XX": 90300
+	},
+	{
+		"RowName": "T3_TriangleWall_Inv_Right",
+		"ID_XX": 90301
+	},
+	{
+		"RowName": "T2_HL_TriangleWall_Inv_Right",
+		"ID_XX": 90302
+	},
+	{
+		"RowName": "T3_HL_TriangleWall_Inv_Right",
+		"ID_XX": 90303
+	},
+	{
+		"RowName": "support_strut",
+		"ID_XX": 90304
+	},
+	{
+		"RowName": "support_strut_diagonal",
+		"ID_XX": 90305
+	},
+	{
+		"RowName": "sandstone_ramp",
+		"ID_XX": 90306
+	},
+	{
+		"RowName": "sandstone_ramp_corner",
+		"ID_XX": 90307
+	},
+	{
+		"RowName": "stonebrick_ramp",
+		"ID_XX": 90308
+	},
+	{
+		"RowName": "stonebrick_ramp_corner",
+		"ID_XX": 90309
+	},
+	{
+		"RowName": "reinforced_stone_ramp",
+		"ID_XX": 90310
+	},
+	{
+		"RowName": "reinforced_stone_ramp_corner",
+		"ID_XX": 90311
+	},
+	{
+		"RowName": "insulated_wood_ramp",
+		"ID_XX": 90312
+	},
+	{
+		"RowName": "insulated_wood_ramp_corner",
+		"ID_XX": 90313
+	},
+	{
+		"RowName": "blackice_ramp",
+		"ID_XX": 90314
+	},
+	{
+		"RowName": "blackice_ramp_corner",
+		"ID_XX": 90315
+	},
+	{
+		"RowName": "sandstone_roofplug",
+		"ID_XX": 90316
+	},
+	{
+		"RowName": "stonebrick_roofplug",
+		"ID_XX": 90317
+	},
+	{
+		"RowName": "reinforced_roofplug",
+		"ID_XX": 90318
+	},
+	{
+		"RowName": "insulated_roofplug",
+		"ID_XX": 90319
+	},
+	{
+		"RowName": "blackice_roofplug",
+		"ID_XX": 90320
+	},
+	{
+		"RowName": "T2_Pontoon_Foundation",
+		"ID_XX": 90323
+	},
+	{
+		"RowName": "T2_Pontoon_Triangle_Foundation",
+		"ID_XX": 90324
+	},
+	{
+		"RowName": "T3_Pontoon_Foundation",
+		"ID_XX": 90325
+	},
+	{
+		"RowName": "T3_Pontoon_Triangle_Foundation",
+		"ID_XX": 90326
+	},
+	{
+		"RowName": "IronEarrings",
+		"ID_XX": 90984
+	},
+	{
+		"RowName": "IronAnklet",
+		"ID_XX": 90985
+	},
+	{
+		"RowName": "IronCirclet",
+		"ID_XX": 90986
+	},
+	{
+		"RowName": "IronBracelet",
+		"ID_XX": 90987
+	},
+	{
+		"RowName": "SteelEarrings",
+		"ID_XX": 90988
+	},
+	{
+		"RowName": "SteelAnklet",
+		"ID_XX": 90989
+	},
+	{
+		"RowName": "SteelCirclet",
+		"ID_XX": 90990
+	},
+	{
+		"RowName": "SteelBracelet",
+		"ID_XX": 90991
+	},
+	{
+		"RowName": "SilverEarrings",
+		"ID_XX": 90992
+	},
+	{
+		"RowName": "SilverAnklet",
+		"ID_XX": 90993
+	},
+	{
+		"RowName": "SilverCirclet",
+		"ID_XX": 90994
+	},
+	{
+		"RowName": "SilverBracelet",
+		"ID_XX": 90995
+	},
+	{
+		"RowName": "GoldEarrings",
+		"ID_XX": 90996
+	},
+	{
+		"RowName": "GoldAnklet",
+		"ID_XX": 90997
+	},
+	{
+		"RowName": "GoldCirclet",
+		"ID_XX": 90998
+	},
+	{
+		"RowName": "GoldBracelet",
+		"ID_XX": 90999
+	},
+	{
+		"RowName": "Endgame_LightExile_Helmet",
+		"ID_XX": 91000
+	},
+	{
+		"RowName": "Endgame_LightExile_Chest",
+		"ID_XX": 91001
+	},
+	{
+		"RowName": "Endgame_LightExile_Gauntlets",
+		"ID_XX": 91002
+	},
+	{
+		"RowName": "Endgame_LightExile_Tasset",
+		"ID_XX": 91003
+	},
+	{
+		"RowName": "Endgame_LightExile_Boots",
+		"ID_XX": 91004
+	},
+	{
+		"RowName": "Endgame_MediumExile_Helmet",
+		"ID_XX": 91005
+	},
+	{
+		"RowName": "Endgame_MediumExile_Chest",
+		"ID_XX": 91006
+	},
+	{
+		"RowName": "Endgame_MediumExile_Gauntlets",
+		"ID_XX": 91007
+	},
+	{
+		"RowName": "Endgame_MediumExile_Tasset",
+		"ID_XX": 91008
+	},
+	{
+		"RowName": "Endgame_MediumExile_Boots",
+		"ID_XX": 91009
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Helmet",
+		"ID_XX": 91010
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Chest",
+		"ID_XX": 91011
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Gauntlets",
+		"ID_XX": 91012
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Tasset",
+		"ID_XX": 91013
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Boots",
+		"ID_XX": 91014
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Helmet",
+		"ID_XX": 91015
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Chest",
+		"ID_XX": 91016
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Gauntlets",
+		"ID_XX": 91017
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Tasset",
+		"ID_XX": 91018
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Boots",
+		"ID_XX": 91019
+	},
+	{
+		"RowName": "Endgame_LightShemite_Helmet",
+		"ID_XX": 91020
+	},
+	{
+		"RowName": "Endgame_LightShemite_Chest",
+		"ID_XX": 91021
+	},
+	{
+		"RowName": "Endgame_LightShemite_Gauntlets",
+		"ID_XX": 91022
+	},
+	{
+		"RowName": "Endgame_LightShemite_Tasset",
+		"ID_XX": 91023
+	},
+	{
+		"RowName": "Endgame_LightShemite_Boots",
+		"ID_XX": 91024
+	},
+	{
+		"RowName": "Endgame_LightVanir_Helmet",
+		"ID_XX": 91025
+	},
+	{
+		"RowName": "Endgame_LightVanir_Chest",
+		"ID_XX": 91026
+	},
+	{
+		"RowName": "Endgame_LightVanir_Gauntlets",
+		"ID_XX": 91027
+	},
+	{
+		"RowName": "Endgame_LightVanir_Tasset",
+		"ID_XX": 91028
+	},
+	{
+		"RowName": "Endgame_LightVanir_Boots",
+		"ID_XX": 91029
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Helmet",
+		"ID_XX": 91030
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Chest",
+		"ID_XX": 91031
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Gauntlets",
+		"ID_XX": 91032
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Tasset",
+		"ID_XX": 91033
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Boots",
+		"ID_XX": 91034
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Helmet",
+		"ID_XX": 91035
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Chest",
+		"ID_XX": 91036
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Gauntlets",
+		"ID_XX": 91037
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Tasset",
+		"ID_XX": 91038
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Boots",
+		"ID_XX": 91039
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Helmet",
+		"ID_XX": 91040
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Chest",
+		"ID_XX": 91041
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Gauntlets",
+		"ID_XX": 91042
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Tasset",
+		"ID_XX": 91043
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Boots",
+		"ID_XX": 91044
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Helmet",
+		"ID_XX": 91045
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Chest",
+		"ID_XX": 91046
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Gauntlets",
+		"ID_XX": 91047
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Tasset",
+		"ID_XX": 91048
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Boots",
+		"ID_XX": 91049
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Helmet",
+		"ID_XX": 91050
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Chest",
+		"ID_XX": 91051
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Gauntlets",
+		"ID_XX": 91052
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Tasset",
+		"ID_XX": 91053
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Boots",
+		"ID_XX": 91054
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Helmet",
+		"ID_XX": 91055
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Chest",
+		"ID_XX": 91056
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Gauntlets",
+		"ID_XX": 91057
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Tasset",
+		"ID_XX": 91058
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Boots",
+		"ID_XX": 91059
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Helmet",
+		"ID_XX": 91060
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Chest",
+		"ID_XX": 91061
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Gauntlets",
+		"ID_XX": 91062
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Tasset",
+		"ID_XX": 91063
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Boots",
+		"ID_XX": 91064
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Helmet",
+		"ID_XX": 91070
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Chest",
+		"ID_XX": 91071
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Gauntlets",
+		"ID_XX": 91072
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Tasset",
+		"ID_XX": 91073
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Boots",
+		"ID_XX": 91074
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Helmet",
+		"ID_XX": 91075
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Chest",
+		"ID_XX": 91076
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Gauntlets",
+		"ID_XX": 91077
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Tasset",
+		"ID_XX": 91078
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Boots",
+		"ID_XX": 91079
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Helmet",
+		"ID_XX": 91080
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Chest",
+		"ID_XX": 91081
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Gauntlets",
+		"ID_XX": 91082
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Tasset",
+		"ID_XX": 91083
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Boots",
+		"ID_XX": 91084
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Helmet",
+		"ID_XX": 91085
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Chest",
+		"ID_XX": 91086
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Gauntlets",
+		"ID_XX": 91087
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Tasset",
+		"ID_XX": 91088
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Boots",
+		"ID_XX": 91089
+	},
+	{
+		"RowName": "Endgame_LightExile_Exceptional_Helmet",
+		"ID_XX": 91095
+	},
+	{
+		"RowName": "Endgame_LightExile_Exceptional_Chest",
+		"ID_XX": 91096
+	},
+	{
+		"RowName": "Endgame_LightExile_Exceptional_Gauntlets",
+		"ID_XX": 91097
+	},
+	{
+		"RowName": "Endgame_LightExile_Exceptional_Tasset",
+		"ID_XX": 91098
+	},
+	{
+		"RowName": "Endgame_LightExile_Exceptional_Boots",
+		"ID_XX": 91099
+	},
+	{
+		"RowName": "Endgame_MediumExile_Exceptional_Helmet",
+		"ID_XX": 91100
+	},
+	{
+		"RowName": "Endgame_MediumExile_Exceptional_Chest",
+		"ID_XX": 91101
+	},
+	{
+		"RowName": "Endgame_MediumExile_Exceptional_Gauntlets",
+		"ID_XX": 91102
+	},
+	{
+		"RowName": "Endgame_MediumExile_Exceptional_Tasset",
+		"ID_XX": 91103
+	},
+	{
+		"RowName": "Endgame_MediumExile_Exceptional_Boots",
+		"ID_XX": 91104
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Exceptional_Helmet",
+		"ID_XX": 91105
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Exceptional_Chest",
+		"ID_XX": 91106
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Exceptional_Gauntlets",
+		"ID_XX": 91107
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Exceptional_Tasset",
+		"ID_XX": 91108
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Exceptional_Boots",
+		"ID_XX": 91109
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Exceptional_Helmet",
+		"ID_XX": 91110
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Exceptional_Chest",
+		"ID_XX": 91111
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Exceptional_Gauntlets",
+		"ID_XX": 91112
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Exceptional_Tasset",
+		"ID_XX": 91113
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Exceptional_Boots",
+		"ID_XX": 91114
+	},
+	{
+		"RowName": "Endgame_LightShemite_Exceptional_Helmet",
+		"ID_XX": 91115
+	},
+	{
+		"RowName": "Endgame_LightShemite_Exceptional_Chest",
+		"ID_XX": 91116
+	},
+	{
+		"RowName": "Endgame_LightShemite_Exceptional_Gauntlets",
+		"ID_XX": 91117
+	},
+	{
+		"RowName": "Endgame_LightShemite_Exceptional_Tasset",
+		"ID_XX": 91118
+	},
+	{
+		"RowName": "Endgame_LightShemite_Exceptional_Boots",
+		"ID_XX": 91119
+	},
+	{
+		"RowName": "Endgame_LightVanir_Exceptional_Helmet",
+		"ID_XX": 91120
+	},
+	{
+		"RowName": "Endgame_LightVanir_Exceptional_Chest",
+		"ID_XX": 91121
+	},
+	{
+		"RowName": "Endgame_LightVanir_Exceptional_Gauntlets",
+		"ID_XX": 91122
+	},
+	{
+		"RowName": "Endgame_LightVanir_Exceptional_Tasset",
+		"ID_XX": 91123
+	},
+	{
+		"RowName": "Endgame_LightVanir_Exceptional_Boots",
+		"ID_XX": 91124
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Exceptional_Helmet",
+		"ID_XX": 91125
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Exceptional_Chest",
+		"ID_XX": 91126
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Exceptional_Gauntlets",
+		"ID_XX": 91127
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Exceptional_Tasset",
+		"ID_XX": 91128
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Exceptional_Boots",
+		"ID_XX": 91129
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Exceptional_Helmet",
+		"ID_XX": 91130
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Exceptional_Chest",
+		"ID_XX": 91131
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Exceptional_Gauntlets",
+		"ID_XX": 91132
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Exceptional_Tasset",
+		"ID_XX": 91133
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Exceptional_Boots",
+		"ID_XX": 91134
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Exceptional_Helmet",
+		"ID_XX": 91135
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Exceptional_Chest",
+		"ID_XX": 91136
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Exceptional_Gauntlets",
+		"ID_XX": 91137
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Exceptional_Tasset",
+		"ID_XX": 91138
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Exceptional_Boots",
+		"ID_XX": 91139
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Exceptional_Helmet",
+		"ID_XX": 91140
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Exceptional_Chest",
+		"ID_XX": 91141
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Exceptional_Gauntlets",
+		"ID_XX": 91142
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Exceptional_Tasset",
+		"ID_XX": 91143
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Exceptional_Boots",
+		"ID_XX": 91144
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Exceptional_Helmet",
+		"ID_XX": 91145
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Exceptional_Chest",
+		"ID_XX": 91146
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Exceptional_Gauntlets",
+		"ID_XX": 91147
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Exceptional_Tasset",
+		"ID_XX": 91148
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Exceptional_Boots",
+		"ID_XX": 91149
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Exceptional_Helmet",
+		"ID_XX": 91150
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Exceptional_Chest",
+		"ID_XX": 91151
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Exceptional_Gauntlets",
+		"ID_XX": 91152
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Exceptional_Tasset",
+		"ID_XX": 91153
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Exceptional_Boots",
+		"ID_XX": 91154
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Exceptional_Helmet",
+		"ID_XX": 91155
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Exceptional_Chest",
+		"ID_XX": 91156
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Exceptional_Gauntlets",
+		"ID_XX": 91157
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Exceptional_Tasset",
+		"ID_XX": 91158
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Exceptional_Boots",
+		"ID_XX": 91159
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Exceptional_Helmet",
+		"ID_XX": 91165
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Exceptional_Chest",
+		"ID_XX": 91166
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Exceptional_Gauntlets",
+		"ID_XX": 91167
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Exceptional_Tasset",
+		"ID_XX": 91168
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Exceptional_Boots",
+		"ID_XX": 91169
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Exceptional_Helmet",
+		"ID_XX": 91170
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Exceptional_Chest",
+		"ID_XX": 91171
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Exceptional_Gauntlets",
+		"ID_XX": 91172
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Exceptional_Tasset",
+		"ID_XX": 91173
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Exceptional_Boots",
+		"ID_XX": 91174
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Exceptional_Helmet",
+		"ID_XX": 91175
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Exceptional_Chest",
+		"ID_XX": 91176
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Exceptional_Gauntlets",
+		"ID_XX": 91177
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Exceptional_Tasset",
+		"ID_XX": 91178
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Exceptional_Boots",
+		"ID_XX": 91179
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Exceptional_Helmet",
+		"ID_XX": 91180
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Exceptional_Chest",
+		"ID_XX": 91181
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Exceptional_Gauntlets",
+		"ID_XX": 91182
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Exceptional_Tasset",
+		"ID_XX": 91183
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Exceptional_Boots",
+		"ID_XX": 91184
+	},
+	{
+		"RowName": "Endgame_LightExile_Flawless_Helmet",
+		"ID_XX": 91190
+	},
+	{
+		"RowName": "Endgame_LightExile_Flawless_Chest",
+		"ID_XX": 91191
+	},
+	{
+		"RowName": "Endgame_LightExile_Flawless_Gauntlets",
+		"ID_XX": 91192
+	},
+	{
+		"RowName": "Endgame_LightExile_Flawless_Tasset",
+		"ID_XX": 91193
+	},
+	{
+		"RowName": "Endgame_LightExile_Flawless_Boots",
+		"ID_XX": 91194
+	},
+	{
+		"RowName": "Endgame_MediumExile_Flawless_Helmet",
+		"ID_XX": 91195
+	},
+	{
+		"RowName": "Endgame_MediumExile_Flawless_Chest",
+		"ID_XX": 91196
+	},
+	{
+		"RowName": "Endgame_MediumExile_Flawless_Gauntlets",
+		"ID_XX": 91197
+	},
+	{
+		"RowName": "Endgame_MediumExile_Flawless_Tasset",
+		"ID_XX": 91198
+	},
+	{
+		"RowName": "Endgame_MediumExile_Flawless_Boots",
+		"ID_XX": 91199
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Flawless_Helmet",
+		"ID_XX": 91200
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Flawless_Chest",
+		"ID_XX": 91201
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Flawless_Gauntlets",
+		"ID_XX": 91202
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Flawless_Tasset",
+		"ID_XX": 91203
+	},
+	{
+		"RowName": "Endgame_HeavyExile_Flawless_Boots",
+		"ID_XX": 91204
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Flawless_Helmet",
+		"ID_XX": 91205
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Flawless_Chest",
+		"ID_XX": 91206
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Flawless_Gauntlets",
+		"ID_XX": 91207
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Flawless_Tasset",
+		"ID_XX": 91208
+	},
+	{
+		"RowName": "Endgame_LightDarfari_Flawless_Boots",
+		"ID_XX": 91209
+	},
+	{
+		"RowName": "Endgame_LightShemite_Flawless_Helmet",
+		"ID_XX": 91210
+	},
+	{
+		"RowName": "Endgame_LightShemite_Flawless_Chest",
+		"ID_XX": 91211
+	},
+	{
+		"RowName": "Endgame_LightShemite_Flawless_Gauntlets",
+		"ID_XX": 91212
+	},
+	{
+		"RowName": "Endgame_LightShemite_Flawless_Tasset",
+		"ID_XX": 91213
+	},
+	{
+		"RowName": "Endgame_LightShemite_Flawless_Boots",
+		"ID_XX": 91214
+	},
+	{
+		"RowName": "Endgame_LightVanir_Flawless_Helmet",
+		"ID_XX": 91215
+	},
+	{
+		"RowName": "Endgame_LightVanir_Flawless_Chest",
+		"ID_XX": 91216
+	},
+	{
+		"RowName": "Endgame_LightVanir_Flawless_Gauntlets",
+		"ID_XX": 91217
+	},
+	{
+		"RowName": "Endgame_LightVanir_Flawless_Tasset",
+		"ID_XX": 91218
+	},
+	{
+		"RowName": "Endgame_LightVanir_Flawless_Boots",
+		"ID_XX": 91219
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Flawless_Helmet",
+		"ID_XX": 91220
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Flawless_Chest",
+		"ID_XX": 91221
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Flawless_Gauntlets",
+		"ID_XX": 91222
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Flawless_Tasset",
+		"ID_XX": 91223
+	},
+	{
+		"RowName": "Endgame_LightZamorian_Flawless_Boots",
+		"ID_XX": 91224
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Flawless_Helmet",
+		"ID_XX": 91225
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Flawless_Chest",
+		"ID_XX": 91226
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Flawless_Gauntlets",
+		"ID_XX": 91227
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Flawless_Tasset",
+		"ID_XX": 91228
+	},
+	{
+		"RowName": "Endgame_LightZingaran_Flawless_Boots",
+		"ID_XX": 91229
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Flawless_Helmet",
+		"ID_XX": 91230
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Flawless_Chest",
+		"ID_XX": 91231
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Flawless_Gauntlets",
+		"ID_XX": 91232
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Flawless_Tasset",
+		"ID_XX": 91233
+	},
+	{
+		"RowName": "Endgame_LightRelicHunter_Flawless_Boots",
+		"ID_XX": 91234
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Flawless_Helmet",
+		"ID_XX": 91235
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Flawless_Chest",
+		"ID_XX": 91236
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Flawless_Gauntlets",
+		"ID_XX": 91237
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Flawless_Tasset",
+		"ID_XX": 91238
+	},
+	{
+		"RowName": "Endgame_MediumKambujan_Flawless_Boots",
+		"ID_XX": 91239
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Flawless_Helmet",
+		"ID_XX": 91240
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Flawless_Chest",
+		"ID_XX": 91241
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Flawless_Gauntlets",
+		"ID_XX": 91242
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Flawless_Tasset",
+		"ID_XX": 91243
+	},
+	{
+		"RowName": "Endgame_MediumStygian_Flawless_Boots",
+		"ID_XX": 91244
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Flawless_Helmet",
+		"ID_XX": 91245
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Flawless_Chest",
+		"ID_XX": 91246
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Flawless_Gauntlets",
+		"ID_XX": 91247
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Flawless_Tasset",
+		"ID_XX": 91248
+	},
+	{
+		"RowName": "Endgame_MediumVanir_Flawless_Boots",
+		"ID_XX": 91249
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Flawless_Helmet",
+		"ID_XX": 91250
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Flawless_Chest",
+		"ID_XX": 91251
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Flawless_Gauntlets",
+		"ID_XX": 91252
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Flawless_Tasset",
+		"ID_XX": 91253
+	},
+	{
+		"RowName": "Endgame_MediumAquilonian_Flawless_Boots",
+		"ID_XX": 91254
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Flawless_Helmet",
+		"ID_XX": 91260
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Flawless_Chest",
+		"ID_XX": 91261
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Flawless_Gauntlets",
+		"ID_XX": 91262
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Flawless_Tasset",
+		"ID_XX": 91263
+	},
+	{
+		"RowName": "Endgame_HeavyHyperborean_Flawless_Boots",
+		"ID_XX": 91264
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Flawless_Helmet",
+		"ID_XX": 91265
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Flawless_Chest",
+		"ID_XX": 91266
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Flawless_Gauntlets",
+		"ID_XX": 91267
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Flawless_Tasset",
+		"ID_XX": 91268
+	},
+	{
+		"RowName": "Endgame_HeavyHyrkanian_Flawless_Boots",
+		"ID_XX": 91269
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Flawless_Helmet",
+		"ID_XX": 91270
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Flawless_Chest",
+		"ID_XX": 91271
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Flawless_Gauntlets",
+		"ID_XX": 91272
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Flawless_Tasset",
+		"ID_XX": 91273
+	},
+	{
+		"RowName": "Endgame_HeavyVanir_Flawless_Boots",
+		"ID_XX": 91274
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Flawless_Helmet",
+		"ID_XX": 91275
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Flawless_Chest",
+		"ID_XX": 91276
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Flawless_Gauntlets",
+		"ID_XX": 91277
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Flawless_Tasset",
+		"ID_XX": 91278
+	},
+	{
+		"RowName": "Endgame_HeavyStygian_Flawless_Boots",
+		"ID_XX": 91279
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Head",
+		"ID_XX": 91280
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Chest",
+		"ID_XX": 91281
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Gauntlets",
+		"ID_XX": 91282
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Tasset",
+		"ID_XX": 91283
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Boots",
+		"ID_XX": 91284
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Exceptional_Head",
+		"ID_XX": 91285
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Exceptional_Chest",
+		"ID_XX": 91286
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Exceptional_Gauntlets",
+		"ID_XX": 91287
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Exceptional_Tasset",
+		"ID_XX": 91288
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Exceptional_Boots",
+		"ID_XX": 91289
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Flawless_Head",
+		"ID_XX": 91290
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Flawless_Gauntlets",
+		"ID_XX": 91291
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Flawless_Chest",
+		"ID_XX": 91292
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Flawless_Tasset",
+		"ID_XX": 91293
+	},
+	{
+		"RowName": "Endgame_Reptile_Armor_Flawless_Boots",
+		"ID_XX": 91294
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Head",
+		"ID_XX": 91295
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Chest",
+		"ID_XX": 91296
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Gauntlets",
+		"ID_XX": 91297
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Tasset",
+		"ID_XX": 91298
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Boots",
+		"ID_XX": 91299
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Exceptional_Head",
+		"ID_XX": 91300
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Exceptional_Chest",
+		"ID_XX": 91301
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Exceptional_Gauntlets",
+		"ID_XX": 91302
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Exceptional_Tasset",
+		"ID_XX": 91303
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Exceptional_Boots",
+		"ID_XX": 91304
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Flawless_Head",
+		"ID_XX": 91305
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Flawless_Chest",
+		"ID_XX": 91306
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Flawless_Gauntlets",
+		"ID_XX": 91307
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Flawless_Tasset",
+		"ID_XX": 91308
+	},
+	{
+		"RowName": "Endgame_Dogs_Armor_Flawless_Boots",
+		"ID_XX": 91309
+	},
+	{
+		"RowName": "Reptile_Armor_Exceptional_Head",
+		"ID_XX": 92000
+	},
+	{
+		"RowName": "Reptile_Armor_Exceptional_Gauntlets",
+		"ID_XX": 92001
+	},
+	{
+		"RowName": "Reptile_Armor_Exceptional_Chest",
+		"ID_XX": 92002
+	},
+	{
+		"RowName": "Reptile_Armor_Exceptional_Tasset",
+		"ID_XX": 92003
+	},
+	{
+		"RowName": "Reptile_Armor_Exceptional_Boots",
+		"ID_XX": 92004
+	},
+	{
+		"RowName": "Reptile_Armor_Flawless_Head",
+		"ID_XX": 92005
+	},
+	{
+		"RowName": "Reptile_Armor_Flawless_Gauntlets",
+		"ID_XX": 92006
+	},
+	{
+		"RowName": "Reptile_Armor_Flawless_Chest",
+		"ID_XX": 92007
+	},
+	{
+		"RowName": "Reptile_Armor_Flawless_Tasset",
+		"ID_XX": 92008
+	},
+	{
+		"RowName": "Reptile_Armor_Flawless_Boots",
+		"ID_XX": 92009
+	},
+	{
+		"RowName": "NightStalkersMask",
+		"ID_XX": 92100
+	},
+	{
+		"RowName": "WarDancerChest",
+		"ID_XX": 92101
+	},
+	{
+		"RowName": "ExsquisiteSilkShirt",
+		"ID_XX": 92102
+	},
+	{
+		"RowName": "ExsquisiteSilkLeggings",
+		"ID_XX": 92103
+	},
+	{
+		"RowName": "VerminHidePants",
+		"ID_XX": 92104
+	},
+	{
+		"RowName": "VerminHideBoots",
+		"ID_XX": 92105
+	},
+	{
+		"RowName": "GodEye",
+		"ID_XX": 92106
+	},
+	{
+		"RowName": "TheHornedHelmet",
+		"ID_XX": 92107
+	},
+	{
+		"RowName": "ScorpionHelm",
+		"ID_XX": 92108
+	},
+	{
+		"RowName": "ScorpionHarness",
+		"ID_XX": 92109
+	},
+	{
+		"RowName": "CommandersHelmet",
+		"ID_XX": 92110
+	},
+	{
+		"RowName": "CommandersChestplate",
+		"ID_XX": 92111
+	},
+	{
+		"RowName": "LegacyoftheNordheimers",
+		"ID_XX": 92112
+	},
+	{
+		"RowName": "WarMammothBoots",
+		"ID_XX": 92113
+	},
+	{
+		"RowName": "HelmoftheBrute",
+		"ID_XX": 92114
+	},
+	{
+		"RowName": "GauntletsoftheBrute",
+		"ID_XX": 92115
+	},
+	{
+		"RowName": "DEV_Dagger_Offhand",
+		"ID_XX": 9000006
+	},
+	{
+		"RowName": "DEV_Skinning_Knife",
+		"ID_XX": 9000007
+	},
+	{
+		"RowName": "Purgewall",
+		"ID_XX": 9000010
+	},
+	{
+		"RowName": "Purgetarget",
+		"ID_XX": 9000011
 	}
 ]

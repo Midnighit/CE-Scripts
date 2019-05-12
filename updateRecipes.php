@@ -1,5 +1,15 @@
 <?php
-echo "<pre>";
+if(isset($_SERVER['REMOTE_ADDR']))
+{
+	echo "<pre>";
+	$html = true;
+	$lb = "<br>";
+}
+else
+{
+	$html = false;
+	$lb = "\n";
+}
 $stime = microtime(true);
 /******************************************
 * Functions, global variables & constants *
@@ -135,7 +145,7 @@ function setPrice($itemID)
 	}
 }
 
-echo '<br>Connecting to google... ';
+echo $lb . 'Connecting to google... ';
 
 // Get the Google API client and construct the service object
 require 'google_sheets_client.php';
@@ -148,7 +158,7 @@ define('ITEMS_SHEET_ID', '335334661');
 define('RECIPES_SHEET_ID', '1136815510');
 define('PRICES_SHEET_ID', '75361171');
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 
 /*********************
 * Table preparations *
@@ -159,7 +169,7 @@ echo 'Reading items table from ItemTable.json... ';
 /// items Table:
 // complile all the relevant information into the items table
 // Key: ItemId / Value: Array with Name, Tier, Type and Ingredient and Result flag
-$json = file_get_contents('../db/ItemTable.json');
+$json = file_get_contents('./db/ItemTable.json');
 $result = json_decode($json, true);
 foreach($result as $row => $value)
 {
@@ -172,15 +182,15 @@ array_multisort($unsorted['Name'], $unsorted['ItemID'], $unsorted['Type']);
 foreach($unsorted['ItemID'] as $key => $itemID) $items[$itemID] = ['Row' => $key + 2, 'Name' => $unsorted['Name'][$key], 'Tier' => 0, 'Type' => $unsorted['Type'][$key], 'Price' => NULL, 'isIngredient' => FALSE, 'isResult' => FALSE, 'isResource' => FALSE];
 unset($unsorted);
 // Add a virtual Water item to allow flasks to be filled.
-$items['100'] = ['Row' => $key + 3, 'Name' => 'Water', 'Tier' => 0, 'Type' => 'Material', 'Price' => NULL, 'isIngredient' => TRUE, 'isResult' => FALSE, 'isResource' => TRUE];
+$items['11504'] = ['Row' => $key + 3, 'Name' => 'Water', 'Tier' => 0, 'Type' => 'Material', 'Price' => NULL, 'isIngredient' => TRUE, 'isResult' => FALSE, 'isResource' => TRUE];
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 echo 'Reading translations table from ItemNameToTemplateID.json... ';
 
 // name2id Table:
 // read translation table to match item names with their template IDs
 // Key: ItemName(db) / Value: ItemId
-$json = file_get_contents('../db/ItemNameToTemplateID.json');
+$json = file_get_contents('./db/ItemNameToTemplateID.json');
 $result = json_decode($json, true);
 foreach($result as $row => $value)
 {
@@ -188,13 +198,13 @@ foreach($result as $row => $value)
 	unset($result[$row]);
 }
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 echo 'Reading resources table from LootTable_Resource.json... ';
 
 // resources Table:
 // compile the resource loot table from any generic, special or limited resources that can be looted in game
 // Key: ItemId / Value: Name
-$json = file_get_contents('../db/LootTable_Resource.json');
+$json = file_get_contents('./db/LootTable_Resource.json');
 $result = json_decode($json, true);
 foreach($result as $row => $value)
 {
@@ -216,7 +226,7 @@ foreach($result as $row => $value)
 	unset($result[$row]);
 }
 // Add a few missing resources. Edit missingResources.php to change those.
-include '../db/missingResources.php';
+include './db/missingResources.php';
 // Remove some that are not resources
 
 array_multisort($unsorted['Name'], $unsorted['ResourceID']);
@@ -230,13 +240,13 @@ foreach($resources as $key => $resource)
 	$items[$key]['isResource'] = TRUE;
 }
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 echo 'Reading recipes table from RecipesTable.json... ';
 
 // recipes Table:
 // Compile the recipes table. Don't include resource materials
 // Key: RecipeID / Value: Array with Name, Tier, Type, needed materials and resulting materials and their quantities
-$json = file_get_contents('../db/RecipesTable.json');
+$json = file_get_contents('./db/RecipesTable.json');
 $result = json_decode($json, true);
 foreach($result as $row => $value)
 {
@@ -277,7 +287,7 @@ foreach($result as $row => $value)
 	unset($result[$row]);
 }
 // replace the 'Melt ice' recipe with the virtual helper recipe 'Fill flask' and add a recipe for Crimson Lotus Powder
-$recipes[14201] = ['Name' => 'Fill flask', 'Tier' => 1, 'Type' => 'Material', 'Recipe_Display' => ['Water'], 'Recipe_Calc' => ['Water_100'], 'Ingredients' => ['Water', 'Glass Flask'], 'IngredientIDs' => ['100', '14200'], 'IngredientQuantities' => [1, 1], 'Product_Display' => ['Water-filled Glass Flask'], 'Results' => ['Water-filled Glass Flask'], 'ResultIDs' => ['14201'], 'ResultQuantities' => [1]];
+$recipes[14201] = ['Name' => 'Fill flask', 'Tier' => 1, 'Type' => 'Material', 'Recipe_Display' => ['Water'], 'Recipe_Calc' => ['Water_11504'], 'Ingredients' => ['Water', 'Glass Flask'], 'IngredientIDs' => ['11504', '14200'], 'IngredientQuantities' => [1, 1], 'Product_Display' => ['Water-filled Glass Flask'], 'Results' => ['Water-filled Glass Flask'], 'ResultIDs' => ['14201'], 'ResultQuantities' => [1]];
 $recipes[11125] = ['Name' => 'Crimson Lotus Powder', 'Tier' => 3, 'Type' => 'Material', 'Recipe_Display' => ['Crimson Lotus Flower'], 'Recipe_Calc' => ['CrimsonLotusFlower_11124'], 'Ingredients' => ['Crimson Lotus Flower'], 'IngredientIDs' => ['11124'], 'IngredientQuantities' => [1], 'Product_Display' => ['Crimson Lotus Powder'], 'Results' => ['Crimson Lotus Powder'], 'ResultIDs' => ['11125'], 'ResultQuantities' => [1]];
 $items[11125]['isResult'] = TRUE; $items[11124]['isIngredient'] = TRUE;
 // remove the recipes to smelt coins back into bars
@@ -289,7 +299,7 @@ unset($recipes[10012]); // 1x Wood => 2x Branch
 foreach($resources as $key => $value) if(!$items[$key]['isIngredient']) unset($resources[$key]);
 foreach($items as $key => $value) if((!$value['isResult'] && !$value['isResource']) || (!$value['isIngredient'] && !$value['isResult'] && $value['isResource'])) unset($items[$key]);
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 
 /***************************
 * Google sheets processing *
@@ -308,7 +318,7 @@ foreach($namedRanges as $namedRange) G_deleteNamedRange(RESOURCES_SHEET_ID, $req
 $response = $service->spreadsheets_values->get(SPREADSHEET_ID, 'Prices!A:D');
 foreach($response->values as $key => $value) if($key > 1) $prices[$value[0]] = $value[3];
 // Water is a helper resource and always free
-$prices['100'] = 0;
+$prices['11504'] = 0;
 // Silverstone always costs exactly so much that one silver coin equals 1
 $prices['11052'] = '=(5/3)/(1+Trade!K12)';
 unset($response);
@@ -337,7 +347,7 @@ $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['
 $response = $service->spreadsheets->batchUpdate(SPREADSHEET_ID, $batchUpdateRequest);
 unset($values); unset($requests);
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 // --------------------------------------------------------------------------------
 echo 'Writing the Items sheet... ';
 
@@ -375,7 +385,7 @@ $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['
 $response = $service->spreadsheets->batchUpdate(SPREADSHEET_ID, $batchUpdateRequest);
 unset($values); unset($requests);
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 // --------------------------------------------------------------------------------
 echo 'Writing the Recipes sheet... ';
 
@@ -399,7 +409,7 @@ $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['
 $response = $service->spreadsheets->batchUpdate(SPREADSHEET_ID, $batchUpdateRequest);
 unset($values); unset($requests);
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 // --------------------------------------------------------------------------------
 echo 'Updating the Prices sheet... ';
 
@@ -411,7 +421,7 @@ $values[1] = ['', '', 'now', 'set', 'diff'];
 $row = 2;
 foreach($resources as $id => $value)
 {
-	if($id <> '100' && $id <> '11052')
+	if($id <> '11504' && $id <> '11052')
 	{
 		$row++;
 		$values[]=[$id, $value['Name'],'=' . norm($value['Name']) . '_' . $id, $prices[$id], '=ABS(C' . $row . '-D' . $row . ')'];
@@ -432,10 +442,10 @@ $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['
 $response = $service->spreadsheets->batchUpdate(SPREADSHEET_ID, $batchUpdateRequest);
 unset($values); unset($requests);
 
-echo 'done!<br>';
+echo 'done!' . $lb;
 
 $etime = microtime(true);
 $diff = $etime - $stime;
-echo '<br><br>Required time: '.round($diff,3).' sec.';
-echo "</pre>";
+echo $lb . $lb . 'Required time: '.round($diff,3).' sec.';
+if(isset($_SERVER['REMOTE_ADDR'])) echo "</pre>";
 ?>

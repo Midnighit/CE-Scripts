@@ -1,0 +1,2155 @@
+{
+    "1": {
+        "RowName": "51465",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "0": {
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "2": {
+        "RowName": "54001",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "3": {
+        "RowName": "51984",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "4": {
+        "RowName": "51516",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "5": {
+        "RowName": "51725",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "6": {
+        "RowName": "51493",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "7": {
+        "RowName": "51984",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "8": {
+        "RowName": "7266",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "9": {
+        "RowName": "51728",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "10": {
+        "RowName": "8266",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "11": {
+        "RowName": "6266",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "12": {
+        "RowName": "51493",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "13": {
+        "RowName": "51725",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "14": {
+        "RowName": "51211",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "15": {
+        "RowName": "51175",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "16": {
+        "RowName": "5266",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "17": {
+        "RowName": "51516",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "18": {
+        "RowName": "51575",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "19": {
+        "RowName": "51463",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "20": {
+        "RowName": "51855",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "21": {
+        "RowName": "51987",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "22": {
+        "RowName": "54000",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "23": {
+        "RowName": "51522",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "24": {
+        "RowName": "51578",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "25": {
+        "RowName": "7277",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "26": {
+        "RowName": "51179",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "27": {
+        "RowName": "51846",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "28": {
+        "RowName": "8277",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "29": {
+        "RowName": "6277",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "30": {
+        "RowName": "51522",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "31": {
+        "RowName": "51197",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "32": {
+        "RowName": "3277",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "33": {
+        "RowName": "5277",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "34": {
+        "RowName": "51546",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "35": {
+        "RowName": "51487",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "36": {
+        "RowName": "51546",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "37": {
+        "RowName": "51550",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "38": {
+        "RowName": "51528",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "39": {
+        "RowName": "50513",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "40": {
+        "RowName": "51466",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "41": {
+        "RowName": "51466",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "42": {
+        "RowName": "7263",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "43": {
+        "RowName": "51188",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "44": {
+        "RowName": "51080",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "45": {
+        "RowName": "51167",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "46": {
+        "RowName": "8263",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "47": {
+        "RowName": "51487",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "48": {
+        "RowName": "6263",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "49": {
+        "RowName": "51083",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "50": {
+        "RowName": "51316",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "51": {
+        "RowName": "51200",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "52": {
+        "RowName": "5263",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "53": {
+        "RowName": "3263",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "54": {
+        "RowName": "51066",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "55": {
+        "RowName": "51086",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "56": {
+        "RowName": "51532",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "57": {
+        "RowName": "54005",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "58": {
+        "RowName": "51519",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "15",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "59": {
+        "RowName": "51464",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "60": {
+        "RowName": "50512",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "61": {
+        "RowName": "51531",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "62": {
+        "RowName": "51975",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "63": {
+        "RowName": "51976",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "64": {
+        "RowName": "51981",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "65": {
+        "RowName": "51069",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "66": {
+        "RowName": "51816",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "67": {
+        "RowName": "51496",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "68": {
+        "RowName": "51981",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "69": {
+        "RowName": "7260",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "70": {
+        "RowName": "51824",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "71": {
+        "RowName": "51177",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "72": {
+        "RowName": "51843",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "73": {
+        "RowName": "51815",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "74": {
+        "RowName": "8260",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "75": {
+        "RowName": "51837",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "76": {
+        "RowName": "51496",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "77": {
+        "RowName": "6260",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "78": {
+        "RowName": "51519",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "79": {
+        "RowName": "51071",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "80": {
+        "RowName": "51819",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "81": {
+        "RowName": "5260",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "82": {
+        "RowName": "3260",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "83": {
+        "RowName": "53736",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "84": {
+        "RowName": "50516",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "85": {
+        "RowName": "51584",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "86": {
+        "RowName": "51598",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "87": {
+        "RowName": "51567",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "88": {
+        "RowName": "51991",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "89": {
+        "RowName": "51510",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "90": {
+        "RowName": "51569",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "91": {
+        "RowName": "51568",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "92": {
+        "RowName": "51570",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "93": {
+        "RowName": "51633",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "94": {
+        "RowName": "51990",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "95": {
+        "RowName": "7231",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "96": {
+        "RowName": "51502",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "97": {
+        "RowName": "51633",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "98": {
+        "RowName": "51627",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "99": {
+        "RowName": "5231",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "100": {
+        "RowName": "3231",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "101": {
+        "RowName": "51499",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "102": {
+        "RowName": "51630",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "103": {
+        "RowName": "8231",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "104": {
+        "RowName": "51490",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "105": {
+        "RowName": "6231",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "106": {
+        "RowName": "51510",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "107": {
+        "RowName": "51484",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "108": {
+        "RowName": "51969",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "109": {
+        "RowName": "51467",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "110": {
+        "RowName": "51538",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "111": {
+        "RowName": "51539",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "112": {
+        "RowName": "53998",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "113": {
+        "RowName": "5262",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "114": {
+        "RowName": "3262",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "115": {
+        "RowName": "51484",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "116": {
+        "RowName": "6262",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "117": {
+        "RowName": "51513",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "118": {
+        "RowName": "51969",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "119": {
+        "RowName": "51183",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "120": {
+        "RowName": "51484",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "121": {
+        "RowName": "7262",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "122": {
+        "RowName": "51966",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "123": {
+        "RowName": "51966",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "124": {
+        "RowName": "8262",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "125": {
+        "RowName": "51513",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "126": {
+        "RowName": "51537",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "127": {
+        "RowName": "81020",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "128": {
+        "RowName": "51536",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "129": {
+        "RowName": "51540",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "130": {
+        "RowName": "50501",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "8"
+            }
+        ]
+    },
+    "131": {
+        "RowName": "51554",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "132": {
+        "RowName": "51553",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "133": {
+        "RowName": "54002",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "134": {
+        "RowName": "51525",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "135": {
+        "RowName": "51551",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "136": {
+        "RowName": "51552",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "137": {
+        "RowName": "50504",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "138": {
+        "RowName": "51555",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "139": {
+        "RowName": "7264",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "140": {
+        "RowName": "51158",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "141": {
+        "RowName": "51163",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "142": {
+        "RowName": "8264",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "143": {
+        "RowName": "51478",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "144": {
+        "RowName": "6264",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "145": {
+        "RowName": "51525",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "146": {
+        "RowName": "51161",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "147": {
+        "RowName": "51165",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "148": {
+        "RowName": "5264",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "149": {
+        "RowName": "3264",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "150": {
+        "RowName": "51481",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "151": {
+        "RowName": "51065",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "14",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "152": {
+        "RowName": "51075",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "19",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "153": {
+        "RowName": "50509",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "154": {
+        "RowName": "51542",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "155": {
+        "RowName": "53999",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "156": {
+        "RowName": "51544",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "157": {
+        "RowName": "51605",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "158": {
+        "RowName": "51543",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "159": {
+        "RowName": "51545",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "160": {
+        "RowName": "7261",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "161": {
+        "RowName": "51062",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "162": {
+        "RowName": "51096",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "163": {
+        "RowName": "8261",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "164": {
+        "RowName": "51481",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "165": {
+        "RowName": "6261",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "166": {
+        "RowName": "51065",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "167": {
+        "RowName": "5261",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "168": {
+        "RowName": "51046",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "169": {
+        "RowName": "51049",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "170": {
+        "RowName": "3289",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "171": {
+        "RowName": "3225",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "172": {
+        "RowName": "3299",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "173": {
+        "RowName": "3298",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "174": {
+        "RowName": "3297",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "175": {
+        "RowName": "3261",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "17",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "176": {
+        "RowName": "51541",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "177": {
+        "RowName": "51559",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "178": {
+        "RowName": "51558",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "179": {
+        "RowName": "54003",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "180": {
+        "RowName": "7265",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "181": {
+        "RowName": "51591",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "182": {
+        "RowName": "51169",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "183": {
+        "RowName": "51404",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "184": {
+        "RowName": "8229",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "185": {
+        "RowName": "8265",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "186": {
+        "RowName": "51409",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "187": {
+        "RowName": "6265",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "188": {
+        "RowName": "51588",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "189": {
+        "RowName": "5265",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "10"
+            }
+        ]
+    },
+    "190": {
+        "RowName": "3265",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "191": {
+        "RowName": "51556",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "192": {
+        "RowName": "51560",
+        "Modifications": [
+            {
+                "IsFloatStatModification": false,
+                "OperatorID": "Add",
+                "StatID": "18",
+                "ModificationValue": "5"
+            }
+        ]
+    },
+    "193": {
+        "RowName": "51557",
+        "Modifications": []
+    },
+    "194": {
+        "RowName": "53527",
+        "Modifications": []
+    },
+    "195": {
+        "RowName": "53528",
+        "Modifications": []
+    },
+    "196": {
+        "RowName": "53529",
+        "Modifications": []
+    },
+    "197": {
+        "RowName": "53530",
+        "Modifications": []
+    },
+    "198": {
+        "RowName": "53531",
+        "Modifications": []
+    },
+    "199": {
+        "RowName": "53532",
+        "Modifications": []
+    },
+    "200": {
+        "RowName": "53533"
+    }
+}

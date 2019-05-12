@@ -61,7 +61,7 @@
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
-					"RowName": "Food_HumanFlesh"
+					"RowName": "Hide"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
@@ -85,6 +85,15 @@
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 5
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Food_HumanFlesh"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 40
 			}
 		],
 		"LimitedResource": [
@@ -549,8 +558,8 @@
 		"isRock": true,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 5,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 90,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -906,8 +915,8 @@
 		"isRock": true,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 5,
+		"MinHitPoints": 6,
+		"MaxHitPoints": 8,
 		"RespawnTime": 30,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -921,15 +930,6 @@
 					"RowName": "Coal"
 				},
 				"LootWeight": 4,
-				"DropChancePercentage": 0
-			},
-			{
-				"Resource":
-				{
-					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
-					"RowName": "Stone"
-				},
-				"LootWeight": 1,
 				"DropChancePercentage": 0
 			}
 		],
@@ -1459,12 +1459,12 @@
 		"LimitedResource": []
 	},
 	{
-		"RowName": "NPC_Undead",
+		"RowName": "NPC_Undead_AbandonedCity",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 2,
-		"MaxHitPoints": 2,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -1534,12 +1534,12 @@
 		]
 	},
 	{
-		"RowName": "NPC_BatDemon",
+		"RowName": "NPC_BatDemon_AbandonedCity",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MinHitPoints": 6,
+		"MaxHitPoints": 6,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -1788,8 +1788,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 6,
-		"MaxHitPoints": 6,
+		"MinHitPoints": 4,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -1912,8 +1912,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 6,
-		"MaxHitPoints": 6,
+		"MinHitPoints": 4,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -1965,8 +1965,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 2,
-		"MaxHitPoints": 2,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2009,7 +2009,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 5,
-		"MaxHitPoints": 5,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2161,8 +2161,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 8,
-		"MaxHitPoints": 10,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2225,8 +2225,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 8,
-		"MaxHitPoints": 10,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2298,8 +2298,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 6,
-		"MaxHitPoints": 6,
+		"MinHitPoints": 4,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2322,8 +2322,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2346,8 +2346,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2370,8 +2370,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2419,7 +2419,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2462,7 +2462,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 3,
-		"MaxHitPoints": 3,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2500,12 +2500,12 @@
 		]
 	},
 	{
-		"RowName": "NPC_SkeletonSerpentMan",
+		"RowName": "NPC_SkeletonSerpentMan_AbandonedCity",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 5,
-		"MaxHitPoints": 5,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2575,16 +2575,18 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [
+		"ResourceTemplates": [],
+		"GenericResource": [
 			{
-				"ResourceTemplate":
+				"Resource":
 				{
-					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
-					"RowName": "Humanoid"
-				}
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
 			}
 		],
-		"GenericResource": [],
 		"SpecialResource": [
 			{
 				"Resource":
@@ -2603,6 +2605,15 @@
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 1
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Food_HumanFlesh"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 40
 			}
 		],
 		"LimitedResource": [
@@ -2765,8 +2776,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 28,
-		"MaxHitPoints": 32,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2825,12 +2836,12 @@
 		]
 	},
 	{
-		"RowName": "NPC_Dragon",
+		"RowName": "NPC_DragonMother",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 12,
-		"MaxHitPoints": 15,
+		"MaxHitPoints": 12,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2845,7 +2856,26 @@
 			}
 		],
 		"GenericResource": [],
-		"SpecialResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Undead_Dragonhorn"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ExplodingGland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			}
+		],
 		"LimitedResource": [
 			{
 				"Resource":
@@ -2928,8 +2958,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 15,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -2982,8 +3012,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3023,8 +3053,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 20,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3083,8 +3113,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3127,8 +3157,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 1,
+		"MaxHitPoints": 2,
 		"RespawnTime": 30,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3163,8 +3193,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 30,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3217,8 +3247,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 30,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3271,8 +3301,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 30,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3303,7 +3333,7 @@
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
-					"RowName": "Midnight_blue_flower_seeds"
+					"RowName": "True_Indigo_seeds"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 10
@@ -3325,8 +3355,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 18,
-		"MaxHitPoints": 20,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -3677,8 +3707,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 12,
-		"MaxHitPoints": 18,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4320,7 +4350,17 @@
 				"DropChancePercentage": 0
 			}
 		],
-		"SpecialResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ExplodingGland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 50
+			}
+		],
 		"LimitedResource": [
 			{
 				"Resource":
@@ -4374,8 +4414,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 60,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4410,8 +4450,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 8,
-		"MaxHitPoints": 16,
+		"MinHitPoints": 6,
+		"MaxHitPoints": 8,
 		"RespawnTime": 60,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4606,8 +4646,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 3,
 		"RespawnTime": 60,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4677,7 +4717,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 3,
-		"MaxHitPoints": 6,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4781,8 +4821,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 7,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4793,6 +4833,13 @@
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
 					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
 				}
 			}
 		],
@@ -4905,8 +4952,8 @@
 		"isRock": true,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 12,
+		"MinHitPoints": 16,
+		"MaxHitPoints": 20,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4931,8 +4978,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 12,
-		"MaxHitPoints": 15,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -4947,7 +4994,26 @@
 			}
 		],
 		"GenericResource": [],
-		"SpecialResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Undead_Dragonhorn"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ExplodingGland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			}
+		],
 		"LimitedResource": [
 			{
 				"Resource":
@@ -5134,8 +5200,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 3,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 7,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -5221,8 +5287,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 12,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -5266,8 +5332,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 12,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -5326,12 +5392,12 @@
 		]
 	},
 	{
-		"RowName": "NPC_Wight",
+		"RowName": "NPC_Wight_AbandonedCity",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 4,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -5770,8 +5836,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 5,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -5909,15 +5975,6 @@
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
-			},
-			{
-				"Resource":
-				{
-					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
-					"RowName": "Ash"
-				},
-				"LootWeight": 1,
-				"DropChancePercentage": 0
 			}
 		],
 		"SpecialResource": [
@@ -5938,12 +5995,21 @@
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 5
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Ash"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
 			}
 		],
 		"LimitedResource": []
 	},
 	{
-		"RowName": "JungleTree",
+		"RowName": "Tree_Jungle",
 		"isRock": false,
 		"isTree": true,
 		"shouldDropAll": false,
@@ -5973,7 +6039,7 @@
 					"RowName": "Branch"
 				},
 				"LootWeight": 1,
-				"DropChancePercentage": 40
+				"DropChancePercentage": 10
 			},
 			{
 				"Resource":
@@ -5982,7 +6048,7 @@
 					"RowName": "Bark"
 				},
 				"LootWeight": 1,
-				"DropChancePercentage": 25
+				"DropChancePercentage": 10
 			},
 			{
 				"Resource":
@@ -5991,7 +6057,7 @@
 					"RowName": "Vines"
 				},
 				"LootWeight": 1,
-				"DropChancePercentage": 5
+				"DropChancePercentage": 50
 			}
 		],
 		"LimitedResource": []
@@ -6612,8 +6678,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6636,8 +6702,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6660,8 +6726,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6684,8 +6750,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6708,8 +6774,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6732,8 +6798,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 5,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6785,15 +6851,25 @@
 				"DropChancePercentage": 25
 			}
 		],
-		"LimitedResource": []
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "SandbeastBileGland"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
 	},
 	{
 		"RowName": "NPC_Salamander",
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6816,7 +6892,7 @@
 					"RowName": "ExplodingGland"
 				},
 				"LootWeight": 1,
-				"DropChancePercentage": 5
+				"DropChancePercentage": 10
 			},
 			{
 				"Resource":
@@ -6845,8 +6921,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6889,8 +6965,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -6946,8 +7022,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7009,8 +7085,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7096,8 +7172,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7122,7 +7198,17 @@
 				"DropChancePercentage": 0
 			}
 		],
-		"SpecialResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Demon_Blood"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			}
+		],
 		"LimitedResource": []
 	},
 	{
@@ -7165,7 +7251,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7226,8 +7312,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 5,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 3,
 		"RespawnTime": 120,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7342,8 +7428,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7373,8 +7459,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7435,8 +7521,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7498,8 +7584,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -7544,7 +7630,17 @@
 				"DropChancePercentage": 25
 			}
 		],
-		"LimitedResource": []
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Jaguar_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
 	},
 	{
 		"RowName": "NPC_GorillaBoss",
@@ -7552,7 +7648,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 6,
-		"MaxHitPoints": 9,
+		"MaxHitPoints": 8,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8267,7 +8363,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 8,
-		"MaxHitPoints": 12,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8406,8 +8502,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8422,7 +8518,26 @@
 			}
 		],
 		"GenericResource": [],
-		"SpecialResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Undead_Dragonhorn"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ExplodingGland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			}
+		],
 		"LimitedResource": []
 	},
 	{
@@ -8474,8 +8589,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 10,
-		"MaxHitPoints": 15,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 12,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8642,7 +8757,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8705,8 +8820,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8750,8 +8865,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8784,8 +8899,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8828,8 +8943,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -8898,8 +9013,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -9006,7 +9121,7 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 4,
-		"MaxHitPoints": 10,
+		"MaxHitPoints": 7,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -9060,12 +9175,20 @@
 		"isTree": false,
 		"shouldDropAll": false,
 		"MinHitPoints": 4,
-		"MaxHitPoints": 8,
+		"MaxHitPoints": 4,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9101,7 +9224,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Large"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9137,7 +9268,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Large"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9173,7 +9312,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Large"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9209,7 +9356,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Large"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9245,7 +9400,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Large"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9281,7 +9444,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Spider_IchorType"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9317,7 +9488,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Spider_IchorType"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9353,7 +9532,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Spider_IchorType"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9389,7 +9576,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Spider_IchorType"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9425,7 +9620,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Spider_IchorType"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9461,7 +9664,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9497,7 +9708,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9533,7 +9752,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9569,7 +9796,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9605,7 +9840,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9641,7 +9884,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9677,7 +9928,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9713,7 +9972,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9749,7 +10016,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9785,7 +10060,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9821,7 +10104,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9949,7 +10240,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -9985,7 +10284,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10021,7 +10328,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10057,7 +10372,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10093,7 +10416,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10129,7 +10460,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10174,13 +10513,30 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
 					"RowName": "Raw_Stringy_Meat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
@@ -10210,13 +10566,30 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
 					"RowName": "Raw_Stringy_Meat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
@@ -10246,13 +10619,30 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
 					"RowName": "Raw_Stringy_Meat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
@@ -10282,13 +10672,30 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
 				{
 					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
 					"RowName": "Raw_Stringy_Meat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide"
 				},
 				"LootWeight": 1,
 				"DropChancePercentage": 0
@@ -10318,7 +10725,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10354,7 +10769,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10390,7 +10813,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10426,7 +10857,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10462,7 +10901,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10498,7 +10945,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10534,7 +10989,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10642,7 +11105,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10678,7 +11149,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10714,7 +11193,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10750,7 +11237,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10786,7 +11281,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10822,7 +11325,15 @@
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
 		"DropOneLimitedResource": true,
-		"ResourceTemplates": [],
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
 		"GenericResource": [
 			{
 				"Resource":
@@ -10915,8 +11426,8 @@
 		"isRock": false,
 		"isTree": false,
 		"shouldDropAll": false,
-		"MinHitPoints": 6,
-		"MaxHitPoints": 9,
+		"MinHitPoints": 5,
+		"MaxHitPoints": 6,
 		"RespawnTime": 0,
 		"MaxPickupDropValue": 1,
 		"NodeTier": 0,
@@ -11023,6 +11534,1367 @@
 				},
 				"MaxDropAmounts": 1,
 				"DropChancePercentage": 10
+			}
+		]
+	},
+	{
+		"RowName": "NPC_WildBoarBoss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fatty_meat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "WildBoar_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Tusks"
+				},
+				"MaxDropAmounts": 2,
+				"DropChancePercentage": 25
+			}
+		]
+	},
+	{
+		"RowName": "NPC_BearMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Bear"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 20
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Bear_Brown_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 10
+			}
+		]
+	},
+	{
+		"RowName": "NPC_CrocodileMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Reptile_Medium"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 50
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Crocodile_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 10
+			}
+		]
+	},
+	{
+		"RowName": "NPC_GorillaSilverbackMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Thick_Hide"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 50
+			}
+		],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_GreyApeMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Gray_Ape_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "npc_HyenaMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Hyena"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hyena_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 5
+			}
+		]
+	},
+	{
+		"RowName": "npc_JaguarMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Panther"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Jaguar_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_JungleBirdMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Prey_common"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Feather"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Bog_Bird_Head_Grey"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_KappaMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Medium"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_LocustMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Chitin"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Ingredient_Ichor"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Locust_Venom_Gland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 30
+			}
+		],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_RocknoseMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Stone"
+				},
+				"LootWeight": 2,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Brimstone"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Crystal"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 20
+			}
+		],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_SabretoothMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 30
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 20
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 20
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Panther"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 50
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Sabretooth_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_Lion",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Panther"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 50
+			}
+		],
+		"SpecialResource": [],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_WolfMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Wolf"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Wolf_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 10
+			}
+		]
+	},
+	{
+		"RowName": "NPC_Yetiblack",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 12,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fur"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Ice"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ChestKey"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_BigSnake",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 4,
+		"MaxHitPoints": 8,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Reptile_Hide"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Snake_Venom_Gland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Demon_Blood"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_SerpentRingBoss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 12,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Undead_Rotten"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Demon"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_BatDemon_Jhil_Black",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 6,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Feather"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Demon_Blood"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			}
+		],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_BatDemon",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Demon"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Bat"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Batdemon_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 30
+			}
+		]
+	},
+	{
+		"RowName": "NPC_Undead",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 2,
+		"MaxHitPoints": 2,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": false,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Skeleton"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Undead_Rotten"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_Wight",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 4,
+		"MaxHitPoints": 4,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Undead_Rotten"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Bone"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			}
+		],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "GlowingGoop"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Gossamer"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Witchfire_Powder"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			}
+		],
+		"LimitedResource": []
+	},
+	{
+		"RowName": "NPC_Dragon",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 8,
+		"MaxHitPoints": 8,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Dragon"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Undead_Dragonhorn"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 10
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "ExplodingGland"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 25
+			}
+		],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "RedDragon_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
+			}
+		]
+	},
+	{
+		"RowName": "NPC_SkeletonSerpentMan",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 3,
+		"MaxHitPoints": 3,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": false,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Skeleton"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Demon"
+				}
+			}
+		],
+		"GenericResource": [],
+		"SpecialResource": [],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Serpentpeople_head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 50
+			}
+		]
+	},
+	{
+		"RowName": "NPC_TigerMiniboss",
+		"isRock": false,
+		"isTree": false,
+		"shouldDropAll": false,
+		"MinHitPoints": 10,
+		"MaxHitPoints": 10,
+		"RespawnTime": 0,
+		"MaxPickupDropValue": 1,
+		"NodeTier": 0,
+		"DropOneLimitedResource": true,
+		"ResourceTemplates": [
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Animal_Predator"
+				}
+			},
+			{
+				"ResourceTemplate":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ResourceLootTemplates.ResourceLootTemplates'",
+					"RowName": "Miniboss_Loot"
+				}
+			}
+		],
+		"GenericResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Hide_Panther"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 0
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Claws"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			},
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Fangs"
+				},
+				"LootWeight": 1,
+				"DropChancePercentage": 15
+			}
+		],
+		"SpecialResource": [],
+		"LimitedResource": [
+			{
+				"Resource":
+				{
+					"DataTable": "DataTable'/Game/Systems/Survival/Gathering/Gathering_v2/ItemNameToTemplateID.ItemNameToTemplateID'",
+					"RowName": "Tiger_Head"
+				},
+				"MaxDropAmounts": 1,
+				"DropChancePercentage": 100
 			}
 		]
 	}

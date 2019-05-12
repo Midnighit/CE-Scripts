@@ -8,8 +8,7 @@ $unsorted['Name'][] = $items['18020']['Name']; $unsorted['ResourceID'][] = '1802
 $unsorted['Name'][] = $items['18021']['Name']; $unsorted['ResourceID'][] = '18021';	// Savory Shellfish
 $unsorted['Name'][] = $items['18022']['Name']; $unsorted['ResourceID'][] = '18022';	// Exotic Shellfish
 // Add a few more resources that are missing for some reason
-$unsorted['Name'][] = $items['100']['Name']; $unsorted['ResourceID'][] = '100';		// Water (helper resource)
-$unsorted['Name'][] = $items['11112']['Name']; $unsorted['ResourceID'][] = '11112';	// xx_beastblood
+$unsorted['Name'][] = $items['11504']['Name']; $unsorted['ResourceID'][] = '11504';	// Water (helper resource)
 $unsorted['Name'][] = $items['11128']['Name']; $unsorted['ResourceID'][] = '11128';	// True Indigo Seeds
 $unsorted['Name'][] = $items['13002']['Name']; $unsorted['ResourceID'][] = '13002';	// Savory Flesh
 $unsorted['Name'][] = $items['13003']['Name']; $unsorted['ResourceID'][] = '13003';	// Exotic Flesh
@@ -25,6 +24,6 @@ $unsorted['Name'][] = $items['82073']['Name']; $unsorted['ResourceID'][] = '8207
 $keys = array_keys($unsorted['ResourceID'], '18263'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]); }	// Salt
 $keys = array_keys($unsorted['ResourceID'], '80532'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]); }	// Witchfire Powder
 $keys = array_keys($unsorted['ResourceID'], '80661'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]); }	// Iron Pot
-$keys = array_keys($unsorted['ResourceID'], '80662'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]);  }	// Mortarium
+$keys = array_keys($unsorted['ResourceID'], '80662'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]); }	// Mortarium
 $keys = array_keys($unsorted['ResourceID'], '80663'); foreach($keys as $key) { unset($unsorted['ResourceID'][$key]); unset($unsorted['Name'][$key]); }	// Iron Pan
 ?>

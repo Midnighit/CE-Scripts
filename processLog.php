@@ -47,7 +47,7 @@ function getName($input)
 	return $result[1];
 }
 
-// define constants and set ini variables	
+// define constants and set ini variables
 ini_set("memory_limit","1000M");
 ini_set('max_execution_time', 300);
 date_default_timezone_set('Etc/GMT');
@@ -111,11 +111,6 @@ foreach($dir as $filename) if(preg_match('/ConanSandbox[\w\d-.]*\.log$/', $filen
 	}
 }
 unset($log);
-
-// read the itemTable json file
-$json = file_get_contents(XAMPP_PATH . 'db/ItemTable.json');
-$itemTable = json_decode($json, true);
-foreach($itemTable as $value) $item[$value['RowName']] = getName($value['Name']);
 
 foreach($dir as $filename) if(preg_match('/ServerCommandLog[\w\d-.]*\.log$/', $filename))
 {
@@ -256,7 +251,7 @@ if(isset($IPList))
 			$IPList[$value['IP']]['Steam Name'][] = $value['Steam Name'];
 			if(strtotime($value['Last Login']) > strtotime($IPList[$value['IP']]['Last Login']));
 		}
-		elseif(strtotime($value['Last Login']) > strtotime($IPList[$value['IP']]['Last Login'])); 
+		elseif(strtotime($value['Last Login']) > strtotime($IPList[$value['IP']]['Last Login']));
 	}
 
 	foreach($IPList as $key => $value)
