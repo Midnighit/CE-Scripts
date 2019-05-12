@@ -6,6 +6,7 @@ SQL-commands.php
 client_secret.json
 credentials.json
 composer.*
+*.json
 *.list
 *.bak
 *.bat
