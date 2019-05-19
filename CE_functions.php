@@ -284,7 +284,7 @@ function updateOwnercache(&$db)
 	// write back the cached owner names
 	$handle = fopen('./ownercache.list', 'w+');
 	$contents = '<?php'.PHP_EOL;
-	foreach($ownercache as $ownerId => $ownerName) $contents .= '$ownercache["'.$ownerId.'"] = "'.$ownerName.'";'.PHP_EOL;
+	foreach($ownercache as $ownerId => $ownerName) $contents .= '$ownercache["'.$ownerId.'"] = "'.str_replace('"', '', stripslashes($ownerName)).'";'.PHP_EOL;
 	$contents .= '?>';
 	fwrite($handle, $contents);
 }
