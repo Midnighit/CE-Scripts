@@ -140,7 +140,6 @@ G_changeFormat(ISM_PLAYER_SHEET_ID, $requests, 2, $rows['firstData'], 2, $rows['
 G_changeFormat(ISM_PLAYER_SHEET_ID, $requests, 3, $rows['firstData'], 3, $rows['lastData'], 'RIGHT', 'NUMBER');
 G_setFilterRequest(ISM_PLAYER_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 
-echo "DBUG: I'm here!\n";
 // Update the spreadsheet
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
 $response = $service->spreadsheets->batchUpdate( PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
