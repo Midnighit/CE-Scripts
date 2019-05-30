@@ -50,7 +50,8 @@ foreach($ism_table as $num => $line)
   // add headline for the sheet but ignore it for the JSON file
   if($num == 0)
   {
-    $values[] = ['Item', 'TemplateID', 'Modify', 'Stat', 'StatID', 'Amount'];
+    $values_admin[] = ['Item', 'TemplateID', 'Modify', 'Stat', 'StatID', 'Amount'];
+    $values_player[] = ['Item', 'Stat', 'Amount'];
     continue;
   }
   // lines with remove as modification only have the first three data cells
@@ -82,12 +83,13 @@ foreach($ism_table as $num => $line)
     $ism_json[$index]['Modifications'][$num_mods]['ModificationValue'] = $amount;
 
     // create values array to upload to re-upload google sheet
-    $values[] = [$name, $templateId, $mod, $stat, $statId, $amount];
+    $values_admin[] = [$name, $templateId, $mod, $stat, $statId, $amount];
+    $values_player[] = [$name, $stat, $amount];
   }
   else
   {
     $ism_json[$index]['Modifications'] = array();
-    $values[] = [$name, $templateId, $mod, '', '', ''];
+    $values_admin[] = [$name, $templateId, $mod, '', '', ''];
   }
 }
 
@@ -96,28 +98,54 @@ $json = json_encode($ism_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 $handle = fopen(OUT_FILE, 'w+');
 fwrite($handle, $json);
 
-echo "Uploading changes to google sheet..." . PHP_EOL;
+echo "Uploading changes to google admin sheet..." . PHP_EOL;
 // Set parameters for the spreadsheet update
 $valueInputOption = 'USER_ENTERED';
-$range = 'Item Stat Modification!A1:F'.count($values);
-$valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
+$range = 'Item Stat Modification!A1:F'.count($values_admin);
+$valueRange = new Google_Service_Sheets_ValueRange(['values' => $values_admin]);
 $params = ['valueInputOption' => $valueInputOption];
-$rows = ['firstHeadline' => 1, 'lastHeadline' => 1, 'firstData' => 2, 'lastData' => count($values), 'last' => count($values)];
+$rows = ['firstHeadline' => 1, 'lastHeadline' => 1, 'firstData' => 2, 'lastData' => count($values_admin), 'last' => count($values_admin)];
 $columns = ['first' => 1, 'last' => 6];
 
 // Build the requests array
-G_setGridSize(ISM_SHEET_ID, $requests, $columns['last'], $rows['last'], 1);
-G_changeFormat(ISM_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat(ISM_SHEET_ID, $requests, 2, $rows['firstData'], 2, $rows['lastData'], 'RIGHT', 'NUMBER');
-G_changeFormat(ISM_SHEET_ID, $requests, 3, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
-G_changeFormat(ISM_SHEET_ID, $requests, 5, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER');
-G_setFilterRequest(ISM_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+G_setGridSize(ISM_ADMIN_SHEET_ID, $requests, $columns['last'], $rows['last'], 1);
+G_changeFormat(ISM_ADMIN_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_ADMIN_SHEET_ID, $requests, 2, $rows['firstData'], 2, $rows['lastData'], 'RIGHT', 'NUMBER');
+G_changeFormat(ISM_ADMIN_SHEET_ID, $requests, 3, $rows['firstData'], 4, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_ADMIN_SHEET_ID, $requests, 5, $rows['firstData'], 6, $rows['lastData'], 'RIGHT', 'NUMBER');
+G_setFilterRequest(ISM_ADMIN_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 
 // Update the spreadsheet
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
 $response = $service->spreadsheets->batchUpdate( ADMIN_SPREADSHEET_ID, $batchUpdateRequest);
 $service->spreadsheets_values->update( ADMIN_SPREADSHEET_ID, $range, $valueRange, $params);
-unset($values);
+unset($values_admin);
+unset($requests);
+
+echo "done!\n";
+
+echo "Uploading changes to google player sheet..." . PHP_EOL;
+// Set parameters for the spreadsheet update
+$valueInputOption = 'USER_ENTERED';
+$range = 'Attribute Bonuses!A1:C'.count($values_player);
+$valueRange = new Google_Service_Sheets_ValueRange(['values' => $values_player]);
+$params = ['valueInputOption' => $valueInputOption];
+$rows = ['firstHeadline' => 1, 'lastHeadline' => 1, 'firstData' => 2, 'lastData' => count($values_player), 'last' => count($values_player)];
+$columns = ['first' => 1, 'last' => 3];
+
+// Build the requests array
+G_setGridSize(ISM_PLAYER_SHEET_ID, $requests, $columns['last'], $rows['last'], 1);
+G_changeFormat(ISM_PLAYER_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_PLAYER_SHEET_ID, $requests, 2, $rows['firstData'], 2, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(ISM_PLAYER_SHEET_ID, $requests, 3, $rows['firstData'], 3, $rows['lastData'], 'RIGHT', 'NUMBER');
+G_setFilterRequest(ISM_PLAYER_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
+
+echo "DBUG: I'm here!\n";
+// Update the spreadsheet
+$batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
+$response = $service->spreadsheets->batchUpdate( PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
+$service->spreadsheets_values->update( PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
+unset($values_player);
 
 echo "done!\n";
 
