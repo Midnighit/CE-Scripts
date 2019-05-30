@@ -45,6 +45,7 @@ if($response->values) foreach($response->values as $key => $value) $ism_table[] 
 echo "Processing Item Stat Modifications..." . PHP_EOL;
 
 // create JSON file for import and values array for upload
+$next_index = 0;
 foreach($ism_table as $num => $line)
 {
   // add headline for the sheet but ignore it for the JSON file
@@ -65,7 +66,7 @@ foreach($ism_table as $num => $line)
   if(!isset($has_been_added[$templateId]))
   {
     // remember that it has been added now
-    $has_been_added[$templateId] = $index = $num - 1;
+    $has_been_added[$templateId] = $index = $next_index++;
     $ism_json[$index]['RowName'] = $templateId;
   }
   else $index = $has_been_added[$templateId];
