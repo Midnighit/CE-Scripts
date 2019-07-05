@@ -18,21 +18,28 @@ echo 'Updating stackable items in ItemTable.json... ';
 // complile all the relevant information into the items table
 // Key: ItemId / Value: Array with MaxStackSize
 $json = file_get_contents('./db/ItemTable.json');
-$result = json_decode($json, true);
+$terpo = file_get_contents('./db/TERPO-items.json');
+$result_json = json_decode($json, true);
+$result_terpo = json_decode($terpo, true);
+$result = array_merge($result_json, $result_terpo);
 $new_row = 0;
 foreach($result as $row => $value)
 {
+	// Only increase stacksize for all items with a MaxStackSize > 1
 	if($value['MaxStackSize'] > 1)
 	{
 		$out_incr[$new_row] = $result[$row];
 		if(in_array($value['RowName'], PRODUCER_ID)) $out_incr[$new_row++]['MaxStackSize'] = MAX_PRODUCER;
 		else $out_incr[$new_row++]['MaxStackSize'] = MAX_STACK_SIZE;
 	}
+	// TERPO items need to be merged even when their stacksize isn't changed
+	elseif(strlen($value['RowName']) == 8 && substr($value['RowName'], 0, 4) == '8469') $out_incr[$new_row++] = $result[$row];
 }
 echo "done!\n";
 
-echo 'Writing changes to ItemTable.UpdatedStackSize.json... ';
+echo "Writing changes to ItemTable.UpdatedStackSize.json...\n";
 $json = json_encode($out_incr, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+
 $handle = fopen('./db/ItemTable.UpdatedStackSize.json', 'w+');
 fwrite($handle, $json);
 echo "done!\n";
