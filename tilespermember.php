@@ -62,8 +62,8 @@ $lastUpdate = 'Database Date: '.convertTZ(getLastOnlineTimestamp($db), $tz, $dt)
 $tilesOwn = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Read the amount of tiles per object into another tiles array
 $tilesObj = getTilescount($db, BY_OBJECT, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
-// Get all the active characters with buildings and the number of them within a guild
-$members = getMembers($db, ACTIVE+BUILDINGS);
+// Get all the characters with buildings and the number of them within a guild
+$members = getMembers($db, BUILDINGS);
 
 // Create the values array
 $sql = 'SELECT object_id, owner_id, class, x, y, z FROM buildings, actor_position WHERE object_id = id';

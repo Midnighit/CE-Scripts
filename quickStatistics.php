@@ -41,8 +41,8 @@ echo 'Updating the tiles per member sheet as of ' . $now . '...' . $lb;
 
 // Read the amount of tiles per owner into the tiles array
 $tiles = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
-// Get all the active characters with buildings and the number of them within a guild
-$members = getMembers($db, ACTIVE+BUILDINGS);
+// Get all the characters with buildings and the number of them within a guild
+$members = getMembers($db, BUILDINGS);
 
 // Create the values array
 $whitelist = implode(',', OWNER_WLST);
@@ -56,7 +56,7 @@ if(isset($values)) $values = array_orderby($values, '2', SORT_DESC, '3', SORT_DE
 else $values[] = ['No buildings found!', '', '', '', ''];
 
 // Add the headlines at the top of the table after it has been sorted
-array_unshift($values, ['Owner Names', 'Active Members', 'Tiles', 'Tiles per member', 'Allowance']);
+array_unshift($values, ['Owner Names', 'Members', 'Tiles', 'Tiles per member', 'Allowance']);
 array_unshift($values, ['Last Upload: '.date('d-M-Y H:i').' GMT', '', $lastUpdate]);
 
 // Define some special rows and columns
