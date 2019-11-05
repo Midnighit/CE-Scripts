@@ -146,10 +146,16 @@ $result = $db->query($sql);
 while($row = $result->fetchArray(SQLITE3_NUM)) if(!in_array($row[1], OWNER_WLST)) $moveToRuinsGuild[] = ['objectID' => $row[0], 'ownerID' => $row[1], 'x' => $row[2], 'y' => $row[3], 'z' => $row[4]];
 $now = time();
 
+// Add all objects in the dedicated Ruins clan to the $toBeDamagedByObject array
+if(DAMAGE > 0)
+{
+	$sql = "SELECT buildings.object_id, instance_id, health_id, health_percentage FROM buildings, buildable_health WHERE buildings.object_id = buildable_health.object_id AND owner_id = 11 ORDER BY buildings.object_id";
+	$result = $db->query($sql);
+	while($row = $result->fetchArray(SQLITE3_NUM)) $toBeDamagedByObject[] = ['objectID' => $row[0], 'ownerID' => 11, 'instanceID' => $row[1], 'healthID' => $row[2], 'healthPercentage' => $row[3]];
+}
+
 // Create an array with all objects that have no owners and the number of days that they have were ownerless.
 if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) $daysObjInactive[$k] = floor(($now - $v) / 86000);
-if(isset($daysObjInactive[1567785])) echo "Object 1567785 has been inactive for " . $daysObjInactive[1567785] . " days.\n";
-else echo "Object 1567785 not on list!\n";
 
 // Create an array with all objects that will be purged
 if(isset($daysInactive))
@@ -240,7 +246,7 @@ if(isset($renameToRuins))
 
 // Damage ruins depending on how long they've been inactive
 if(isset($toBeDamagedByOwner)) foreach($toBeDamagedByOwner as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysInactive[$v['ownerID']])) $queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysInactive[$v['ownerID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
-if(isset($toBeDamagedByObject)) foreach($toBeDamagedByObject as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysObjInactive[$v['objectID']])) $queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysObjInactive[$v['ownerID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
+if(isset($toBeDamagedByObject)) foreach($toBeDamagedByObject as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysObjInactive[$v['objectID']])) $queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysObjInactive[$v['objectID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
 if(count($queries) > 0)
 {
 	echo "Damaging " . count($queries) . " objects and object instances that are part of ruins...\n";
