@@ -20,9 +20,6 @@ $db = new SQLite3(CEDB_PATH . DB_FILE);
 // Create a SQL compatibel string from the owner whitelist
 $whitelist = implode(",", OWNER_WLST);
 
-// Give all thespians within New Vilayet territory back to their respective owners
-$queries[] = "UPDATE buildings SET owner_id = 12 WHERE object_id IN (SELECT id FROM actor_position, buildings WHERE id = object_id AND (x BETWEEN -81000 AND -64000) AND (y BETWEEN 103000 AND 111000) AND class = '/Game/Mods/Pippi/Pippi_Mob.Pippi_Mob_C' AND owner_id <> 12)";
-
 // Remove characters that have been inactive for more than the number of days defined in LONG_INACTIVE from the db
 $result = $db->exec("CREATE TEMPORARY TABLE removed_chars AS SELECT id FROM characters WHERE (strftime('%s','now')) - lastTimeOnline > " . LONG_INACTIVE . " * 86400 AND id > 20 AND id NOT IN (" . $whitelist . ")");
 $result = $db->exec("DELETE FROM characters WHERE id IN (SELECT id FROM removed_chars)");
@@ -46,11 +43,6 @@ if($changes) echo "Removing " . $changes . " empty clans from the db...\n";
 $result = $db->exec("DELETE FROM game_events WHERE worldTime < strftime('%s', 'now', '-" . EVENT_LOG_HOLD_BACK . " days')");
 if($result) $changes = $db->changes();
 if($changes) echo "Removing " . $changes . " event log lines from the db...\n";
-
-// Remove entries older than EVENT_LOG_HOLD_BACK from the TERPO_debug_log table
-$result = $db->exec("DELETE FROM TERPO_debug_log WHERE lastSwitch < strftime('%s', 'now', '-" . EVENT_LOG_HOLD_BACK . " days')");
-if($result) $changes = $db->changes();
-if($changes) echo "Removing " . $changes . " TERPO debug log lines from the db...\n";
 
 // Remove thrall and pet feeding pots
 $queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
