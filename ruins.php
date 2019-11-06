@@ -151,11 +151,7 @@ if(DAMAGE > 0)
 {
 	$sql = "SELECT buildings.object_id, instance_id, health_id, health_percentage FROM buildings, buildable_health WHERE buildings.object_id = buildable_health.object_id AND owner_id = 11 ORDER BY buildings.object_id";
 	$result = $db->query($sql);
-	echo "Adding objects to the toBeDamagedByObject array:\n";
-	while($row = $result->fetchArray(SQLITE3_NUM)) {
-		$toBeDamagedByObject[] = ['objectID' => $row[0], 'ownerID' => 11, 'instanceID' => $row[1], 'healthID' => $row[2], 'healthPercentage' => $row[3]];
-		if($row[0] == 289632) print_r(['objectID' => $row[0], 'ownerID' => 11, 'instanceID' => $row[1], 'healthID' => $row[2], 'healthPercentage' => $row[3]]);
-	}
+	while($row = $result->fetchArray(SQLITE3_NUM)) $toBeDamagedByObject[] = ['objectID' => $row[0], 'ownerID' => 11, 'instanceID' => $row[1], 'healthID' => $row[2], 'healthPercentage' => $row[3]];
 }
 
 // Create an array with all objects that have no owners and the number of days that they have were ownerless.
@@ -250,11 +246,7 @@ if(isset($renameToRuins))
 
 // Damage ruins depending on how long they've been inactive
 if(isset($toBeDamagedByOwner)) foreach($toBeDamagedByOwner as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysInactive[$v['ownerID']])) $queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysInactive[$v['ownerID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
-echo "applying damage to objects in toBeDamagedByObject:\n";
-if(isset($toBeDamagedByObject)) foreach($toBeDamagedByObject as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysObjInactive[$v['objectID']])) {
-	$queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysObjInactive[$v['objectID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
-	if($v['objectID'] == 289632) echo "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysObjInactive[$v['objectID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'] . "\n";
-}
+if(isset($toBeDamagedByObject)) foreach($toBeDamagedByObject as $k => $v) if($v['healthPercentage'] > (1.00000001 - DAMAGE * $daysObjInactive[$v['objectID']])) $queries[] = "UPDATE buildable_health SET health_percentage = " . (1 - DAMAGE * $daysObjInactive[$v['objectID']]) . " WHERE object_id = " . $v['objectID'] . " AND instance_id = " . $v['instanceID'] . " AND health_id = " . $v['healthID'];
 if(count($queries) > 0)
 {
 	echo "Damaging " . count($queries) . " objects and object instances that are part of ruins...\n";
