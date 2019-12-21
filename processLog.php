@@ -57,7 +57,10 @@ $dir = scandir(CEDB_PATH . 'Logs/');
 $queue = array();
 if(file_exists('steamcache.list')) include 'steamcache.list';
 
-foreach($dir as $filename) if(preg_match('/ConanSandbox[\w\d-.]*\.log$/', $filename))
+foreach($dir as $filename)
+{
+	echo $filename . "\n";
+	if(preg_match('/ConanSandbox[\w\d\-.]*\.log$/', $filename))
 {
 	$log = file(CEDB_PATH . 'Logs/' . $filename);
 	echo "Processing ".$filename." please wait..." . $lb;
@@ -65,15 +68,19 @@ foreach($dir as $filename) if(preg_match('/ConanSandbox[\w\d-.]*\.log$/', $filen
 	foreach($log as $num => &$line)
 	{
 		// Example Chat
-		// [2018.07.16-13.33.23:827][ 80]ChatWindow: Character Kimifae said: "We are at war with them, as are many in these lands. But they killed our Blacksmith, a revered role of our tribe."
-		if(substr($line, 30, 11) == "ChatWindow:")
+		// Vanilla => [2018.07.16-13.33.23:827][ 80]ChatWindow: Character Kimifae said: "We are at war with them, as are many in these lands. But they killed our Blacksmith, a revered role of our tribe."
+		// Pippi   => [2019.12.20-17.59.39:226][Pippi]PippiChat: Birger said in channel [Global]: Wtf
+		// Pippi   => [2019.12.20-17.48.59:412][Pippi]PippiChat: Broga said in channel [The Golden Falls]: Heyo
+		// Pippi   => [2019.12.20-17.53.00:048][Pippi]PippiChat: Aera said in channel [Tarcus:Aera]: this char has
+		if(substr($line, 32, 10) == "PippiChat:")
 		{
 			$date = substr($line, 1, 4) . '-' . substr($line, 6, 2) . '-' . substr($line, 9, 2);	// YYYY-MM-DD (ISO 8601)
 			$time = substr($line, 12, 2) . ':' . substr($line, 15, 2) . ':' . substr($line, 18, 2);	// HH:MM:SS
 			$timestamp = strtotime($date.' '.$time);
-			$name = substr($line, 52, (strpos($line, " said:", 52)-52));
-			$chat = preg_replace(['/(["])/', '/(^[=])/', "/([;\n\r])/"], ["'", ' ='], substr($line, strpos($line, " said:")+7));
-			$chatlog[$timestamp] = ['Date' => $date, 'Time' => $time, 'Name' => $name, 'Chat' => $chat];
+			$name = substr($line, 43, strpos($line, " said in channel", 43) - 43);
+			$channel = substr($line, strpos($line, " said in channel [") + 18, strpos($line, "]: ") - (strpos($line, " said in channel [") + 18));
+			$chat = preg_replace(['/(["])/', '/(^[=])/', "/([;\n\r])/"], ["'", ' ='], substr($line, strpos($line, "]: ") + 3));
+			$chatlog[$timestamp] = ['Date' => $date, 'Time' => $time, 'Name' => $name, 'Channel' => $channel, 'Chat' => $chat];
 		}
 		// Example Login
 		// [2018.07.16-14.44.39:823][550]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 99.10.207.47:59233, Name: SteamNetConnection_15, Driver: GameNetDriver SteamNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
@@ -110,9 +117,10 @@ foreach($dir as $filename) if(preg_match('/ConanSandbox[\w\d-.]*\.log$/', $filen
 		}
 	}
 }
+}
 unset($log);
 
-foreach($dir as $filename) if(preg_match('/ServerCommandLog[\w\d-.]*\.log$/', $filename))
+foreach($dir as $filename) if(preg_match('/ServerCommandLog[\w\d\-.]*\.log$/', $filename))
 {
 	$log = file(CEDB_PATH . 'Logs/' . $filename);
 	echo "Processing ".$filename." please wait..." . $lb;
@@ -121,7 +129,7 @@ foreach($dir as $filename) if(preg_match('/ServerCommandLog[\w\d-.]*\.log$/', $f
 	{
 		// Example SpawnItem
 		// [2018.09.01-14.31.15:844][841]Player Randel used command: SpawnItem 52006 1 (player is admin)
-		preg_match('/Player (\w+) used command: SpawnItem ([-]?\d+) (\d+)/', $line, $matches);
+		preg_match('/Player (\w+) used command: SpawnItem ([\-]?\d+) (\d+)/', $line, $matches);
 		if($matches)
 		{
 			$date = substr($line, 1, 4) . '-' . substr($line, 6, 2) . '-' . substr($line, 9, 2);	// YYYY-MM-DD (ISO 8601)
@@ -180,7 +188,7 @@ if($response->values) foreach($response->values as $key => $value)
 }
 
 $values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . HOLD_BACK_TIME];
-$values[] = ['Date', 'Time', 'Name', 'Chat message'];
+$values[] = ['Date', 'Time', 'Name', 'Channel', 'Chat message'];
 
 if(isset($chatlog))
 {
@@ -190,16 +198,16 @@ if(isset($chatlog))
 	foreach($chatlog as $line => $value)
 	{
 		$timestamp = strtotime($value['Date'] . ' ' . $value['Time']);
-		if($timestamp > $tooOld) $values[] = [date('d-M-Y', $timestamp), $value['Time'], $value['Name'], $value['Chat']];
+		if($timestamp > $tooOld) $values[] = [date('d-M-Y', $timestamp), $value['Time'], $value['Name'], $value['Channel'], $value['Chat']];
 	}
 
 	// Set parameters for the spreadsheet update
 	$valueInputOption = 'USER_ENTERED';
-	$range = 'Chat Log!A1:D'.count($values);
+	$range = 'Chat Log!A1:E'.count($values);
 	$valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
 	$params = ['valueInputOption' => $valueInputOption];
 	$rows = ['firstHeadline' => 1, 'lastHeadline' => 2, 'firstData' => 3, 'lastData' => count($values), 'last' => count($values)];
-	$columns = ['first' => 1, 'last' => 4];
+	$columns = ['first' => 1, 'last' => 5];
 
 	// Build the requests array
 	G_setGridSize(CHAT_LOG_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
