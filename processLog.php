@@ -176,11 +176,11 @@ $client = G_getClient();
 $service = new Google_Service_Sheets($client);
 
 // Read the chatlog that's already uploaded
-$response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'Chat Log!A3:D');
+$response = $service->spreadsheets_values->get( LOGS_SPREADSHEET_ID, 'Chat Log!A3:E');
 if($response->values) foreach($response->values as $key => $value)
 {
-	if(!isset($value[3])) $value[3] = '';
-	$chatlog[strtotime($value[0] . ' ' . $value[1])] = ['Date' => $value[0], 'Time' => $value[1], 'Name' => $value[2], 'Chat' => $value[3]];
+	if(!isset($value[4])) $value[4] = '';
+	$chatlog[strtotime($value[0] . ' ' . $value[1])] = ['Date' => $value[0], 'Time' => $value[1], 'Name' => $value[2], 'Channel' => $value[3], 'Chat' => $value[4]];
 }
 
 $values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . HOLD_BACK_TIME];
