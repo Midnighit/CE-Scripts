@@ -57,10 +57,7 @@ $dir = scandir(CEDB_PATH . 'Logs/');
 $queue = array();
 if(file_exists('steamcache.list')) include 'steamcache.list';
 
-foreach($dir as $filename)
-{
-	echo $filename . "\n";
-	if(preg_match('/ConanSandbox[\w\d\-.]*\.log$/', $filename))
+foreach($dir as $filename) if(preg_match('/ConanSandbox[\w\d\-.]*\.log$/', $filename))
 {
 	$log = file(CEDB_PATH . 'Logs/' . $filename);
 	echo "Processing ".$filename." please wait..." . $lb;
@@ -116,7 +113,6 @@ foreach($dir as $filename)
 			}
 		}
 	}
-}
 }
 unset($log);
 
