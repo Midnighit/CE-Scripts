@@ -19,12 +19,12 @@ function getClassName($input)
 
 // Calcualte the average of the values within an array
 function array_avrg($array, $precision = 0)
-{ 
-	$count = count($array); 
-	$sum = array_sum($array); 
+{
+	$count = count($array);
+	$sum = array_sum($array);
 	if($precision === false) return $sum / $count;
 	else return round($sum / $count, $precision);
-} 
+}
 
 // Calcualte the median of the values within an array
 function array_median($array, $precision = 0)
@@ -44,7 +44,7 @@ function array_median($array, $precision = 0)
 	}
 	if($precision === false) return $total;
 	else return round($total, $precision);
-} 
+}
 
 // Function to order tables organized in rows instead of columns
 function array_orderby()
@@ -91,7 +91,7 @@ function getTilescount($db, $key = 0, $bMult = 1, $pMult = 1)
 		while($row = $result->fetchArray(SQLITE3_ASSOC)) $tiles[$row['owner_id']] = 0;
 		$result->finalize();
 	}
-		
+
 	// Add root-objects and those attached to it to the tiles array and store the root objects in a separate array to exclude them from the placables array
 	$sql = 'SELECT buildings.object_id, owner_id, count(*) AS tiles FROM actor_position, buildings, building_instances WHERE buildings.object_id = id AND building_instances.object_id = id GROUP BY buildings.object_id';
 	$result = $db->query($sql);
@@ -112,7 +112,7 @@ function getTilescount($db, $key = 0, $bMult = 1, $pMult = 1)
 		elseif($key == BY_OBJECT) $tiles[$row['object_id']] = $pMult;
 	}
 	$result->finalize();
-	
+
 	array_walk($tiles, 'roundTiles');
 	return $tiles;
 }
@@ -124,7 +124,7 @@ function getMembers($db, $filter = 0, $time = false)
 	$guild = "SELECT guild as guild_id, count(*) as members FROM characters WHERE guild_id NOT NULL";
 	$char = 'SELECT id as char_id FROM characters WHERE guild IS NULL';
 	$onlyChars = $onlyGuilds = false;
-	
+
 	if($filter >= NOGUILD)
 	{
 		$filter -= NOGUILD;
@@ -142,7 +142,7 @@ function getMembers($db, $filter = 0, $time = false)
 		$char .= " AND char_id NOT IN (SELECT owner_id FROM buildings)";
 	}
 	if($filter >= BUILDINGS)
-	{ 
+	{
 		$filter -= BUILDINGS;
 		$guild .= " AND guild_id IN (SELECT owner_id FROM buildings)";
 		$char .= " AND char_id IN (SELECT owner_id FROM buildings)";
@@ -159,8 +159,8 @@ function getMembers($db, $filter = 0, $time = false)
 		$guild .= " AND " . $time . " - lastTimeOnline <= " . INACTIVITY . " * 86400";
 		$char .= " AND " . $time . " - lastTimeOnline <= " . INACTIVITY . " * 86400";
 	}
-	
-	
+
+
 	$guild .= " GROUP BY guild_id";
 	$result = $db->query($guild);
 	while($row = $result->fetchArray(SQLITE3_ASSOC)) if((!$onlyChars || $row['members'] == 1) && (!$onlyGuilds || $row['members'] > 1)) $members[$row['guild_id']] = $row['members'];
@@ -172,7 +172,7 @@ function getMembers($db, $filter = 0, $time = false)
 		while($row = $result->fetchArray(SQLITE3_ASSOC)) $members[$row['char_id']] = 1;
 		$result->finalize();
 	}
-	
+
 	if(isset($members)) return $members;
 	else return [];
 }
@@ -235,15 +235,15 @@ function updateNoOwnerObjectscache(&$db)
 		FROM buildings
 		WHERE (owner_id NOT IN ( SELECT id FROM characters ) AND owner_id NOT IN ( SELECT guildId FROM guilds )) AND owner_id <> 0 OR owner_id = " . RUINS_CLAN_ID;
 	$result = $db->query($sql);
-	// add current timestamp for new entries 
+	// add current timestamp for new entries
 	$now = time();
 	$allNoOwnerObj = [];
 	while($row = $result->fetchArray(SQLITE3_NUM)) $allNoOwnerObj[$row[0]] = $now;
 	$result->finalize();
-	
+
 	// purge objects from the cache that either have an owner or don't exist anymore (e.g. everything that's not in the objects array)
 	if(!empty($noownerobjcache)) foreach($noownerobjcache as $k => $v) if(!isset($allNoOwnerObj[$k])) unset($noownerobjcache[$k]);
-	
+
 	// add new objects that don't have an owner or belong to the no owner ruins guild to the cache
 	if(!empty($allNoOwnerObj)) foreach($allNoOwnerObj as $k => $v) if(!isset($noownerobjcache[$k])) $noownerobjcache[$k] = $v;
 
@@ -348,5 +348,42 @@ function getSteamName($steamid, &$steamcache, $timeout = 1)
 		}
 		else return '';
 	}
+}
+
+// function to read the last X lines of a textfile
+function getLastLines($filename, $num_lines = 2)
+{
+	// function has to read at least 2 lines
+	$num_lines < 2 ? $num_lines = 1 : $num_lines--;
+	$file = new SplFileObject($filename, 'r');
+	$file->seek(PHP_INT_MAX);
+	$last_line = $file->key();
+	$lines = new LimitIterator($file, $last_line - $num_lines);
+	return iterator_to_array($lines, false);
+}
+
+// function to log messages in addition to the console output
+function log_line($message, $lines = null, $write = false, $echo = true, $max_entries = 5000, $filename = CEDB_PATH . 'Logs/Script.log')
+{
+	if(isset($_SERVER['REMOTE_ADDR']))	$lb = "<br>";
+	else $lb = "\n";
+
+	echo $message . $lb;
+	if(!file_exists($filename))
+	{
+		$handle = fopen($filename, "w+");
+		fclose($handle);
+	}
+	if(!$lines) $lines = file($filename);
+	if(count($lines) >= $max_entries) $lines = array_slice($lines, count($lines) - $max_entries + 2);
+	$lines[] = "[" . date('d-M-Y H:i:s', time()) . "] " . $message . "\r\n";
+	if($write)
+	{
+		$handle = fopen($filename, "w+");
+		$contents = implode($lines);
+		fwrite($handle, $contents);
+		fclose($handle);
+	}
+	return $lines;
 }
 ?>

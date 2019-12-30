@@ -16,7 +16,11 @@ else
 require 'CE_functions.php';
 
 // check if db is found at given path
-if(!file_exists(CEDB_PATH . DB_FILE)) exit('No database found, skipping script' . $lb);
+if(!file_exists(CEDB_PATH . DB_FILE))
+{
+	log_line('No database found, skipping script', false, true, false);
+	exit('No database found, skipping script' . $lb);
+}
 
 // Get the Google API client and construct the service object and set the spreadsheet- and sheetId.
 require 'google_sheets_client.php';
@@ -37,7 +41,7 @@ updateOwnercache($db);
 // Get the last time a player has been online and use that information to determine the db age
 $lastUpdate = 'Database Date: '.convertTZ(getLastOnlineTimestamp($db), $tz, $dt).' GMT';
 $now = date('d-M-Y H:i', time());
-echo 'Updating the tiles per member sheet as of ' . $now . '...' . $lb;
+$log = log_line('Updating the tiles per member sheet as of ' . $now . '...');
 
 // Read the amount of tiles per owner into the tiles array
 $tiles = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
@@ -82,9 +86,9 @@ $response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpd
 $service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
 unset($values);
 
-//---------------------------- Activity Statistics ----------------------------//
+//---------------------------- Activity Statistics ---------------------------//
 
-echo "Updating the activity statistics sheet..." . $lb;
+$log = log_line("Updating the activity statistics sheet...", $log);
 
 const FRAME = 75;
 const HOLD_BACK_TIME = 5;
@@ -144,7 +148,27 @@ $service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange
 $batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
 $response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
 
+//------------------------- Check for restart freeze -------------------------//
+
+$log = log_line("Check for restart freeze...", $log);
+
+$last_edit = filemtime(CEDB_PATH . 'Logs/ConanSandbox.log');
+// if more than 4.5 minutes have passed since the last update, check the log file
+$freeze = false;
+if($now - $last_edit > 270)
+{
+	// read the last 4 lines of the logfile
+	$lines = getLastLines(CEDB_PATH . 'Logs/ConanSandbox.log', 4);
+	// if any of the lines differ, we assume that the game didn't freeze
+	$freeze = true;
+	foreach($lines as $key => $line) if(substr($line, 30) != FREEZE_LOG_LINES[$key]) $freeze = false;
+	if($freeze) exec('taskkill /F /FI "WINDOWTITLE eq Conan Exiles"');
+}
+if($freeze) $log = log_line("Freeze detected (" . ($now - $last_edit) . " seconds since last change to logfile), killing process now...", $log);
+else $log = log_line("No freeze detected (" . ($now - $last_edit) . " seconds since last change to logfile).", $log);
+
 $etime = microtime(true);
 $diff = $etime - $stime;
-echo "Done!" . $lb . "Required time: ".round($diff, 3)." sec." . $lb;
+echo "Done!" . $lb;
+log_line("Required time: ".round($diff, 3)." sec.", $log, true);
 ?>
