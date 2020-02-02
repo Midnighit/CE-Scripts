@@ -46,13 +46,19 @@ $log = log_line('Updating the tiles per member sheet as of ' . $now . '...');
 // Read the amount of tiles per owner into the tiles array
 $tiles = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Get all the characters with buildings and the number of them within a guild
-$members = getMembers($db, BUILDINGS);
+$active = ACTIVE * ((ALLOWANCE_INCLUDES_INACTIVES + 1) % 2);
+$members = getMembers($db, BUILDINGS + $active);
 
 // Create the values array
 $whitelist = implode(',', OWNER_WLST);
 $sql = 'SELECT DISTINCT owner_id FROM buildings WHERE owner_id NOT IN (' . $whitelist . ')';
 $result = $db->query($sql);
-while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [$ownercache[$row['owner_id']], $members[$row['owner_id']], $tiles[$row['owner_id']], round($tiles[$row['owner_id']] / $members[$row['owner_id']]), ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
+while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [
+		$ownercache[$row['owner_id']],
+		$members[$row['owner_id']],
+		$tiles[$row['owner_id']],
+		round($tiles[$row['owner_id']] / $members[$row['owner_id']]),
+		ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
 $result->finalize();
 
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
