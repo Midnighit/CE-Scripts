@@ -51,7 +51,6 @@ function getName($input)
 ini_set("memory_limit","1000M");
 ini_set('max_execution_time', 300);
 date_default_timezone_set('Etc/GMT');
-const HOLD_BACK_TIME = 7;
 
 $dir = scandir(CEDB_PATH . 'Logs/');
 $queue = array();
@@ -183,14 +182,14 @@ if($response->values) foreach($response->values as $key => $value)
 	$chatlog[strtotime($value[0] . ' ' . $value[1])] = ['Date' => $value[0], 'Time' => $value[1], 'Name' => $value[2], 'Channel' => $value[3], 'Chat' => $value[4]];
 }
 
-$values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . HOLD_BACK_TIME];
+$values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . CHAT_LOG_HOLD_BACK_TIME];
 $values[] = ['Date', 'Time', 'Name', 'Channel', 'Chat message'];
 
 if(isset($chatlog))
 {
 	ksort($chatlog);
-	// chat entries older than the HOLD_BACK_TIME will not be taken over into the values array
-	$tooOld = time() - HOLD_BACK_TIME * 24 * 60 * 60;
+	// chat entries older than the CHAT_LOG_HOLD_BACK_TIME will not be taken over into the values array
+	$tooOld = time() - CHAT_LOG_HOLD_BACK_TIME * 24 * 60 * 60;
 	foreach($chatlog as $line => $value)
 	{
 		$timestamp = strtotime($value['Date'] . ' ' . $value['Time']);
@@ -300,18 +299,18 @@ if($response->values) foreach($response->values as $key => $value)
 	$commandLog[strtotime($value[0])][$value[1]][$value[2]]['Date'] = $value[0];
 }
 
-$values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . HOLD_BACK_TIME];
+$values[] = ['Last Upload: '.date('d-M-Y H:i').' GMT', '', '', 'Hold back time: ' . CHAT_LOG_HOLD_BACK_TIME];
 $values[] = ['Date', 'Account', 'Item ID', 'Item Name', 'Amount'];
 
 if(isset($commandLog))
 {
 	ksort($commandLog);
-	// log entries older than the HOLD_BACK_TIME will not be taken over into the values array
-	$tooOld = time() - HOLD_BACK_TIME * 24 * 60 * 60;
+	// log entries older than the CHAT_LOG_HOLD_BACK_TIME will not be taken over into the values array
+	$tooOld = time() - CHAT_LOG_HOLD_BACK_TIME * 24 * 60 * 60;
 	// for each day
 	foreach($commandLog as $timestamp => $names)
 	{
-		// check if the date isn't older than what HOLD_BACK_TIME dictates and then for each name
+		// check if the date isn't older than what CHAT_LOG_HOLD_BACK_TIME dictates and then for each name
 		if($timestamp > $tooOld) foreach($names as $name => $itemIDs)
 		{
 			// and for each of the itemIDs assign the values
