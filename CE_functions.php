@@ -313,6 +313,44 @@ function updateThrallcache(&$db)
 	fwrite($handle, $contents);
 }
 
+// remove all the objects with the given object_ids from all relevant tables
+function remove_items_from_db($db, $object_ids)
+{
+  if(is_array($object_ids)) $objects_list = implode(',', $object_ids);
+  else $objects_list = $object_ids;
+  $queries[] = "DELETE FROM buildable_health WHERE object_id IN (" . $objects_list  . ")";
+  $queries[] = "DELETE FROM buildings WHERE object_id IN (" . $objects_list  . ")";
+  $queries[] = "DELETE FROM destruction_history WHERE object_id IN (" . $objects_list  . ")";
+  $queries[] = "DELETE FROM properties WHERE object_id IN (" . $objects_list  . ")";
+  $queries[] = "DELETE FROM actor_position WHERE id IN (" . $objects_list  . ")";
+  while(count($queries) > 0) $db->exec(array_shift($queries));
+}
+
+// uses the LIMITS constant of config.php to reduce all listed object classes to their given limit
+function reduce_to_limits($db, $verboose = false)
+{
+	if($verboose) echo "Reducing objects according to the limits set in config...\n";
+  $sum = 0;
+  foreach(LIMITS as $key => $limit) {
+    $class_list = 'class like "%' . implode('%" or class LIKE "%', $limit['obj']) . '%"';
+    $sql = 'SELECT id, owner_id FROM actor_position, buildings WHERE object_id=id and (' . $class_list . ') ORDER BY owner_id';
+    $result = $db->query($sql);
+    $owner_list = [];
+    while($row = $result->fetchArray(SQLITE3_ASSOC)) $owner_list[$row['owner_id']][] = $row['id'];
+    foreach($owner_list as $owner_id => $object_ids) {
+      $diff = count($object_ids) - $limit['max'];
+      if($diff > 0) {
+        $sum += $diff;
+        if($verboose) echo "Remove " . $diff . " objects at random for the owner with owner_id " . $owner_id . "\n";
+        $obj = array_rand(array_flip($object_ids), $diff);
+        remove_items_from_db($db, $obj);
+      }
+    }
+  }
+  if($verboose) echo $sum . " objects removed from the db.\n";
+  return $sum;
+}
+
 // function to convert the Steamd64ID to the Steam username
 function getSteamName($steamid, &$steamcache, $timeout = 1)
 {

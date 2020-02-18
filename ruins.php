@@ -44,12 +44,9 @@ $result = $db->exec("DELETE FROM game_events WHERE worldTime < strftime('%s', 'n
 if($result) $changes = $db->changes();
 if($changes) echo "Removing " . $changes . " event log lines from the db...\n";
 
-// Remove thrall and pet feeding pots
-$queries[] = "DELETE FROM buildable_health WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
-$queries[] = "DELETE FROM buildings WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
-$queries[] = "DELETE FROM destruction_history WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
-$queries[] = "DELETE FROM properties WHERE object_id IN (SELECT id FROM actor_position WHERE class LIKE '%FeedingContainer%')";
-$queries[] = "DELETE FROM actor_position WHERE class LIKE '%FeedingContainer%'";
+// Remove all objects according to their set limits
+$removed = reduce_to_limits($db);
+if($removed) echo "Removing " . $removed . " objects from the db because they were over the set limits...\n";
 
 //---------------------------- Compiling Information ----------------------------//
 
