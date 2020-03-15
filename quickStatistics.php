@@ -48,17 +48,22 @@ $tiles = getTilescount($db, BY_OWNER, BUILDING_TILE_MULT, PLACEBALE_TILE_MULT);
 // Get all the characters with buildings and the number of them within a guild
 $active = ACTIVE * ((ALLOWANCE_INCLUDES_INACTIVES + 1) % 2);
 $members = getMembers($db, BUILDINGS + $active);
+if($active) $total_members = getMembers($db, BUILDINGS);
 
 // Create the values array
 $whitelist = implode(',', OWNER_WLST);
 $sql = 'SELECT DISTINCT owner_id FROM buildings WHERE owner_id NOT IN (' . $whitelist . ')';
 $result = $db->query($sql);
-while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) $values[] = [
+while($row = $result->fetchArray(SQLITE3_ASSOC)) if(isset($members[$row['owner_id']])) {
+		if($active) $members_str = $members[$row['owner_id']] . ' / ' . $total_members[$row['owner_id']];
+		else $members_str = $members[$row['owner_id']];
+	 	$values[] = [
 		$ownercache[$row['owner_id']],
-		$members[$row['owner_id']],
+		$members_str,
 		$tiles[$row['owner_id']],
 		round($tiles[$row['owner_id']] / $members[$row['owner_id']]),
 		ALLOWANCE_BASE + ($members[$row['owner_id']] - 1) * ALLOWANCE_CLAN];
+}
 $result->finalize();
 
 // Order the remaining values by tiles per member then owner then number of tiles and finally coordinates
@@ -66,7 +71,9 @@ if(isset($values)) $values = array_orderby($values, '2', SORT_DESC, '3', SORT_DE
 else $values[] = ['No buildings found!', '', '', '', ''];
 
 // Add the headlines at the top of the table after it has been sorted
-array_unshift($values, ['Owner Names', 'Members', 'Tiles', 'Tiles per member', 'Allowance']);
+if($active) $members_str = 'Members (active / total)';
+else $members_str = 'Members';
+array_unshift($values, ['Owner Names', $members_str, 'Tiles', 'Tiles per member', 'Allowance']);
 array_unshift($values, ['Last Upload: '.date('d-M-Y H:i').' GMT', '', $lastUpdate]);
 
 // Define some special rows and columns
@@ -83,7 +90,7 @@ $params = ['valueInputOption' => $valueInputOption];
 G_unmergeCells(TPM_PLAYERS_SHEET_ID, $requests, 1, $rows['firstData'], 2, $rows['lastData']);
 G_setFilterRequest(TPM_PLAYERS_SHEET_ID, $requests, $columns['first'], $rows['lastHeadline'], $columns['last'], $rows['lastData']);
 G_setGridSize(TPM_PLAYERS_SHEET_ID, $requests, $columns['last'], $rows['last'], 2);
-G_changeFormat(TPM_PLAYERS_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'TEXT');
+G_changeFormat(TPM_PLAYERS_SHEET_ID, $requests, 1, $rows['firstData'], 2, $rows['lastData'], 'LEFT', 'TEXT');
 G_changeFormat(TPM_PLAYERS_SHEET_ID, $requests, 2, $rows['firstData'], 5, $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
 
 // Update the spreadsheet
