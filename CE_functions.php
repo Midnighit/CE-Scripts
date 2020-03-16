@@ -67,7 +67,7 @@ function array_orderby()
 // Get the timestamp of the character that was the last to be online on the server
 function getLastOnlineTimestamp($db)
 {
-	$sql = 'SELECT lastTimeOnline FROM characters ORDER BY lastTimeOnline DESC LIMIT 1';
+	$sql = "SELECT lastTimeOnline FROM characters WHERE lastTimeOnline <= strftime('%s', 'now') ORDER BY lastTimeOnline DESC LIMIT 1";
 	$result = $db->query($sql);
 	$row = $result->fetchArray(SQLITE3_ASSOC);
 	$result->finalize();
