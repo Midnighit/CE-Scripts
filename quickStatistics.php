@@ -170,8 +170,8 @@ $last_edit = filemtime(CEDB_PATH . 'Logs/ConanSandbox.log');
 $freeze = false;
 if($now - $last_edit > 270)
 {
-	// read the last 4 lines of the logfile
-	$lines = getLastLines(CEDB_PATH . 'Logs/ConanSandbox.log', 4);
+	// read the last few lines of the logfile
+	$lines = getLastLines(CEDB_PATH . 'Logs/ConanSandbox.log', 3);
 	// if any of the lines differ, we assume that the game didn't freeze
 	$freeze = true;
 	foreach($lines as $key => $line) if(substr($line, 30) != FREEZE_LOG_LINES[$key]) $freeze = false;
