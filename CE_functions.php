@@ -406,18 +406,14 @@ function log_line($message, $lines = null, $write = false, $echo = true, $max_en
 	if(isset($_SERVER['REMOTE_ADDR']))	$lb = "<br>";
 	else $lb = "\n";
 
-	echo $message . $lb;
-	if(!file_exists($filename))
-	{
-		$handle = fopen($filename, "w+");
-		fclose($handle);
-	}
 	if(!$lines) $lines = file($filename);
-	if(count($lines) >= $max_entries) $lines = array_slice($lines, count($lines) - $max_entries + 2);
 	$lines[] = "[" . date('d-M-Y H:i:s', time()) . "] " . $message . "\r\n";
+
+	if($echo) echo $message . $lb;
 	if($write)
 	{
 		$handle = fopen($filename, "w+");
+		if(count($lines) >= $max_entries) $lines = array_slice($lines, count($lines) - $max_entries + 2);
 		$contents = implode($lines);
 		fwrite($handle, $contents);
 		fclose($handle);
