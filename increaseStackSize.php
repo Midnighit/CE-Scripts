@@ -7,6 +7,7 @@ $stime = microtime(true);
 const MAX_STACK_SIZE = 1000000;
 const MAX_PRODUCER = 1000;
 const PRODUCER_ID = array('13012', '18002', '18010', '18011', '18012', '18020', '18021', '18022', '80995', '80991', '80992', '80993', '80994', '80995');
+const MODIFIED_VANILLA_ID = array('51396');
 
 /*********************
 * Table preparations *
@@ -23,10 +24,19 @@ $result_json = json_decode($json, true);
 $result_terpo = json_decode($terpo, true);
 $result = array_merge($result_json, $result_terpo);
 $new_row = 0;
+$counted = [];
 foreach($result as $row => $value)
 {
+	// Vanilla items that were changed have to be specifically added here
+	if(in_array($value['RowName'], MODIFIED_VANILLA_ID))
+	{
+		// ignore the vanilla version of the item (the one that shows up first)
+		if(!isset($counted[$value['RowName']])) $counted[$value['RowName']] = true;
+		// add the changed version that originates from TERPO-items.json
+		else $out_incr[$new_row++] = $result[$row];
+	}
 	// Only increase stacksize for all items with a MaxStackSize > 1
-	if($value['MaxStackSize'] > 1)
+	elseif($value['MaxStackSize'] > 1)
 	{
 		$out_incr[$new_row] = $result[$row];
 		if(in_array($value['RowName'], PRODUCER_ID)) $out_incr[$new_row++]['MaxStackSize'] = MAX_PRODUCER;
