@@ -104,6 +104,7 @@ unset($values);
 $last_edit = filemtime(CEDB_PATH . 'Logs/ConanSandbox.log');
 // if more than 3 minutes have passed since the last update, check the log file
 $freeze = false;
+$now = time();
 if($now - $last_edit > 180)
 {
 	// read the last few lines of the logfile
