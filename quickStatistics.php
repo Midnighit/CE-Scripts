@@ -99,68 +99,6 @@ $response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpd
 $service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
 unset($values);
 
-//---------------------------- Activity Statistics ---------------------------//
-
-log_line("Updating the activity statistics sheet...");
-
-const FRAME = 75;
-const HOLD_BACK_TIME = 5;
-
-// get current time
-$now = time();
-
-// Read the statistics already uploaded
-$response = $service->spreadsheets_values->get(PLAYER_SPREADSHEET_ID, 'Activity Statistics!A2:B');
-if($response->values) foreach($response->values as $key => $value)
-{
-	$statsTS = strtotime($value[0]);
-	$statistics[$statsTS] = $value;
-}
-
-$value[0] = date('D d-M-Y H:i', $now);
-
-// Determine all the characters that have been online (add 15 seconds gap to exclude players who were online when the server shuts down)
-$result=$db->query("SELECT id, char_name FROM characters WHERE " . $now . " - lastTimeOnline < " . FRAME);
-while($row = $result->fetchArray(SQLITE3_ASSOC)) $charsOnlineLastTenMinutes[$row['id']] = $row['char_name'];
-$result->finalize();
-if(isset($charsOnlineLastTenMinutes)) $value[1] = count($charsOnlineLastTenMinutes);
-else $value[1] = 0;
-
-$db->close();
-
-// Append the new set of statistics and sort it by timestamp
-$statistics[$now] = $value;
-ksort($statistics);
-
-// Form the values array to pass it over to the google sheets API
-$values[0] = ['Date', '#Chars logged in'];
-
-// statistics entries older than the HOLD_BACK_TIME will not be taken over into the values array
-$tooOld = $now - HOLD_BACK_TIME * 24 * 60 * 60;
-foreach($statistics as $k => $v)
-{
-	$timestamp = strtotime($v[0]);
-	if($timestamp > $tooOld) $values[] = $v;
-}
-
-// Set parameters for the spreadsheet update
-$valueInputOption = 'USER_ENTERED';
-$range = 'Activity Statistics!A1:B4321';
-$valueRange = new Google_Service_Sheets_ValueRange(['values' => $values]);
-$params = ['valueInputOption' => $valueInputOption];
-$rows = ['firstHeadline' => 1, 'lastHeadline' => 1, 'firstData' => 2, 'lastData' => count($values), 'last' => count($values)];
-$columns = ['first' => 1, 'last' => 2];
-
-// Build the requests array
-G_setGridSize(ACTIVITY_STATISTICS_SHEET_ID, $requests, $columns['last'], HOLD_BACK_TIME * 144 + 1, 1, true);
-G_changeFormat(ACTIVITY_STATISTICS_SHEET_ID, $requests, 1, $rows['firstData'], 1, $rows['lastData'], 'LEFT', 'DATE_TIME', 'ddd dd-mmm-yyyy hh:mm');
-G_changeFormat(ACTIVITY_STATISTICS_SHEET_ID, $requests, 2, $rows['firstData'], $columns['last'], $rows['lastData'], 'CENTER', 'NUMBER', '#,##0');
-
-// Update the spreadsheet
-$service->spreadsheets_values->update(PLAYER_SPREADSHEET_ID, $range, $valueRange, $params);
-$batchUpdateRequest = new Google_Service_Sheets_BatchUpdateSpreadsheetRequest(['requests' => $requests]);
-$response = $service->spreadsheets->batchUpdate(PLAYER_SPREADSHEET_ID, $batchUpdateRequest);
-
 //------------------------- Check for restart freeze -------------------------//
 
 $last_edit = filemtime(CEDB_PATH . 'Logs/ConanSandbox.log');
